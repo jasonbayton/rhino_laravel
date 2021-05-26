@@ -5056,7 +5056,7 @@ content {
     background: #636cf5;
     padding: 25px;
     color: white;
-    background: url(/img/hero.jpg) #454879;
+    /*background: url(/theme/rhino_v2/img/hero.jpg) #454879;*/
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;

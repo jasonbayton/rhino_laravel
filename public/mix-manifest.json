@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/tocbot.js": "/js/tocbot.js",
+    "/js/darkmode.js": "/js/darkmode.js",
+    "/js/darkmodetoggle.js": "/js/darkmodetoggle.js",
+    "/js/fitvids.js": "/js/fitvids.js",
     "/css/app.css": "/css/app.css",
     "/assets/rhino-logo.png": "/assets/rhino-logo.png"
 }

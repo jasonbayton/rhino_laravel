@@ -22,8 +22,12 @@ class ContentService {
 		return $this->content->firstWhere('type', '===', 'home');
 	}
 
+	public function notFound(): ContentEntry {
+		return $this->content->firstWhere('url', '===', '/404');
+	}
+
 	public function getByUrl(string $url): ContentEntry {
-		return $this->content->firstWhere('url', '===', '/' . $url);
+		return $this->content->firstWhere('url', '===', '/' . $url) ?? $this->notFound();
 	}
 
 	public function getByTopic(string $title): ?Collection {

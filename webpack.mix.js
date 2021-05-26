@@ -15,6 +15,9 @@ mix.setResourceRoot("../");
 
 mix.js('resources/js/app.js', 'public/js')
 	.js('resources/js/tocbot.js', 'public/js')
+	.js('resources/js/darkmode.js', 'public/js')
+	.js('resources/js/darkmodetoggle.js', 'public/js')
+	.js('resources/js/fitvids.js', 'public/js')
 	.copyDirectory('resources/assets', 'public/assets')
 	.postCss('resources/css/app.css', 'public/css', [
 		//
