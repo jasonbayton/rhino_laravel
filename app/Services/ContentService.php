@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Dtos\ContentEntry;
+use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
 
 class ContentService {
@@ -40,5 +41,12 @@ class ContentService {
 				'entry' => $entry,
 				'children' => $this->content->where('parent', '===', $entry->parentID),
 			]);
+	}
+
+	public function search(string $keyword, bool $exact = false) {
+		return $exact
+			? $this->all()->filter(fn($entry) => Str::containsAll($entry->title, explode(' ' , $keyword)))
+			: $this->all()->filter(fn($entry) => Str::contains($entry->title, explode(' ' , $keyword)))
+			?? collect();
 	}
 }

@@ -75,4 +75,8 @@ class ContentEntry {
 			])->first();
 	}
 
+	public function __toString() {
+		return json_encode($this);
+	}
+
 }

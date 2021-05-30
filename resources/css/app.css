@@ -1,10 +1,4 @@
 /*core*/
-
-@import '~@fortawesome/fontawesome-free/css/fontawesome';
-@import '~@fortawesome/fontawesome-free/css/regular';
-@import '~@fortawesome/fontawesome-free/css/solid';
-@import '~@fortawesome/fontawesome-free/css/brands';
-
 :root {
   --light: #f6f6f6;
   --dark: #333333;
@@ -112,7 +106,6 @@ body {
 
 header {
   background: white;
-  padding-bottom: 20px;
   box-shadow: 0px 8px 20px 0px #00000014;
 }
 
@@ -371,13 +364,67 @@ button.arrow-only {
 }
 
 #rhino_header {
-  padding-top: 20px;
+  padding: 20px 0;
   justify-self: left;
   display: grid;
   grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-items: center;
   grid-gap: 20px;
+}
+
+#search_container {
+  background-color: #636cf5;
+  padding: 10px 20px;
+  font-size: 22px;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.rhino_search {
+  border-bottom: 3px solid #fff;
+  justify-self: right;
+}
+
+.rhino_search input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background: none;
+  color: #fff
+}
+
+.rhino_search button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: transparent;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .rhino_search {
+    float: none;
+  }
+ header input[type=text], .rhino_search button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
 
 #rhino_title {
@@ -1189,6 +1236,10 @@ article {max-width: 90%;}
   }
 
   #header_container {
+    grid-template-columns: auto;
+  }
+
+  #search_container {
     grid-template-columns: auto;
   }
 

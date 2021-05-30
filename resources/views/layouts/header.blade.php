@@ -15,4 +15,12 @@
             </div>
         </nav>
     </div>
+    <div id="search_container">
+        <div class="rhino_search">
+            <form action="/search" method="get" style="float: right;">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
 </header>

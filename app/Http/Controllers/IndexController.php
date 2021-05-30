@@ -8,9 +8,8 @@ use App\Services\ContentService;
 class IndexController extends Controller {
 
 	public function __invoke(ContentService $service) {
-		return view('index', [
+		return view('home', [
 			'content' => $service->home(),
-			'contentView' => 'home',
 		]);
 	}
 }

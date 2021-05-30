@@ -11,10 +11,9 @@ class ContentController extends Controller {
 	public function __invoke(string $route, ContentService $contentService) {
 		$content = $contentService->getByUrl($route);
 
-		return view('index', [
+		return view('content.doc', [
 			'content' => $content,
 			'navigation' => $contentService->getNavEntries(),
-			'contentView' => 'layouts.doc',
 		]);
 	}
 }

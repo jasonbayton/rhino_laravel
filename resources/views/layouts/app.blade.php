@@ -28,10 +28,10 @@
 <body>
 <div class="grid-container">
     @include('layouts.header')
-    {{--    <aside class="menu-container">Menu</aside>--}}
     <content>
         <div class="max-width">
-            @include($contentView ?? 'home')
+
+            @yield('content')
         </div>
     </content>
     <footer class="item5">
