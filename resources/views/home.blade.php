@@ -80,9 +80,10 @@
 					<i class="fas fa-shield-check"></i>
 				</div>
 				<div class="rhino-security-text">
-					<div class="card-header">Rhino M10p</div>
+					<div class="card-header">Rhino Security</div>
 					<div class="card-text">
-						Product documentation for the Rhino M10p includes guides, FAQ, downloads, spec, help docs etc
+						View release notes for system updates, support lifecycle for Rhino devices, download OTA updates
+						for offline deployment and view or participate in the Rhino vulnerability program.
 					</div>
 				</div>
 			</div>
@@ -91,7 +92,7 @@
 					<i class="far fa-life-ring"></i>
 				</div>
 				<div class="rhino-security-text">
-					<div class="card-header">Get help</div>
+					<div class="card-header" style="text-align: left;">Get help</div>
 					<div class="card-text">
 						<p>Checked our docs and still need help? Suffering issues that may require an RMA under
 							warranty, or repair outside of warranty?</p>

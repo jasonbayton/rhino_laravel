@@ -1700,7 +1700,7 @@ ul.toc-list li ul {
 .card {
     background: #fff;
     border-radius: 10px;
-    padding: 20px 5px;
+    padding: 20px 30px;
 }
 
 .card-header {
@@ -1710,7 +1710,7 @@ ul.toc-list li ul {
 
 .card-text {
     font-size: 12pt;
-    text-align: justify;
+    text-align: left;
 }
 
 .card-icon {
@@ -1757,20 +1757,20 @@ ul.toc-list li ul {
 }
 
 .rhino-security-icon {
-    font-size: 183px;
+    font-size: 280px;
     color: #646cf5;
     float: left;
+    margin: 0 20px 0 0;
 }
 
 .rhino-help-icon {
-    font-size: 183px;
+    font-size: 280px;
     color: #f39020;
     float: left;
+    margin: 0 20px 0 0;
 }
 
 .rhino-security-text {
-    float: right;
-    width: 50%;
 }
 
 .get-help {
