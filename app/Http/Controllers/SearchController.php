@@ -9,11 +9,12 @@ class SearchController extends Controller {
 
 
 	public function __invoke(ContentService $contentService, Request $request) {
-		$exactMatches = $contentService->search($request->search, true);
+		$search = $request->search ?? '';
+		$exactMatches = $contentService->search($search, true);
 		return view('search', [
 			'content' => $contentService->getByUrl('search'),
 			'results' => $exactMatches,
-			'similar' => $contentService->search($request->search)->diff($exactMatches),
+			'similar' => $contentService->search($search)->diff($exactMatches),
 		]);
 	}
 }

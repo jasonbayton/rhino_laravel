@@ -7,11 +7,18 @@ use App\Services\ContentService;
 
 class ContentController extends Controller {
 
+	protected array $documentTypes = [
+		'doc_parent' => 'content.doc',
+		'grid' => 'content.grid',
+	];
+
 
 	public function __invoke(string $route, ContentService $contentService) {
 		$content = $contentService->getByUrl($route);
 
-		return view('content.doc', [
+		$documentType = $this->documentTypes[$content->type] ?? 'content.doc';
+
+		return view($documentType, [
 			'content' => $content,
 			'navigation' => $contentService->getNavEntries(),
 		]);

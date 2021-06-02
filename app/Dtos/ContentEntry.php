@@ -5,6 +5,7 @@ namespace App\Dtos;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use App\Services\ContentService;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Date;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 
@@ -73,6 +74,11 @@ class ContentEntry {
 					'entries' => $contentService->getByTopic($childTopic),
 				])
 			])->first();
+	}
+
+	public function getChildren(): Collection {
+		$contentService = new ContentService();
+		return $contentService->all()->where('parent', '===', $this->parentID) ?? collect();
 	}
 
 	public function __toString() {
