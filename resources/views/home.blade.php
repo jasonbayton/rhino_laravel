@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="pull-right">
-				<img id="rhino_c10" src="/img/c10-front.png">
+				<img id="rhino_c10" src="/img/c10-front.png" alt="rhino c10">
 			</div>
 		</div>
 	</div>
@@ -30,28 +30,28 @@
 	<section id="path">
 		<div class="home-container">
 			<div class="rhino-t8 card">
-				<img class="product-image" src="/assets/rhino-t8.png">
+				<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
 				<div class="card-header">Rhino T8</div>
 				<div class="card-text">
 					Product documentation for the Rhino T8 includes guides, FAQ, downloads, spec, help docs etc
 				</div>
 			</div>
 			<div class="rhino-c10 card">
-				<img class="product-image" src="/assets/rhino-c10.png">
+				<img class="product-image" src="/assets/rhino-c10.png" alt="rhino c10">
 				<div class="card-header">Rhino C10</div>
 				<div class="card-text">
 					Product documentation for the Rhino C10 includes guides, FAQ, downloads, spec, help docs etc
 				</div>
 			</div>
 			<div class="rhino-t5se card">
-				<img class="product-image" src="/assets/rhino-t5se.png">
+				<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino t5se">
 				<div class="card-header">Rhino T5se</div>
 				<div class="card-text">
 					Product documentation for the Rhino T5se includes guides, FAQ, downloads, spec, help docs etc
 				</div>
 			</div>
 			<div class="rhino-m10p card">
-				<img class="product-image" src="/assets/rhino-m10p.png">
+				<img class="product-image" src="/assets/rhino-m10p.png" alt="rhino m10p">
 				<div class="card-header">Rhino M10p</div>
 				<div class="card-text">
 					Product documentation for the Rhino M10p includes guides, FAQ, downloads, spec, help docs etc
