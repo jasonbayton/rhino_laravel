@@ -778,6 +778,32 @@ h3.section-title {
     flex-grow: 1;
 }
 
+.grid-topic-title {
+    border-bottom: 1px solid grey;
+}
+
+.grid-topic-title h4 {
+    margin-bottom: 5px;
+    font-size: 14pt;
+}
+
+.grid-topic ul {
+    margin: 15px 0 0 10px;
+    padding: 0;
+}
+
+.grid-topic ul li {
+    padding: 0 8px 15px;
+    font-size: 12pt;
+}
+
+.grid-topic ul li::marker {
+    content: "\f15c";
+    font-weight: 300;
+    font-family: "Font Awesome 5 Pro";
+    padding-right: 5px;
+}
+
 #android_post_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
