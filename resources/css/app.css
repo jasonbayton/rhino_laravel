@@ -517,7 +517,7 @@ content {
     background: #636cf5;
     padding: 25px;
     color: white;
-    /*background: url(/theme/rhino_v2/img/hero.jpg) #454879;*/
+    background: url(/assets/hero.jpg) #454879;
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -1680,4 +1680,99 @@ ul.toc-list li ul {
     #bayton {
         padding: 30px 0;
     }
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    grid-template-areas:
+    "rhino-t8 rhino-c10 rhino-t5se rhino-m10p"
+    "product-videos faqs rhino-security rhino-security"
+    "get-help get-help get-help community-forum"
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 5px;
+}
+
+.card-header {
+    margin: 15px 0;
+    font-size: 20pt;
+}
+
+.card-text {
+    font-size: 12pt;
+    text-align: justify;
+}
+
+.card-icon {
+    font-size: 183px;
+    color: #646cf5;
+}
+
+.center {
+    text-align: center;
+}
+
+.product-image {
+    margin: 5px auto;
+    height: 125px;
+    width: auto;
+}
+
+.rhino-t8 {
+    grid-area: rhino-t8;
+}
+
+.rhino-c10 {
+    grid-area: rhino-c10;
+}
+
+.rhino-t5se {
+    grid-area: rhino-t5se;
+}
+
+.rhino-m10p {
+    grid-area: rhino-m10p;
+}
+
+.product-videos {
+    grid-area: product-videos;
+}
+
+.faqs {
+    grid-area: faqs;
+}
+
+.rhino-security {
+    grid-area: rhino-security;
+}
+
+.rhino-security-icon {
+    font-size: 183px;
+    color: #646cf5;
+    float: left;
+}
+
+.rhino-help-icon {
+    font-size: 183px;
+    color: #f39020;
+    float: left;
+}
+
+.rhino-security-text {
+    float: right;
+    width: 50%;
+}
+
+.get-help {
+    grid-area: get-help;
+}
+
+.community-forum {
+    grid-area: community-forum;
 }
