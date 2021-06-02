@@ -15,6 +15,10 @@ class ContentService {
 		$this->content = collect($content)->mapInto(ContentEntry::class);
 	}
 
+	public static function getAllFeedItems(): Collection {
+		return (new ContentService())->all();
+	}
+
 	public function all(): Collection {
 		return $this->content;
 	}

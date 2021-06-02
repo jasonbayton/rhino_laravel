@@ -2,14 +2,17 @@
 
 namespace App\Dtos;
 
+use Spatie\Feed\Feedable;
+use Spatie\Feed\FeedItem;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use App\Services\ContentService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Facades\Route;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 
-class ContentEntry {
+class ContentEntry implements Feedable {
 
 	public $title;
 	public $subtitle;
@@ -72,7 +75,7 @@ class ContentEntry {
 				collect($entry->childTopics)->map(fn($childTopic) => [
 					'topic' => $childTopic,
 					'entries' => $contentService->getByTopic($childTopic),
-				])
+				]),
 			])->first();
 	}
 
@@ -85,4 +88,13 @@ class ContentEntry {
 		return json_encode($this);
 	}
 
+	public function toFeedItem(): FeedItem {
+		return FeedItem::create()
+			->id($this->url)
+			->title($this->title)
+			->summary($this->content())
+			->updated($this->updated ?? $this->date)
+			->link(url($this->url))
+			->author('Jason Bayton');
+	}
 }
