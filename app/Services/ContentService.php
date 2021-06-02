@@ -16,7 +16,7 @@ class ContentService {
 	}
 
 	public static function getAllFeedItems(): Collection {
-		return (new ContentService())->all();
+		return (new ContentService())->all()->where('published', '===', true);
 	}
 
 	public function all(): Collection {
