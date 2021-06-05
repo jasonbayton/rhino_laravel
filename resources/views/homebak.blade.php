@@ -28,8 +28,11 @@
 </section>
 <div class="max-width"> <!-- Reviving max-width -->
 	<section id="path">
-		<div id="home_container">
-			<div>
+		<div>
+
+		</div>
+		<div class="home-container">
+			<div class="rhino-t8">
 				<div class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
 					<div class="card-header">Rhino T8</div>
@@ -38,7 +41,7 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="rhino-c10">
 				<div class="card">
 					<img class="product-image" src="/assets/rhino-c10.png" alt="rhino c10">
 					<div class="card-header">Rhino C10</div>
@@ -47,7 +50,7 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="rhino-t5se">
 				<div class="card">
 					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino t5se">
 					<div class="card-header">Rhino T5se</div>
@@ -56,7 +59,7 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="rhino-m10p">
 				<div class="card">
 					<img class="product-image" src="/assets/rhino-m10p.png" alt="rhino m10p">
 					<div class="card-header">Rhino M10p</div>
@@ -65,7 +68,7 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="product-videos">
 				<div class="card">
 					<div class="card-icon">
 						<i class="fas fa-play-circle"></i>
@@ -76,15 +79,14 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="faqs">
 				<div class="card">
 					<div class="card-icon">
 						<i class="fas fa-question-circle"></i>
 					</div>
 					<div class="card-header">FAQs</div>
 					<div class="card-text">
-						Product non-specific frequently asked questions. Check here if you can't find and answer
-						elsewhere
+						Product non-specific frequently asked questions. Check here if you can't find and answer elsewhere
 					</div>
 				</div>
 			</div>
@@ -96,14 +98,13 @@
 					<div class="rhino-security-text">
 						<div class="card-header">Rhino Security</div>
 						<div class="card-text">
-							View release notes for system updates, support lifecycle for Rhino devices, download OTA
-							updates
+							View release notes for system updates, support lifecycle for Rhino devices, download OTA updates
 							for offline deployment and view or participate in the Rhino vulnerability program.
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="rhino-help">
+			<div class="get-help card">
 				<div class="card">
 					<div class="rhino-help-icon">
 						<i class="far fa-life-ring"></i>
@@ -113,22 +114,20 @@
 						<div class="card-text">
 							<p>Checked our docs and still need help? Suffering issues that may require an RMA under
 								warranty, or repair outside of warranty?</p>
-							<p>Click through for guidance on what to collect before reaching out, and means of contact
-								once
+							<p>Click through for guidance on what to collect before reaching out, and means of contact once
 								you're ready to talk to the Rhino team</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="community-forum">
 				<div class="card">
 					<div class="card-icon">
 						<i class="fas fa-comments-alt"></i>
 					</div>
 					<div class="card-header">Community Forum</div>
 					<div class="card-text">
-						For enterprise and consumer customers alike, find answers to your questions through the
-						community
+						For enterprise and consumer customers alike, find answers to your questions through the community
 					</div>
 				</div>
 			</div>
