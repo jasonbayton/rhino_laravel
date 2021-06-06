@@ -1719,6 +1719,20 @@ ul.toc-list li ul {
     grid-template-columns: 100%;
 }
 
+.front-search div input {
+    width: 80%;
+}
+
+.front-search div form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.front-search div {
+    align-content: center;
+}
+
 @media (min-width: 600px) {
     #home_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1730,6 +1744,10 @@ ul.toc-list li ul {
 
     .rhino-help {
         grid-area: 3 / 1 / 3 / 4;
+    }
+
+    .front-search {
+        grid-area: 1 / 1 / 1 / 5;
     }
 }
 

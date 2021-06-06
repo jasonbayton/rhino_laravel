@@ -28,7 +28,21 @@
 </section>
 <div class="max-width"> <!-- Reviving max-width -->
 	<section id="path">
+
+
 		<div id="home_container">
+			<div class="front-search">
+				<div>
+					<h2>How can we help?</h2>
+					<p>Search by keyword or task</p>
+					<form action="/search" method="GET" class="quick-search">
+						<input type="text" placeholder="Search..." name="search" class="search-input">
+						<button class="search-button">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+				</div>
+			</div>
 			<div>
 				<div class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
