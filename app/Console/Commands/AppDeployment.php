@@ -27,7 +27,6 @@ class AppDeployment extends Command {
 	 */
 	public function handle() {
 		$command = new Process(['deploy.sh']);
-		$command->setWorkingDirectory(base_path());
 		$command->setTimeout(15);
 		$command->run(function ($type, $buffer) {
 			$this->info($buffer);
