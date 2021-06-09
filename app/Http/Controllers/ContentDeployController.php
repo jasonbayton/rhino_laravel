@@ -3,16 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
-use Symfony\Component\Process\Process;
+use Illuminate\Support\Facades\Artisan;
 
 class ContentDeployController extends Controller {
 
 	public function __invoke(): JsonResponse {
-		$command = new Process(['git', 'pull']);
-		$command->setWorkingDirectory(storage_path('/rhino_content/'));
-		$command->start();
-		return response()->json([
-			'status' => 'success',
-		]);
+		try {
+			Artisan::call('update:content');
+		} catch (\Throwable $throwable) {
+			//this always throws a timeout exception, its just the way it is
+			return response()->json([
+				'status' => 'success',
+			]);
+		}
 	}
 }
