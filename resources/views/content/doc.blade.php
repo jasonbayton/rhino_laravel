@@ -23,6 +23,9 @@
             <div id="literal_content" class="js-toc-content">
                 {!! $content->content() !!}
             </div>
+            @if($content->mailingSignup())
+                {!! $content->mailingSignup() !!}
+            @endif
         </article>
         @include('layouts.aside_right')
     </section>
