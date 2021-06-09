@@ -5,7 +5,6 @@ namespace App\Console\Commands;
 use Spatie\Sitemap\Sitemap;
 use Illuminate\Console\Command;
 use App\Services\ContentService;
-use Spatie\Sitemap\SitemapGenerator;
 
 class GenerateSitemap extends Command {
 	/**
@@ -25,16 +24,16 @@ class GenerateSitemap extends Command {
 	/**
 	 * Execute the console command.
 	 *
+	 * @param \App\Services\ContentService $service
 	 * @return int
 	 */
 	public function handle(ContentService $service): int {
 		$generator = Sitemap::create();
 
-		$service->all()->each(function ($entry) use ($generator) {
-			$generator->add($entry->url);
-		});
+		$service->all()->each(fn($entry) => $generator->add($entry->url));
 
 		$generator->writeToFile(public_path('sitemap.xml'));
+		$this->info('Sitemap Generated');
 		return 0;
 	}
 }

@@ -4,39 +4,36 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;
-use Illuminate\Support\Facades\Artisan;
 
-class UpdateContent extends Command {
+class AppDeployment extends Command {
 	/**
 	 * The name and signature of the console command.
 	 *
 	 * @var string
 	 */
-	protected $signature = 'update:content';
+	protected $signature = 'deploy';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Command description';
-
+	protected $description = 'Pulls and builds the application';
 
 	/**
 	 * Execute the console command.
 	 *
 	 * @return int
 	 */
-	public function handle(): int {
-		$command = new Process(['git', 'pull']);
-		$command->setWorkingDirectory(storage_path('/rhino_content/'));
+	public function handle() {
+		$command = new Process(['deploy.sh']);
+		$command->setWorkingDirectory(base_path());
 		$command->setTimeout(15);
 		$command->run(function ($type, $buffer) {
 			$this->info($buffer);
 		});
 
-		//generate the sitemap to make sure its up to date
-		Artisan::command('sitemap:generate');
+
 		return 0;
 	}
 }

@@ -2,91 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>http://rhino.test</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/404</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/c10/c10-001_20201022</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/c10/c10-001_20210129</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8/t8-001_20201010</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8/t8-001_20201017</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8/t8-001_20201127</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8/t8-001_20210121</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8/t8-001ce_20200807</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/releases/t8/t8-001ce_20201127</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/security/vulnerability-disclosure</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://rhino.test/support</loc>
-        <lastmod>2021-05-26T21:29:26+00:00</lastmod>
+        <lastmod>2021-06-09T22:10:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
