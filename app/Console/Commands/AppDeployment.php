@@ -32,7 +32,6 @@ class AppDeployment extends Command {
 			$this->info($buffer);
 		});
 
-
 		return 0;
 	}
 }
