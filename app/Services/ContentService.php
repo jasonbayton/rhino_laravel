@@ -32,7 +32,10 @@ class ContentService {
 	}
 
 	public function getByUrl(string $url): ContentEntry {
-		return $this->content->firstWhere('url', '===', '/' . $url) ?? $this->notFound();
+		if (!str_starts_with($url, '/')) {
+			$url = '/' . $url;
+		}
+		return $this->content->firstWhere('url', '===', $url) ?? $this->notFound();
 	}
 
 	public function getByTopic(string $title): ?Collection {
