@@ -14,7 +14,11 @@ class ContentDeployController extends Controller {
 			//this always throws a timeout exception, its just the way it is
 			return response()->json([
 				'status' => 'success',
+				'message' => $throwable->getMessage(),
 			]);
 		}
+		return response()->json([
+			'status' => 'success',
+		]);
 	}
 }
