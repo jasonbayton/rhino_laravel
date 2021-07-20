@@ -35,4 +35,11 @@ class ContentServiceTest extends TestCase {
 		$this->assertCount(2, $navEntries);
 	}
 
+	/** @test */
+	public function testContentCanReturnCorrectChildren() {
+		$entry = $this->contentService->getByUrl('security/releases/t8');
+
+		$this->assertCount(6, $entry->getChildren());
+	}
+
 }

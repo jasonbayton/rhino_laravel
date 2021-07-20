@@ -90,7 +90,7 @@
 		"date": "2021-01-01",
 		"updated": "",
 		"url": "/security/releases",
-		"type": "doc_parent",
+		"type": "grid",
 		"published": "true",
 		"parent": "Security",
 		"is_parent": "true",
@@ -119,7 +119,7 @@
 		"published": "true",
 		"parent": "Releases",
 		"is_parent": "true",
-		"parentID": "Releases",
+		"parentID": "T8",
 		"topic": "",
 		"order": "0"
 	},
