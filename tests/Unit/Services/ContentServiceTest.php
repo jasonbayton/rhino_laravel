@@ -16,4 +16,23 @@ class ContentServiceTest extends TestCase {
 		$this->contentService = new ContentService;
 	}
 
+	/** @test */
+	public function testGetAllReturnsCorrectCount() {
+		$this->assertCount(16, $this->contentService->all());
+	}
+
+	/** @test */
+	public function testGettingEntryByUrl() {
+		$entry = $this->contentService->getByUrl('/support');
+
+		$this->assertEquals('Rhino Support', $entry->title);
+	}
+
+	/** @test */
+	public function testGetNavEntriesReturnsTheCorrectAmount() {
+		$navEntries = $this->contentService->getNavEntries();
+
+		$this->assertCount(2, $navEntries);
+	}
+
 }
