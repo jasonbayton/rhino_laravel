@@ -13,6 +13,7 @@
     --text: #333333;
     --background: #fafafa;
     --dat-purple: #474774;
+    --rhino-blue: #121ecd;
 }
 
 [data-theme="dark"] {
@@ -110,14 +111,18 @@ header {
 }
 
 .max-width {
-    max-width: 1820px;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .full-width {
     max-width: 100%;
     margin: 0 auto;
+}
+
+.left {
+    background: var(--rhino-blue);
+    color: var(--bright);
+    padding: 20px;
 }
 
 img {
@@ -522,7 +527,6 @@ nav #nav_links {
 }
 
 content {
-    padding: 76px 0px 0;
     display: block;
     color: var(--text);
     overflow-wrap: break-word;
@@ -1140,7 +1144,6 @@ footer {
     background-color: var(--dark);
     padding: 30px 0 0;
     color: var(--bright);
-    margin-top: 40px;
 }
 
 .footer-column-heading {
