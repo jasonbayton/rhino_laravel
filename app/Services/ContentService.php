@@ -51,9 +51,11 @@ class ContentService {
 	}
 
 	public function search(string $keyword, bool $exact = false) {
+		$searchParams = collect(explode(' ' , $keyword))->map(fn($keyword) => strtolower($keyword))->toArray();
+
 		return $exact
-			? $this->all()->filter(fn($entry) => Str::containsAll($entry->title, explode(' ' , $keyword)))
-			: $this->all()->filter(fn($entry) => Str::contains($entry->title, explode(' ' , $keyword)))
+			? $this->all()->filter(fn($entry) => Str::containsAll(strtolower($entry->title), $searchParams))
+			: $this->all()->filter(fn($entry) => Str::contains(strtolower($entry->title), $searchParams))
 			?? collect();
 	}
 }

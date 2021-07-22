@@ -42,4 +42,11 @@ class ContentServiceTest extends TestCase {
 		$this->assertCount(6, $entry->getChildren());
 	}
 
+	/** @test */
+	public function testSearchReturnsCorrectCount() {
+		$entries = $this->contentService->search('rhino');
+
+		$this->assertCount(5, $entries);
+	}
+
 }
