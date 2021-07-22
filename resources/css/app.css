@@ -458,14 +458,17 @@ article {
 
 .quick-search {
     border-bottom: 4px solid #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 .search-input {
     border: none;
     background: #636cf5;
     color: #fff;
-    width: 250px;
     padding: 10px 15px;
+    flex-grow: 1;
 }
 
 .search-input::-webkit-input-placeholder {
