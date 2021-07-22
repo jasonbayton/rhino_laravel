@@ -5,9 +5,6 @@
 </div> <!-- to remove max width -->
 <section id="bold_intro">
 	<div id="hero_rhino">
-		<div id="statement">
-			<h1>Devices <strong>made</strong> for enterprise</h1>
-		</div>
 		<div class="hero-grid">
 			<div class="pull-left">
 				<div id="hero_intro">
@@ -28,21 +25,21 @@
 </section>
 <div class="front-max-width"> <!-- Reviving max-width -->
 	<section id="path">
-
+		<div class="front-search">
+			<div>
+				<h2>How can we help?</h2>
+				<p>Search by keyword or task</p>
+				<form action="/search" method="GET" class="front-quick-search">
+					<input type="text" placeholder="How to perform a factory reset" name="search"
+						   class="front-search-input">
+					<button class="front-search-button">
+						<i class="fal fa-search"></i>
+					</button>
+				</form>
+			</div>
+		</div>
 
 		<div id="home_container">
-			<div class="front-search">
-				<div style="flex-grow: 1">
-					<h2>How can we help?</h2>
-					<p>Search by keyword or task</p>
-					<form action="/search" method="GET" class="front-quick-search">
-						<input type="text" placeholder="How to perform a factory reset" name="search" class="front-search-input">
-						<button class="front-search-button">
-							<i class="fal fa-search"></i>
-						</button>
-					</form>
-				</div>
-			</div>
 			<div>
 				<div class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
@@ -103,8 +100,8 @@
 				</div>
 			</div>
 			<div class="rhino-security">
-				<div class="card">
-					<div class="rhino-security-icon">
+				<div class="card flexed-card">
+					<div class="card-icon rhino-security-icon">
 						<i class="fas fa-shield-check"></i>
 					</div>
 					<div class="rhino-security-text">
@@ -118,12 +115,12 @@
 				</div>
 			</div>
 			<div class="rhino-help">
-				<div class="card">
-					<div class="rhino-help-icon">
+				<div class="card flexed-card">
+					<div class="card-icon rhino-help-icon">
 						<i class="far fa-life-ring"></i>
 					</div>
 					<div class="rhino-security-text">
-						<div class="card-header" style="text-align: left;">Get help</div>
+						<div class="card-header">Get help</div>
 						<div class="card-text">
 							<p>Checked our docs and still need help? Suffering issues that may require an RMA under
 								warranty, or repair outside of warranty?</p>
