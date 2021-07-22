@@ -26,18 +26,18 @@
 		</div>
 	</div>
 </section>
-<div class="max-width"> <!-- Reviving max-width -->
+<div class="front-max-width"> <!-- Reviving max-width -->
 	<section id="path">
 
 
 		<div id="home_container">
 			<div class="front-search">
-				<div>
+				<div style="flex-grow: 1">
 					<h2>How can we help?</h2>
 					<p>Search by keyword or task</p>
-					<form action="/search" method="GET" class="quick-search">
-						<input type="text" placeholder="Search..." name="search" class="search-input">
-						<button class="search-button">
+					<form action="/search" method="GET" class="front-quick-search">
+						<input type="text" placeholder="Search..." name="search" class="front-search-input">
+						<button class="front-search-button">
 							<i class="fas fa-search"></i>
 						</button>
 					</form>
