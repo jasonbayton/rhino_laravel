@@ -23,8 +23,10 @@
 			<div id="literal_content" class="js-toc-content">
 				{!! $content->content() !!}
 			</div>
-			<div>
-                    <a href="{{ route('export-to-pdf', ['content' => $content->url]) }}">Download as PDF</a>
+			<div class="article-bottom-links">
+				<a href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
+				<a href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>
+				<a href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
 			</div>
 			@if($content->mailingSignup())
 				{!! $content->mailingSignup() !!}
