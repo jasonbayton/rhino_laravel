@@ -23,7 +23,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" media="all" crossorigin="anonymous"/>
 </head>
 <body>
 <div class="grid-container">
