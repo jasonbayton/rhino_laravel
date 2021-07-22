@@ -1853,7 +1853,7 @@ ul.toc-list li ul {
 }
 
 .front-search div {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto 20px;
 }
 
@@ -1874,7 +1874,7 @@ ul.toc-list li ul {
 
 .card-text {
     font-size: 12pt;
-    text-align: center;
+    text-align: left;
 }
 
 .card-icon {
@@ -1883,7 +1883,7 @@ ul.toc-list li ul {
 }
 
 .rhino-security-icon {
-    color: #646cf5;
+    color: var(--rhino-blue);
     margin: 0 20px 0 0;
 }
 
@@ -1922,7 +1922,6 @@ ul.toc-list li ul {
 
     .rhino-security-icon {
         font-size: 280px;
-        color: #646cf5;
         float: left;
         margin: 0 20px 0 0;
     }
