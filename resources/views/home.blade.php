@@ -36,9 +36,9 @@
 					<h2>How can we help?</h2>
 					<p>Search by keyword or task</p>
 					<form action="/search" method="GET" class="front-quick-search">
-						<input type="text" placeholder="Search..." name="search" class="front-search-input">
+						<input type="text" placeholder="How to perform a factory reset" name="search" class="front-search-input">
 						<button class="front-search-button">
-							<i class="fas fa-search"></i>
+							<i class="fal fa-search"></i>
 						</button>
 					</form>
 				</div>
