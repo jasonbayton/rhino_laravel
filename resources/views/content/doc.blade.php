@@ -24,9 +24,9 @@
 				{!! $content->content() !!}
 			</div>
 			<div class="article-bottom-links">
-				<a href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
-				<a href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>
-				<a href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
+				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
+				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>
+				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
 			</div>
 			@if($content->mailingSignup())
 				{!! $content->mailingSignup() !!}
