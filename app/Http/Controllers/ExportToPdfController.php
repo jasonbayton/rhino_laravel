@@ -12,6 +12,6 @@ class ExportToPdfController extends Controller {
 
 		$pdf = App::make('dompdf.wrapper');
 		$pdf->loadHTML($content->content());
-		return $pdf->stream();
+		return $pdf->download($content->title);
 	}
 }
