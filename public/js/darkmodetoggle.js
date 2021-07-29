@@ -1,1 +1,20 @@
-document.getElementById("darktoggle").onclick=function(){var t="light";"light"===document.documentElement.getAttribute("data-theme")&&(t="dark"),document.documentElement.setAttribute("data-theme",t),localStorage.setItem("theme",t)};
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!****************************************!*\
+  !*** ./resources/js/darkmodetoggle.js ***!
+  \****************************************/
+var toggle = document.getElementById("darktoggle");
+
+toggle.onclick = function () {
+  var currentTheme = document.documentElement.getAttribute("data-theme");
+  var targetTheme = "light";
+
+  if (currentTheme === "light") {
+    targetTheme = "dark";
+  }
+
+  document.documentElement.setAttribute('data-theme', targetTheme);
+  localStorage.setItem('theme', targetTheme);
+};
+/******/ })()
+;

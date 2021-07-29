@@ -31,6 +31,10 @@ class ContentService {
 		return $this->content->firstWhere('url', '===', '/404');
 	}
 
+	public function parents(): Collection {
+		return $this->content->filter(fn($content) => $content->is_parent);
+	}
+
 	public function getByUrl(string $url): ContentEntry {
 		if (!str_starts_with($url, '/')) {
 			$url = '/' . $url;
@@ -42,12 +46,16 @@ class ContentService {
 		return $this->content->where('topic', '===', $title)->sortBy('order');
 	}
 
-	public function getNavEntries() {
-		return $this->content->where('type', '===', 'doc_parent')->where('parent', '===', '')
-			->map(fn($entry) => [
-				'entry' => $entry,
-				'children' => $this->content->where('parent', '===', $entry->parentID),
-			]);
+	public function getTopicEntries(?string $parentId = ''): ?Collection {
+		$content = $this->content;
+		if ($parentId) {
+			$content = $this->content->where('parentID', $parentId);
+		}
+		return $content->where('topic', '!==', '')->groupBy('topic');
+	}
+
+	public function getNavEntries(string $parent = ''): ContentEntry {
+		return $this->parents()->get($parent);
 	}
 
 	public function search(string $keyword, bool $exact = false) {

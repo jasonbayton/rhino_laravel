@@ -29,6 +29,7 @@ class ContentEntry implements Feedable {
 	public $childTopics;
 	public $topic;
 	public $order;
+	public $appliesTo;
 
 	public function __construct(array $entry) {
 		$this->title = $entry['title'];
@@ -46,6 +47,7 @@ class ContentEntry implements Feedable {
 		$this->childTopics = $entry['childTopics'] ?? [];
 		$this->topic = $entry['topic'];
 		$this->order = $entry['order'] ?? 0;
+		$this->appliesTo = $entry['appliesTo'] ?? [];
 	}
 
 	public function content(): string {
@@ -82,6 +84,15 @@ class ContentEntry implements Feedable {
 	public function getChildren(): Collection {
 		$contentService = new ContentService();
 		return $contentService->all()->where('parent', '===', $this->parentID) ?? collect();
+	}
+
+	public function getAppliesToImages(): ?Collection {
+		return collect($this->appliesTo)->map(function ($device) {
+			return [
+				'image' => '/assets/rhino-' . strtolower($device) . '.png',
+				'device' => $device,
+			];
+		});
 	}
 
 	public function mailingSignup(): ?string {

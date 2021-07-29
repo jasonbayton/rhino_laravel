@@ -575,7 +575,13 @@ article {
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid black;
-    padding-top: 30px;
+    padding: 20px;
+}
+
+.article-bottom-links img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .article-bottom-links a {
@@ -985,6 +991,10 @@ h3.section-title {
 summary.docnav-topic-title {
     font-size: 26px;
     font-weight: 300;
+}
+
+summary {
+    cursor: pointer;
 }
 
 details.docnav-topic ul {

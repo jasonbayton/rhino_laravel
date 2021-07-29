@@ -23,6 +23,14 @@
 			<div id="literal_content" class="js-toc-content">
 				{!! $content->content() !!}
 			</div>
+			@if($content->getAppliesToImages()->count())
+				<div class="article-bottom-links">
+					@foreach($content->getAppliesToImages() as $image)
+						<img src="{{ $image['image'] }}" alt="{{ $image['device'] }}">
+					@endforeach
+				</div>
+			@endif
+
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>

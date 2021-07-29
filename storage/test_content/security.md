@@ -22,6 +22,8 @@ Occasionally, maintenance releases will be required. These include changes outsi
 
 The following table outlines each available Rhino device and pertinent information relating to support.
 <div id="support_table" markdown="1">
+
+
 | **Model** | **SKU** | **OS** | **Upgrade** | **EOA**   | **SMR EOS** |
 |-----------|---------|--------|-------------|-----------|-------------|
 | T5se      | Global  | 11     | 12          | TBD       | TBD         |

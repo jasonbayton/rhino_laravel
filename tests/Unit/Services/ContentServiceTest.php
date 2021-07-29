@@ -18,7 +18,7 @@ class ContentServiceTest extends TestCase {
 
 	/** @test */
 	public function testGetAllReturnsCorrectCount() {
-		$this->assertCount(16, $this->contentService->all());
+		$this->assertCount(20, $this->contentService->all());
 	}
 
 	/** @test */
@@ -46,7 +46,13 @@ class ContentServiceTest extends TestCase {
 	public function testSearchReturnsCorrectCount() {
 		$entries = $this->contentService->search('rhino');
 
-		$this->assertCount(5, $entries);
+		$this->assertCount(3, $entries);
+	}
+
+	/** @test */
+	public function testCanReturnTheCorrectAmountOfTopics() {
+		$entries = $this->contentService->getTopicEntries('Support');
+		$this->assertCount(2, $entries);
 	}
 
 }

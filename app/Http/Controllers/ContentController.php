@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Services\ContentService;
 
@@ -18,9 +19,14 @@ class ContentController extends Controller {
 
 		$documentType = $this->documentTypes[$content->type] ?? 'content.doc';
 
+//		dd($contentService->getNavEntries()->first()->getChildren());
+
+		$path = Str::before(request()->path(), '/');
+
 		return view($documentType, [
 			'content' => $content,
-			'navigation' => $contentService->getNavEntries(),
+			'navigation' => $contentService->getNavEntries($path),
+			'topics' => $contentService->getTopicEntries($content->parentID),
 		]);
 	}
 }

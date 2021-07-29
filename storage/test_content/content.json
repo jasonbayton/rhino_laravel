@@ -46,6 +46,87 @@
 		"order": "0"
 	},
 
+	"support/factory-reset": {
+		"title": "Factory Reset your Device",
+		"subtitle": "",
+		"featuredImage": "",
+		"featured": "false",
+		"date": "2021-01-01",
+		"updated": "",
+		"url": "/support/factory-reset",
+		"type": "doc",
+		"published": "true",
+		"parent": "false",
+		"parentID": "Support",
+		"topic": "Maintenance",
+		"order": "0",
+		"appliesTo": [
+			"C10",
+			"T8"
+		]
+	},
+
+	"support/reset-network-settings": {
+		"title": "Factory Reset your Network Settings",
+		"subtitle": "",
+		"featuredImage": "",
+		"featured": "false",
+		"date": "2021-01-01",
+		"updated": "",
+		"url": "/support/reset-network-settings",
+		"type": "doc",
+		"published": "true",
+		"parent": "false",
+		"parentID": "Support",
+		"topic": "Maintenance",
+		"order": "0",
+		"appliesTo": [
+			"C10",
+			"T8"
+		]
+	},
+
+
+	"support/changing-theme": {
+		"title": "Changing Device Theme",
+		"subtitle": "",
+		"featuredImage": "",
+		"featured": "false",
+		"date": "2021-01-01",
+		"updated": "",
+		"url": "/support/factory-reset",
+		"type": "doc",
+		"published": "true",
+		"parent": "false",
+		"parentID": "Support",
+		"topic": "Customization",
+		"order": "0",
+		"appliesTo": [
+			"C10",
+			"T8"
+		]
+	},
+
+	"support/change-background": {
+		"title": "Changing Device Background",
+		"subtitle": "",
+		"featuredImage": "",
+		"featured": "false",
+		"date": "2021-01-01",
+		"updated": "",
+		"url": "/support/reset-network-settings",
+		"type": "doc",
+		"published": "true",
+		"parent": "false",
+		"parentID": "Support",
+		"topic": "Customization",
+		"order": "0",
+		"appliesTo": [
+			"C10",
+			"T8"
+		]
+	},
+
 	"security": {
 		"title": "Rhino security",
 		"subtitle": "",
@@ -108,7 +189,7 @@
 	},
 
 	"security/releases/t8": {
-		"title": "Rhino software releases",
+		"title": "T8 Software Releases",
 		"subtitle": "",
 		"featuredImage": "",
 		"featured": "false",
@@ -125,7 +206,7 @@
 	},
 
 	"security/releases/c10": {
-		"title": "Rhino software releases",
+		"title": "C10 software releases",
 		"subtitle": "",
 		"featuredImage": "",
 		"featured": "false",
@@ -136,7 +217,7 @@
 		"published": "true",
 		"parent": "Releases",
 		"is_parent": "true",
-		"parentID": "Releases",
+		"parentID": "C10",
 		"topic": "",
 		"order": "0"
 	},
