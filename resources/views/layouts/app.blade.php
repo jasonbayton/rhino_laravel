@@ -17,6 +17,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/darkmode.js') }}"></script>
 
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" href="/css/webfonts.css">
@@ -38,5 +39,6 @@
         @include('layouts.footer')
     </footer>
 </div>
+<script src="{{ mix('js/menus.js') }}"></script>
 </body>
 </html>
