@@ -20,7 +20,8 @@ mix.js('resources/js/app.js', 'public/js')
 	.js('resources/js/fitvids.js', 'public/js')
 	.js('resources/js/menus.js', 'public/js')
 	.copyDirectory('resources/assets', 'public/assets')
-	.postCss('resources/css/app.css', 'public/css', [
+	.styles('resources/css/*.css', 'site.css')
+	.postCss('resources/css/site.css', 'public/css', [
 		//
 	])
 	.options({

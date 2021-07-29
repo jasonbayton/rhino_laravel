@@ -17,13 +17,11 @@
     <!-- Scripts -->
     <script src="{{ asset('js/darkmode.js') }}"></script>
 
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="stylesheet" href="/css/webfonts.css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/site.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" media="all" crossorigin="anonymous"/>
 </head>
 <body>
@@ -31,7 +29,6 @@
     @include('layouts.header')
     <content>
         <div class="max-width">
-
             @yield('content')
         </div>
     </content>

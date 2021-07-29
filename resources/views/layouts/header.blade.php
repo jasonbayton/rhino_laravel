@@ -7,6 +7,11 @@
 					Rhino Mobility
 				</div>
 			</a>
+			<div class="burger" onclick="">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 
 	@else
@@ -25,6 +30,11 @@
 					<i class="fas fa-clouds-moon"></i>
 				</div>
 			</nav>
+			<div class="burger" onclick="">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div id="search_container">
 			<form action="/search" method="GET" class="quick-search">

@@ -5,11 +5,12 @@
     "/js/darkmodetoggle.js": "/js/darkmodetoggle.js",
     "/js/fitvids.js": "/js/fitvids.js",
     "/js/menus.js": "/js/menus.js",
-    "/css/app.css": "/css/app.css",
+    "/css/site.css": "/css/site.css",
     "/assets/hero.jpg": "/assets/hero.jpg",
     "/assets/rhino-c10.png": "/assets/rhino-c10.png",
     "/assets/rhino-logo.png": "/assets/rhino-logo.png",
     "/assets/rhino-m10p.png": "/assets/rhino-m10p.png",
     "/assets/rhino-t5se.png": "/assets/rhino-t5se.png",
-    "/assets/rhino-t8.png": "/assets/rhino-t8.png"
+    "/assets/rhino-t8.png": "/assets/rhino-t8.png",
+    "/site.css": "/site.css"
 }
