@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96e8f28edaf9f2fef2032916929041b9",
+    "content-hash": "88548181ca5e03ca19308cd6d0bffda8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2417,6 +2417,73 @@
                 }
             ],
             "time": "2020-07-20T17:29:33+00:00"
+        },
+        {
+            "name": "pragmarx/yaml",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antonioribeiro/yaml.git",
+                "reference": "9f2b44c4a31f8a71bab77169205aee7184ae3ef4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antonioribeiro/yaml/zipball/9f2b44c4a31f8a71bab77169205aee7184ae3ef4",
+                "reference": "9f2b44c4a31f8a71bab77169205aee7184ae3ef4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.5.33",
+                "php": ">=7.0",
+                "symfony/yaml": "^3.4|^4.0|^5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.5|^3.6|^4.0|^5.0",
+                "phpunit/phpunit": "^4.0|^6.4|^7.0|^8.0|^9.0"
+            },
+            "suggest": {
+                "ext-yaml": "Required to use the PECL YAML."
+            },
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "laravel": {
+                    "providers": [
+                        "PragmaRX\\Yaml\\Package\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Yaml": "PragmaRX\\Yaml\\Package\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PragmaRX\\Yaml\\Package\\": "src/package",
+                    "PragmaRX\\Yaml\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Carlos Ribeiro",
+                    "email": "acr@antoniocarlosribeiro.com",
+                    "role": "Creator & Designer"
+                }
+            ],
+            "description": "Load your Laravel config files using yaml",
+            "keywords": [
+                "config",
+                "laravel",
+                "yaml"
+            ],
+            "support": {
+                "issues": "https://github.com/antonioribeiro/yaml/issues",
+                "source": "https://github.com/antonioribeiro/yaml/tree/v1.2.1"
+            },
+            "time": "2020-05-21T19:46:28+00:00"
         },
         {
             "name": "psr/container",
@@ -8853,8 +8920,9 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4|^8.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-yaml": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

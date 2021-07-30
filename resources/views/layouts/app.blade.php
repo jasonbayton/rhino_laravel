@@ -17,10 +17,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/darkmode.js') }}"></script>
 
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="stylesheet" href="/css/webfonts.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -31,7 +29,6 @@
     @include('layouts.header')
     <content>
         <div class="max-width">
-
             @yield('content')
         </div>
     </content>
