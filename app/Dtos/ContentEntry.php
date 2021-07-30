@@ -2,15 +2,15 @@
 
 namespace App\Dtos;
 
+use ParsedownExtra;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
+use Mni\FrontYAML\Parser;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use App\Services\ContentService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Date;
-use Illuminate\Support\Facades\Route;
-use League\CommonMark\GithubFlavoredMarkdownConverter;
 
 class ContentEntry implements Feedable {
 
@@ -30,6 +30,7 @@ class ContentEntry implements Feedable {
 	public $topic;
 	public $order;
 	public $appliesTo;
+	public $yamlVars;
 
 	public function __construct(array $entry) {
 		$this->title = $entry['title'];
@@ -51,13 +52,17 @@ class ContentEntry implements Feedable {
 	}
 
 	public function content(): string {
-		$converter = new GithubFlavoredMarkdownConverter();
+		$parser = new Parser;
 		try {
 			$fileContent = file_get_contents(storage_path(config('database.content_location')) . (($this->url === '/') ? '/home' : $this->url) . '.md');
 		} catch (\Throwable $throwable) {
 			return '';
 		}
-		return $converter->convertToHtml($fileContent);
+		$parsedContent = $parser->parse($fileContent);
+		$this->yamlVars = $parsedContent->getYAML();
+		$markdown = $parsedContent->getContent();
+		$extra = new ParsedownExtra;
+		return $extra->text($markdown);
 	}
 
 	public function readTime(): string {
