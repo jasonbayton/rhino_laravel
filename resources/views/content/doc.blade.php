@@ -10,9 +10,9 @@
 				@include('layouts.breadcrumb')
 			@endif
 			<div id="article_meta">
-				<i class="fas fa-calendar"></i> published at | <i
-						class="fas fa-edit"></i> updated at | <i
-						class="fas fa-clock"></i> 1 minute
+				<i class="fas fa-calendar"></i> published at | {{ $content->date }}<i
+						class="fas fa-edit"></i> updated at | {{ $content->updated ?? $content->date }}<i
+						class="fas fa-clock"></i> {{ $content->readTime() }}
 			</div>
 			<h2 id="article_title">
 				{{ $content->title }}
@@ -33,8 +33,8 @@
 
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
-				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>
-				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
+				<a target="_blank" href=""><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>
+				<a target="_blank" onclick="window.print()"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
 			</div>
 			@if($content->mailingSignup())
 				{!! $content->mailingSignup() !!}
