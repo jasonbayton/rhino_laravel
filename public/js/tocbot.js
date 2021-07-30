@@ -15,5 +15,8 @@ tocbot.init({
   orderedList: false,
   collapseDepth: 4
 });
+var toc = document.getElementsByClassName('js-toc')[0].innerHTML;
+console.log(toc);
+document.getElementById('mobile_article_contents_list').innerHTML = toc;
 /******/ })()
 ;

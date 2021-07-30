@@ -11,3 +11,8 @@ tocbot.init({
   collapseDepth: 4,
 });
 
+let toc = document.getElementsByClassName('js-toc')[0].innerHTML;
+
+console.log(toc);
+
+document.getElementById('mobile_article_contents_list').innerHTML = toc;
