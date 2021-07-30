@@ -2033,6 +2033,16 @@ ul.toc-list li ul {
 
 }
 
+.card:hover {
+    all: unset;
+}
+
+ .flexed-card:hover {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
 #home_container > div {
     background: #fff;
     border-radius: 10px;
@@ -2050,43 +2060,29 @@ ul.toc-list li ul {
     margin: 0;
 }
 
-
-
-/*.rhino-t8 {*/
-/*    grid-column: 1;*/
-/*}*/
-
-/*.rhino-c10 {*/
-/*    grid-area: rhino-c10;*/
-/*}*/
-
-/*.rhino-t5se {*/
-/*    grid-area: rhino-t5se;*/
-/*}*/
-
-/*.rhino-m10p {*/
-/*    grid-area: rhino-m10p;*/
-/*}*/
-
-/*.product-videos {*/
-/*    grid-area: product-videos;*/
-/*}*/
-
-/*.faqs {*/
-/*    grid-area: faqs;*/
-/*}*/
-
-/*.rhino-security {*/
-/*    grid-area: rhino-security;*/
-/*}*/
-
-.rhino-security-text {
-}
-
 .get-help {
     grid-area: get-help;
 }
 
 .community-forum {
     grid-area: community-forum;
+}
+
+.applies-to-header {
+    width: 100%;
+    margin: 0 5px 5px;
+}
+
+.device-figure {
+    margin: 5px;
+}
+
+.device-figure img {
+    margin: 0 auto;
+}
+
+.device-figure figcaption {
+    font-size: 10pt;
+    margin: 5px 0;
+    text-align: center;
 }
