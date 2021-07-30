@@ -41,43 +41,43 @@
 
 		<div id="home_container">
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
 					<div class="card-header">Rhino T8</div>
 					<div class="card-text">
 						Product documentation for the Rhino T8 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-				</div>
+				</a>
 			</div>
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<img class="product-image" src="/assets/rhino-c10.png" alt="rhino c10">
 					<div class="card-header">Rhino C10</div>
 					<div class="card-text">
 						Product documentation for the Rhino C10 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-				</div>
+				</a>
 			</div>
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino t5se">
 					<div class="card-header">Rhino T5se</div>
 					<div class="card-text">
 						Product documentation for the Rhino T5se includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-				</div>
+				</a>
 			</div>
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<img class="product-image" src="/assets/rhino-m10p.png" alt="rhino m10p">
 					<div class="card-header">Rhino M10p</div>
 					<div class="card-text">
 						Product documentation for the Rhino M10p includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-				</div>
+				</a>
 			</div>
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<div class="card-icon">
 						<i class="fas fa-play-circle"></i>
 					</div>
@@ -85,10 +85,10 @@
 					<div class="card-text">
 						View product videos covering common topics including issues, setup, troubleshooting and more
 					</div>
-				</div>
+				</a>
 			</div>
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<div class="card-icon">
 						<i class="fas fa-question-circle"></i>
 					</div>
@@ -97,10 +97,10 @@
 						Product non-specific frequently asked questions. Check here if you can't find and answer
 						elsewhere
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="rhino-security">
-				<div class="card flexed-card">
+				<a href="/security" class="card flexed-card">
 					<div class="card-icon rhino-security-icon">
 						<i class="fas fa-shield-check"></i>
 					</div>
@@ -112,10 +112,10 @@
 							for offline deployment and view or participate in the Rhino vulnerability program.
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="rhino-help">
-				<div class="card flexed-card">
+				<a href="/support" class="card flexed-card">
 					<div class="card-icon rhino-help-icon">
 						<i class="far fa-life-ring"></i>
 					</div>
@@ -129,10 +129,10 @@
 								you're ready to talk to the Rhino team</p>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 			<div>
-				<div class="card">
+				<a href="#" class="card">
 					<div class="card-icon">
 						<i class="fas fa-comments-alt"></i>
 					</div>
@@ -141,7 +141,7 @@
 						For enterprise and consumer customers alike, find answers to your questions through the
 						community
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>

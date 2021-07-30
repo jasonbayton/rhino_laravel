@@ -416,6 +416,7 @@ button.arrow-only {
 }
 
 article {
+    width: calc(100% - 40px);
     padding: 20px;
 }
 
@@ -628,15 +629,19 @@ article {
     }
 
     #mobile_aside_contents {
-        padding: 10px 20px;
-        background: var(--light);
+        padding: 2px 20px;
+        background: lightgray;
         color: var(--dark);
+    }
+
+    .aside-title h2 {
+        margin: 15px 0;
+        font-size: 20pt;
     }
 
     .toc-content-hidden {
         display: none;
     }
-
 
     .burger {
         display: block;
@@ -687,6 +692,10 @@ article {
 
     .overflow-hidden {
         overflow: hidden;
+    }
+
+    #mobile_article_contents_list {
+        padding: 0 0 15px;
     }
 }
 
@@ -1885,6 +1894,7 @@ ul.toc-list li ul {
     #article_meta {
         display: block;
         font-size: 12px;
+        margin: 20px 0;
     }
 }
 
@@ -2026,15 +2036,20 @@ ul.toc-list li ul {
 #home_container > div {
     background: #fff;
     border-radius: 10px;
+    padding: 10px;
 }
 
 #home_container > div > .card {
     background: #fff;
-    padding: 10px;
+    padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border-bottom: none;
+    transition: none;
+    margin: 0;
 }
+
 
 
 /*.rhino-t8 {*/
