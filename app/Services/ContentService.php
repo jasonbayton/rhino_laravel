@@ -55,7 +55,7 @@ class ContentService {
 	}
 
 	public function getNavEntries(string $parent = ''): ContentEntry {
-		return $this->parents()->get($parent);
+		return $this->parents()->get($parent) ?? $this->notFound();
 	}
 
 	public function search(string $keyword, bool $exact = false) {
