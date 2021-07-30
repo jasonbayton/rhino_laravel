@@ -25,8 +25,12 @@
 			</div>
 			@if($content->getAppliesToImages()->count())
 				<div class="article-bottom-links">
+					<h4 class="applies-to-header">Applies to:</h4>
 					@foreach($content->getAppliesToImages() as $image)
-						<img src="{{ $image['image'] }}" alt="{{ $image['device'] }}">
+						<figure class="device-figure">
+							<img src="{{ $image['image'] }}" alt="{{ $image['device'] }}">
+							<figcaption>{{ $image['device'] }}</figcaption>
+						</figure>
 					@endforeach
 				</div>
 			@endif
