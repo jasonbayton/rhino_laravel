@@ -1,5 +1,6 @@
 <?php
 
+use App\Services\MenuService;
 use App\Services\ContentService;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
@@ -10,8 +11,8 @@ use App\Http\Controllers\ContentDeployController;
 use App\Http\Controllers\AppDeploymentController;
 
 
-Route::get('/test', function (ContentService $content) {
-	dd($content->getNavEntries('support')->getChildren());
+Route::get('/test', function (MenuService $menu) {
+	dd($menu->getMainMenu());
 
 
 });

@@ -7,13 +7,7 @@
 					Rhino Mobility
 				</div>
 			</a>
-			<div class="burger" onclick="">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
 		</div>
-
 	@else
 		<div id="header_container" class="">
 			<a href="/" id="rhino_header">
@@ -30,10 +24,32 @@
 					<i class="fas fa-clouds-moon"></i>
 				</div>
 			</nav>
-			<div class="burger" onclick="">
+			<div class="burger" onclick="toggleMainMenu(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
+			</div>
+		</div>
+		<div id="menu_overlay" class="menu_overlay_hidden">
+			<div class="menu_overlay_title">
+				Main
+			</div>
+			<div class="menu_overlay_content">
+				@foreach($mainMenu as $menu)
+					<details class="docnav-topic">
+						<summary class="docnav-topic-title">
+							{{ $menu['name'] }}
+						</summary>
+						<ul>
+							<li><a href="{{ $menu['href'] }}">{{ $menu['name'] }}</a></li>
+							@if(isset($menu['items']))
+								@foreach($menu['items'] as $subMenuItem)
+									<li><a href="{{ $subMenuItem['href'] }}">{{ $subMenuItem['name'] }}</a></li>
+								@endforeach
+							@endif
+						</ul>
+					</details>
+				@endforeach
 			</div>
 		</div>
 		<div id="search_container">
@@ -45,4 +61,5 @@
 			</form>
 		</div>
 	@endif
+
 </header>
