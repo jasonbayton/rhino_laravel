@@ -2047,6 +2047,10 @@ ul.toc-list li ul {
     margin: 0;
 }
 
+.card:hover {
+    color: unset;
+}
+
 .flexed-card:visited {
     display: flex;
 }
