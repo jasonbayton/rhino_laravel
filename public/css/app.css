@@ -2028,22 +2028,9 @@ ul.toc-list li ul {
         text-align: left;
     }
 
-    .flexed-card {
-        display: flex;
-        align-items: center;
-    }
 
 }
 
-.card:hover {
-    all: unset;
-}
-
- .flexed-card:hover {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 
 #home_container > div {
     background: #fff;
@@ -2058,6 +2045,22 @@ ul.toc-list li ul {
     border-bottom: none;
     transition: none;
     margin: 0;
+}
+
+.flexed-card:visited {
+    display: flex;
+}
+
+.flexed-card:hover {
+    height: unset;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    display: flex;
+}
+
+.flexed-card {
+    display: flex;
+    align-items: center;
 }
 
 .get-help {
