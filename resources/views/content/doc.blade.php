@@ -10,9 +10,9 @@
 				@include('layouts.breadcrumb')
 			@endif
 			<div id="article_meta">
-				<i class="fas fa-calendar"></i> published at | {{ $content->date }}<i
-						class="fas fa-edit"></i> updated at | {{ $content->updated ?? $content->date }}<i
-						class="fas fa-clock"></i> {{ $content->readTime() }}
+				<i class="fas fa-calendar"></i> {{ $content->date->toFormattedDateString() }}
+				<i class="fas fa-edit"></i> | {{ $content->updated ?? $content->date->toFormattedDateString() }} |
+				<i class="fas fa-clock"></i> {{ $content->readTime() }}
 			</div>
 			<h2 id="article_title">
 				{{ $content->title }}
