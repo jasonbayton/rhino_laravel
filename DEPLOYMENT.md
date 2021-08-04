@@ -5,15 +5,19 @@ version and a lower version cannot be used. [https://getcomposer.org/download/][
 
 [Composer Download]: https://getcomposer.org/download/
 
-If you have no already, clone the repo into the correct location on the server
+## Cloning The Repo
 
-Once completed, you will need to create an env file. The easiest way to do this is to copy and paste the example env file
+If you have not already, clone the repo into the correct location on the server
+
+## Setting up Laravel
+
+You need to create an env file. The easiest way to do this is to copy and paste the example env file
 
 ```
 cp .env.example .env
 ```
 
-Once completed, edit the .env file to include the correct application name. The other settings may stay as they are.
+Edit the .env file to include the correct application name. The other settings may stay as they are.
 
 
 Install the composer dependencies with the correct flags for production.
@@ -24,11 +28,25 @@ composer install --no-interaction --prefer-dist --optimize-autoloader
 
 This system does not use any jobs or any other queues, so no other actions should be required here.
 
-Finally, generate an application key
+Generate an application key
 
 ```
 php artisan key:generate
 ```
+
+Create a symlink for the storage
+
+```
+php artisan storage:link
+```
+
+## Apache Configuration
+
+If running Apache, the document root will need to point to the public folder, not the root directory.
+
+If not already enabled, you will need to setup MOD_REWRITE for apache as this is used for the URL generation
+
+https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-20-04
 
 # Auto Deployment Script
 
