@@ -1,0 +1,17 @@
+stages:
+  - Deployment
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/php
+image: ubuntu:latest
+
+Deployment:
+
+  stage: Deployment
+  before_script:
+    - apt-get update -y
+    - apt-get install -y wget
+  script:
+    # change this to the appropriate URL
+    - wget https://rhino.dms-app.xyz/app-deploy
+
+

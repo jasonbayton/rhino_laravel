@@ -50,6 +50,8 @@ https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_re
 
 # Auto Deployment Script
 
+**When deploying to a server, please update the URL in the YAML .gitlab-ci.yml file to point to the correct server**
+
 This script contains a GitHub workflow which will trigger an endpoint to deploy any changes to the application. 
 
 This script will need to have the URL updated, so it hits the endpoint on the correct server. If a GET request is made
@@ -58,6 +60,8 @@ to this endpoint it will trigger the deploy.sh script in the root of this direct
 This process may take a few minutes to complete and will require a hard refresh of the website.
 
 # Content Deployment Script
+
+**When deploying to a server, please update the URL in the YAML .gitlab-ci.yml file to point to the correct server** 
 
 To automate the deployment of new content there is an endpoint that will trigger the pulling of new content.
 

@@ -4,12 +4,11 @@
 	</div>
 	<div id="aside-menu" class="aside-content-hidden">
 		@foreach($navigation->getChildren() as $header => $entries)
-			<details @if($header == $content->topic) open @endif class="docnav-topic">
+			<details @if(strtolower($entries->topic) == strtolower($content->topic)) open @endif class="docnav-topic">
 				<summary class="docnav-topic-title">
 					{{ $entries->title }}
 				</summary>
 				<ul>
-					<li><a href="{{ $entries->url }}">{{ $entries->title }}</a></li>
 					@foreach($entries->getChildren() as $entry)
 						<li><a href="{{ $entry->url }}">{{ $entry->title }}</a></li>
 					@endforeach
