@@ -20,9 +20,16 @@
 			@if($content->subtitle)
 				<div id="article_subtitle">{{ $content->subtitle }}</div>
 			@endif
-			<div id="literal_content" class="js-toc-content">
-				{!! $content->content() !!}
-			</div>
+			@if($content->content())
+				<div id="literal_content" class="js-toc-content">
+					{!! $content->content() !!}
+				</div>
+			@endif
+			<ul>
+				@foreach($content->getChildren() as $result)
+					<li><a href="{{ $result->url }}">{{ $result->title }}</a></li>
+				@endforeach
+			</ul>
 			@if($content->getAppliesToImages()->count())
 				<div class="article-bottom-links">
 					<h4 class="applies-to-header">Applies to:</h4>
@@ -36,14 +43,18 @@
 			@endif
 
 			<div class="article-bottom-links">
-				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
-				<a target="_blank" href=""><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report Content</a>
+				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
+							style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
+				<a target="_blank" href=""><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report
+					Content</a>
 				<a target="_blank" onclick="window.print()"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
 			</div>
 			@if($content->mailingSignup())
 				{!! $content->mailingSignup() !!}
 			@endif
 		</article>
-		@include('layouts.aside_right')
+		@if($content->content())
+			@include('layouts.aside_right')
+		@endif
 	</section>
 @endsection

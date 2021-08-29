@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Str;
-use Illuminate\Http\Request;
 use App\Services\ContentService;
 
 class ContentController extends Controller {
@@ -13,13 +12,9 @@ class ContentController extends Controller {
 		'grid' => 'content.grid',
 	];
 
-
 	public function __invoke(string $route, ContentService $contentService) {
 		$content = $contentService->getByUrl($route);
-
 		$documentType = $this->documentTypes[$content->type] ?? 'content.doc';
-
-//		dd($contentService->getNavEntries()->first()->getChildren());
 
 		$path = Str::before(request()->path(), '/');
 
