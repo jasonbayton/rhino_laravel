@@ -25,4 +25,4 @@ jobs:
 
       # Call the deployment script
       - name: Run the deployment script
-        run: wget https://rhino.dms-app.xyz/app-deploy
+        run: wget http://support.rhinomobility.com/app-deploy
