@@ -412,7 +412,7 @@ button.arrow-only {
     grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background: #fff;
+    background: var(--background);
 }
 
 article {
