@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Artisan;
+
 class AppDeploymentController extends Controller {
 
-	public function __invoke() {
-//		Artisan::call('deploy');
-		echo 'the script is' . base_path() . '/deploy.sh';
-		$command = new \Symfony\Component\Process\Process(['sh', base_path() . '/deploy.sh']);
-		$command->setTimeout(15);
-		$command->run(function ($type, $buffer) {
-			echo $buffer . '\r\n';
-		});
+	public function __invoke(): JsonResponse {
+		Artisan::call('deploy');
+
+		return response()->json([
+			'status' => 'success',
+			'output' => Artisan::output(),
+		]);
 	}
 }
