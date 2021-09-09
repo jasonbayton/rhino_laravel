@@ -4,7 +4,7 @@
 	</div>
 	<div id="aside-menu" class="aside-content-hidden">
 		@foreach($topics as $header => $entries)
-			<details @if($header == $content->topic) open @endif class="docnav-topic">
+			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif class="docnav-topic">
 				<summary class="docnav-topic-title">
 					{{ $header }}
 				</summary>

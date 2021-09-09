@@ -183,7 +183,7 @@ h5 {
     transition: all 0.2s ease;
 }
 
-:is(article :is(h1, h2, h3, h4, h5, h6)) a:hover {
+:is(article :is(h1, h2, h3, h4, h5, h6, #rhino_header)) a:hover {
     all: unset;
 }
 
@@ -718,6 +718,10 @@ article {
     font-size: 46px;
     display: inline-block;
     font-weight: 300;
+}
+
+#rhino_header:hover {
+    color: unset;
 }
 
 nav {
@@ -2056,7 +2060,7 @@ ul.toc-list li ul {
     margin: 0;
 }
 
-.card:hover {
+#home_container > div > .card:hover {
     color: unset;
 }
 
