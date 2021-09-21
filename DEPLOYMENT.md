@@ -1,13 +1,85 @@
 # Deployment Guide
 
-Firstly, make sure composer is installed on the system, as this is used for package management. Version 2 is now the standard
-version and a lower version cannot be used. [https://getcomposer.org/download/][Composer Download]
+## Install Apache
 
-[Composer Download]: https://getcomposer.org/download/
+Update the repos and install Apache
+
+```
+sudo apt update
+sudo apt install apache2
+```
+
+Start the apache service and set it to run on boot
+
+```
+systemctl start apache2
+systemctl enable apache2
+```
+
+
+Enable firewall access for apache
+
+```
+for svc in ssh http https
+do 
+ufw allow $svc
+done
+```
+
+Enable the firewall
+
+```
+sudo ufw enable
+```
+
+Install PHP and the required dependencies
+
+```
+sudo apt install libapache2-mod-php php php-common php-xml php-gd php-opcache php-mbstring php-tokenizer php-json php-bcmath php-zip unzip php-yaml
+```
+
+Once installed you need to edit the php.ini config file
+
+```
+cd /etc/php/7.4/
+nano apache2/php.ini
+```
+
+
+Uncomment the cgi.fix_path_info and change the value to 0
+
+```
+cgi.fix_pathinfo=0 
+```
+
+Restart Apache
+
+```
+systemctl restart apache2
+```
+
+## Install Composer
+
+```
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+Check the composer version is version 2 and the command works correctly
+```
+composer --version
+```
 
 ## Cloning The Repo
 
-If you have not already, clone the repo into the correct location on the server
+If you have not already, clone the repo into the correct location on the server. This will likely be `/var/www/public`
+
+Update the apache enabled websites to make sure it is pointing at the public directory within the repo
+
+## Set the correct permissions
+
+sudo chgrp -R www-data /var/www/
+sudo chmod -R 775 /var/www/storage
 
 ## Setting up Laravel
 
@@ -80,5 +152,3 @@ prebuilt, so this is not a requirement, but often a good practise to follow.
 
 A sitemap is regenerated every time a new content deployment is run. You can manually generate a sitemap using the
 `php artisan sitemap:generate` command from within your bash console.
-
-
