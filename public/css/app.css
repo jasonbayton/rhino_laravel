@@ -242,12 +242,10 @@ a:hover {
 }
 
 a:visited {
-    background-color: var(--contrast);
     border-bottom-color: var(--contrast);
 }
 
 a:visited:hover {
-    color: var(--dark);
 }
 
 
