@@ -1969,7 +1969,6 @@ ul.toc-list li ul {
     align-content: center;
 }
 
-
 .card-header {
     margin: 15px 0;
     font-size: 20pt;
@@ -1978,6 +1977,11 @@ ul.toc-list li ul {
 .card-text {
     font-size: 12pt;
     text-align: left;
+}
+
+.click-choice {
+    padding: 5px 0;
+    font-size: 12pt;
 }
 
 .card-icon {
