@@ -1984,6 +1984,10 @@ ul.toc-list li ul {
     font-size: 12pt;
 }
 
+.click-choice a {
+    font-size: 12pt;
+}
+
 .card-icon {
     font-size: 183px;
     color: #646cf5;
