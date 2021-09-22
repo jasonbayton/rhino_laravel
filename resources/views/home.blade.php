@@ -41,7 +41,7 @@
 
 		<div id="home_container">
 			<div>
-				<a href="#" class="card">
+				<a href="/support/t8" class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
 					<div class="card-header">Rhino T8</div>
 					<div class="card-text">
@@ -50,7 +50,7 @@
 				</a>
 			</div>
 			<div>
-				<a href="#" class="card">
+				<a href="/support/c10" class="card">
 					<img class="product-image" src="/assets/rhino-c10.png" alt="rhino c10">
 					<div class="card-header">Rhino C10</div>
 					<div class="card-text">
@@ -59,7 +59,7 @@
 				</a>
 			</div>
 			<div>
-				<a href="#" class="card">
+				<a href="/support/t5se" class="card">
 					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino t5se">
 					<div class="card-header">Rhino T5se</div>
 					<div class="card-text">
@@ -68,7 +68,7 @@
 				</a>
 			</div>
 			<div>
-				<a href="#" class="card">
+				<a href="/support/m10p" class="card">
 					<img class="product-image" src="/assets/rhino-m10p.png" alt="rhino m10p">
 					<div class="card-header">Rhino M10p</div>
 					<div class="card-text">
@@ -79,16 +79,16 @@
 			<div>
 				<a href="#" class="card">
 					<div class="card-icon">
-						<i class="fas fa-play-circle"></i>
+						<!--i class="fas fa-play-circle"></i--><i class="far fa-construction"></i>
 					</div>
 					<div class="card-header">Product Videos</div>
 					<div class="card-text">
-						View product videos covering common topics including issues, setup, troubleshooting and more
+						Coming soon: View product videos covering common topics including issues, setup, troubleshooting and more
 					</div>
 				</a>
 			</div>
 			<div>
-				<a href="#" class="card">
+				<a href="/support" class="card">
 					<div class="card-icon">
 						<i class="fas fa-question-circle"></i>
 					</div>
@@ -115,7 +115,7 @@
 				</a>
 			</div>
 			<div class="rhino-help">
-				<a href="/support" class="card flexed-card">
+				<a href="/support/escalation" class="card flexed-card">
 					<div class="card-icon rhino-help-icon">
 						<i class="far fa-life-ring"></i>
 					</div>
@@ -134,11 +134,11 @@
 			<div>
 				<a href="#" class="card">
 					<div class="card-icon">
-						<i class="fas fa-comments-alt"></i>
+						<!--i class="fas fa-comments-alt"></i--><i class="far fa-construction"></i>
 					</div>
 					<div class="card-header">Community Forum</div>
 					<div class="card-text">
-						For enterprise and consumer customers alike, find answers to your questions through the
+						Coming soon: For enterprise and consumer customers alike, find answers to your questions through the
 						community
 					</div>
 				</a>
