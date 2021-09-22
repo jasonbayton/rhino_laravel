@@ -6,12 +6,12 @@
             <h2 id="article_title">
                 Site search
             </h2>
-            <div class="callout callout-warning">
+            <!--div class="callout callout-warning">
                 <div class="callout-heading">Problems with search?</div>
                 Search has been built from the ground-up. If it's not behaving as you'd expect, please <a
                         href="https://github.com/jasonbayton/bayton_v5/issues">raise an issue</a> with feedback on how
                 to make it better!
-            </div>
+            </div-->
             <h3 class="search-heading">
 				Results for: {{ request()->search }}
             </h3>
