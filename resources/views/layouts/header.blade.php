@@ -17,12 +17,12 @@
 				</div>
 			</a>
 			<nav>
-				<div id="nav_links">
+				<!--div id="nav_links">
 					<a href="/support">Support</a> <a href="/security">Security</a>
 				</div>
 				<div id="darktoggle">
 					<i class="fas fa-clouds-moon"></i>
-				</div>
+				</div-->
 			</nav>
 			<div class="burger" onclick="toggleMainMenu(this)">
 				<div class="bar1"></div>
