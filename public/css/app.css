@@ -2103,6 +2103,7 @@ ul.toc-list li ul {
 
 .device-figure img {
     margin: 0 auto;
+    border-radius: 0;
 }
 
 .device-figure figcaption {
