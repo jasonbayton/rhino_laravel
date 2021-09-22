@@ -25,4 +25,4 @@ jobs:
 
       # Call the deployment script
       - name: Run the deployment script
-        run: wget http://home.bayton.org:8989/app-deploy
+        run: wget https://support.rhinomobility.com/app-deploy
