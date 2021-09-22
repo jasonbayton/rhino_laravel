@@ -25,11 +25,13 @@
 					{!! $content->content() !!}
 				</div>
 			@endif
+			@if (!$content->content())
 			<ul>
 				@foreach($content->getChildren() as $result)
 					<li><a href="{{ $result->url }}">{{ $result->title }}</a></li>
 				@endforeach
 			</ul>
+			@endif
 			@if($content->getAppliesToImages()->count())
 				<div class="article-bottom-links">
 					<h4 class="applies-to-header">Applies to:</h4>
