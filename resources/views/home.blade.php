@@ -47,6 +47,9 @@
 					<div class="card-text">
 						Product documentation for the Rhino T8 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
+                    <div class="click-choice">
+                        <centre><a href="/support/t8">Support</a> | <a href="/security/t8">Releases</a></center>
+                    </div>
 				</a>
 			</div>
 			<div>
