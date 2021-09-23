@@ -41,7 +41,7 @@
 
 		<div id="home_container">
 			<div>
-				<a href="/support/t8" class="card">
+				<a href="/devices/t8" class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
 					<div class="card-header">Rhino T8</div>
 					<div class="card-text">
@@ -53,7 +53,7 @@
 				</a>
 			</div>
 			<div>
-				<a href="/support/c10" class="card">
+				<a href="/devices/c10" class="card">
 					<img class="product-image" src="/assets/rhino-c10.png" alt="rhino c10">
 					<div class="card-header">Rhino C10</div>
 					<div class="card-text">
@@ -65,7 +65,7 @@
 				</a>
 			</div>
 			<div>
-				<a href="/support/t5se" class="card">
+				<a href="/devices/t5se" class="card">
 					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino t5se">
 					<div class="card-header">Rhino T5se</div>
 					<div class="card-text">
@@ -77,7 +77,7 @@
 				</a>
 			</div>
 			<div>
-				<a href="/support/m10p" class="card">
+				<a href="/devices/m10p" class="card">
 					<img class="product-image" src="/assets/rhino-m10p.png" alt="rhino m10p">
 					<div class="card-header">Rhino M10p</div>
 					<div class="card-text">
