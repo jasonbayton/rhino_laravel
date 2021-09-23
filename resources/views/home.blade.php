@@ -127,7 +127,7 @@
 				</a>
 			</div>
 			<div class="rhino-help">
-				<a href="/support/escalation" class="card flexed-card">
+				<a href="/support/escalate" class="card flexed-card">
 					<div class="card-icon rhino-help-icon">
 						<i class="far fa-life-ring"></i>
 					</div>
