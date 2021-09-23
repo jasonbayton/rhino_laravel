@@ -21,7 +21,7 @@ class ContentController extends Controller {
 		return view($documentType, [
 			'content' => $content,
 			'navigation' => $contentService->getNavEntries($path),
-			'topics' => $contentService->getTopicEntries($content->parentID),
+			'topics' => $contentService->getTopicEntries($content->parentID, Str::before($route, '/')),
 		]);
 	}
 }
