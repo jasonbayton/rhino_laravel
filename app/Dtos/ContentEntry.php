@@ -72,6 +72,16 @@ class ContentEntry implements Feedable {
 		return $readtime . ' ' . Str::plural('minute', $readtime);
 	}
 
+	public function breadcrumb(): string {
+		$breadcrumb = '';
+
+		for($content = $this; $content!== null; $content = $content->getParent()) {
+			$breadcrumb = '<i class="fas fa-caret-right"></i>' . $content->title . ' ' . $breadcrumb;
+		}
+
+		return $breadcrumb;
+	}
+
 	public function getRelatedContent() {
 		$contentService = new ContentService();
 		return $contentService->all()
@@ -84,6 +94,11 @@ class ContentEntry implements Feedable {
 					'entries' => $contentService->getByTopic($childTopic),
 				]),
 			])->first();
+	}
+
+	public function getParent(): ?ContentEntry {
+		$contentService = new ContentService();
+		return $contentService->all()->where('parentID', '===', $this->parent)->first();
 	}
 
 	public function getChildren(): Collection {
