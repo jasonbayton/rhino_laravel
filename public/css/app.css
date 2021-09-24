@@ -1271,6 +1271,7 @@ section#content_container {
     grid-template-rows: auto;
     grid-column-gap: 30px;
     grid-row-gap: 0px;
+    padding-right: 20px;
 }
 
 #content_container aside.left {
@@ -1892,6 +1893,7 @@ ul.toc-list li ul {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-column-gap: 0px;
+        padding-right: 0px;
     }
 
     #content_container aside {
