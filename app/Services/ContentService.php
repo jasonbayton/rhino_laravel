@@ -46,12 +46,14 @@ class ContentService {
 		return $this->content->where('topic', '===', $title)->sortBy('order');
 	}
 
-	public function getTopicEntries(?string $parentId = ''): ?Collection {
+	public function getTopicEntries(?string $parentId = '', ?string $rootPath = ''): ?Collection {
 		$content = $this->content;
 		if ($parentId) {
 			$content = $this->content->where('parentID', $parentId);
 		}
-		return $content->where('topic', '!==', '')->groupBy('topic');
+		return $content->where('topic', '!==', '')
+			->filter(fn($item) => Str::startsWith($item->url, '/' . $rootPath))
+			->groupBy('topic');
 	}
 
 	public function getNavEntries(string $parent = ''): ContentEntry {

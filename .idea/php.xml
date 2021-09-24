@@ -135,6 +135,7 @@
       <path value="$PROJECT_DIR$/vendor/mnapoli/front-yaml" />
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown-extra" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
