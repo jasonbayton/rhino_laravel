@@ -717,7 +717,9 @@ article {
 #rhino_title {
     font-size: 46px;
     display: inline-block;
-    font-weight: 300;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
 }
 
 #rhino_header:hover {
