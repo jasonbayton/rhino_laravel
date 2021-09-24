@@ -1345,6 +1345,8 @@ section#content_container {
 #support_table table {
     overflow-x: auto;
     white-space: nowrap;
+    width: 0;
+    min-width: 50%;
 }
 
 #share_container {
