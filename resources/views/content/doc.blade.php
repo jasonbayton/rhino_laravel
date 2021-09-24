@@ -55,8 +55,5 @@
 				{!! $content->mailingSignup() !!}
 			@endif
 		</article>
-		@if($content->content())
-			@include('layouts.aside_right')
-		@endif
 	</section>
 @endsection
