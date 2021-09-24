@@ -13,7 +13,7 @@
 			<a href="/" id="rhino_header">
 				<img src="{{ asset('assets/rhino-logo.png') }}" alt="rhino logo" width="45px"/>
 				<div id="rhino_title">
-					Rhino Mobility
+					RHINO
 				</div>
 			</a>
 			<nav>
