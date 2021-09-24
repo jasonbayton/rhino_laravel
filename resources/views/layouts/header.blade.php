@@ -2,9 +2,9 @@
 	@if(Request::is('/'))
 		<div id="front_header_container" class="">
 			<a href="/" id="rhino_header">
-				<img src="{{ asset('assets/rhino-logo.png') }}" alt="rhino logo" width="64px"/>
+				<img src="{{ asset('assets/rhino-logo.png') }}" alt="rhino logo" width="45px"/>
 				<div id="rhino_title">
-					Rhino Mobility
+					RHINO
 				</div>
 			</a>
 		</div>
