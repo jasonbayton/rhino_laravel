@@ -1352,7 +1352,7 @@ section#content_container {
 }
 
 .table-spec tbody tr:nth-child(even) {
-  background-color: none;
+  background-color: transparent;
 }
 
 #share_container {
