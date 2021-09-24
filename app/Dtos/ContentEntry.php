@@ -73,13 +73,7 @@ class ContentEntry implements Feedable {
 	}
 
 	public function breadcrumb(): string {
-		$breadcrumb = '';
-
-		for($content = $this; $content!== null; $content = $content->getParent()) {
-			$breadcrumb = '<i class="fas fa-caret-right"></i>' . $content->title . ' ' . $breadcrumb;
-		}
-
-		return $breadcrumb;
+		return '<i class="fas fa-caret-right"></i> ' . $this->parent . ' <i class="fas fa-caret-right"></i> ' . $this->topic;
 	}
 
 	public function getRelatedContent() {
