@@ -630,9 +630,7 @@ article {
     }
 
     #mobile_aside_contents {
-        padding: 2px 20px;
-        background: lightgray;
-        color: var(--dark);
+        display: none;
     }
 
     .aside-title h2 {
