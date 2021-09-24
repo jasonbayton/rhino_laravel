@@ -1267,7 +1267,7 @@ section#grid_container {
 
 section#content_container {
     display: grid;
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: 25% auto;
     grid-template-rows: auto;
     grid-column-gap: 30px;
     grid-row-gap: 0px;
