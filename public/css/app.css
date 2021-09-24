@@ -1274,6 +1274,13 @@ section#content_container {
     padding-right: 20px;
 }
 
+.device-details {
+    padding: 20px 0;
+}
+.device-details item {
+    display: block;
+}
+
 #content_container aside.left {
     grid-area: 1 / 1 / 2 / 2;
 }
