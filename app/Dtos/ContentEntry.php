@@ -53,16 +53,16 @@ class ContentEntry implements Feedable {
 
 	public function content(): string {
 		$parser = new Parser;
+		$extra = new ParsedownExtra;
 		try {
 			$fileContent = file_get_contents(storage_path(config('database.content_location')) . (($this->url === '/') ? '/home' : $this->url) . '.md');
 		} catch (\Throwable $throwable) {
 			return '';
 		}
+		$fileContent = $extra->text($fileContent);
 		$parsedContent = $parser->parse($fileContent);
 		$this->yamlVars = $parsedContent->getYAML();
-		$markdown = $parsedContent->getContent();
-		$extra = new ParsedownExtra;
-		return $extra->text($markdown);
+		return $parsedContent->getContent();
 	}
 
 	public function readTime(): string {
@@ -73,13 +73,7 @@ class ContentEntry implements Feedable {
 	}
 
 	public function breadcrumb(): string {
-		$breadcrumb = '';
-
-		for($content = $this; $content!== null; $content = $content->getParent()) {
-			$breadcrumb = '<i class="fas fa-caret-right"></i>' . $content->title . ' ' . $breadcrumb;
-		}
-
-		return $breadcrumb;
+		return '<i class="fas fa-caret-right"></i> ' . $this->parent . ' <i class="fas fa-caret-right"></i> ' . $this->topic;
 	}
 
 	public function getRelatedContent() {
