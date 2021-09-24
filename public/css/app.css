@@ -1347,6 +1347,14 @@ section#content_container {
     white-space: nowrap;
 }
 
+.table-headless thead {
+    display: none;
+}
+
+.table-spec tbody tr:nth-child(even) {
+  background-color: none;
+}
+
 #share_container {
     max-width: 500px;
 }
