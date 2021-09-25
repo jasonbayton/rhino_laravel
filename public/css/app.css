@@ -1085,6 +1085,10 @@ h3.section-title {
     padding-right: 5px;
 }
 
+.docnav-topic ul li a {
+    font-size: 16px;
+}
+
 .docnav-topic-title::marker {
     font-family: "Font Awesome 5 Pro";
     content: "\f07b";
