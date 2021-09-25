@@ -1283,6 +1283,7 @@ section#content_container {
 
 #content_container aside.left {
     grid-area: 1 / 1 / 2 / 2;
+    min-width: 320px;
 }
 
 #content_container aside.right {
