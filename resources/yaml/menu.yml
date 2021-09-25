@@ -1,17 +1,13 @@
 - name: "Device Support"
-  href: /device-support
+  href: 
   items:
     - name: "Rhino T8"
-      href: /support/rhino-t8
+      href: /devices/t8
     - name: "Rhino C10"
-      href: /support/rhino-c10
-- name: "FAQs"
-  href: /faqs
-- name: "Videos"
-  href: /videos
+      href: /devices/c10
+- name: "Support"
+  href: 
 - name: "Security"
   href: /security
-- name: "Forum"
-  href: https://www.google.com
 - name: "Contact Us"
   href: /contact-us
