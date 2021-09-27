@@ -2027,6 +2027,10 @@ ul.toc-list li ul {
     padding: 15px;
 }
 
+.flexed-card .card-text {
+  padding-left: 0;
+}
+
 .click-choice {
     padding: 5px 0;
     font-size: 12pt;
