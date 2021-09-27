@@ -47,9 +47,6 @@
 					<div class="card-text">
 						Product documentation for the Rhino T8 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-                    <div class="click-choice">
-                        <centre><a href="/support/t8">Support</a> | <a href="/security/releases/t8">Releases</a></center>
-                    </div>
 				</a>
 			</div>
 			<div>
@@ -59,9 +56,6 @@
 					<div class="card-text">
 						Product documentation for the Rhino C10 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-                    <div class="click-choice">
-                        <centre><a href="/support/c10">Support</a> | <a href="/security/releases/c10">Releases</a></center>
-                    </div>
 				</a>
 			</div>
 			<div>
@@ -71,9 +65,6 @@
 					<div class="card-text">
 						Product documentation for the Rhino T5se includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-                    <div class="click-choice">
-                        <centre><a href="/support/t5se">Support</a> | <a href="/security/releases/t5se">Releases</a></center>
-                    </div>
 				</a>
 			</div>
 			<div>
@@ -83,9 +74,6 @@
 					<div class="card-text">
 						Product documentation for the Rhino M10p includes guides, FAQ, downloads, spec, help docs etc
 					</div>
-                    <div class="click-choice">
-                        <centre><a href="/support/m10p">Support</a> | <a href="/security/releases/m10p">Releases</a></center>
-                    </div>
 				</a>
 			</div>
 			<div>
