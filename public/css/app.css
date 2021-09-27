@@ -2024,6 +2024,7 @@ ul.toc-list li ul {
 .card-text {
     font-size: 12pt;
     text-align: left;
+    padding: 15px;
 }
 
 .click-choice {
