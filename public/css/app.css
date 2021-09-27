@@ -2079,6 +2079,10 @@ ul.toc-list li ul {
     padding: 4px 1px;
 }
 
+.numbered-instructions ol li > ol li::before {
+    content: counter(item, lower-latin)!important;
+}
+
 @media (min-width: 600px) {
     #home_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
