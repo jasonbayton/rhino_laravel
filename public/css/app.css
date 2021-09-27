@@ -720,9 +720,18 @@ article {
     color: unset;
 }
 
+.summary-heading {
+  padding-bottom: 40px;
+}
+
+.summary-heading ::marker {
+  content: "\f059";
+  font-weight: 300;
+  font-family: "Font Awesome 5 Pro";
+}
+
 .summary-heading h2, .summary-heading h3 {
   display: inline;
-  padding-bottom: 10px;
 }
 
 nav {
