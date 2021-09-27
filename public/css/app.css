@@ -2055,6 +2055,27 @@ ul.toc-list li ul {
     margin: 0 20px 0 0;
 }
 
+.numbered-instructions ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+.numbered-instructions ol li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+
+.numbered-instructions ol li:before {
+    margin-right: 10px;
+    content: counter(item);
+    background: #636cf5;
+    border-radius: 50%;
+    color: white;
+    width: 27px;
+    text-align: center;
+    display: inline-block;
+}
+
 @media (min-width: 600px) {
     #home_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
