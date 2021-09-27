@@ -720,11 +720,11 @@ article {
     color: unset;
 }
 
-.summary-heading {
+.details-content {
   padding-bottom: 40px;
 }
 
-.summary-heading ::marker {
+.summary-heading::marker {
   content: "\f059";
   font-weight: 300;
   font-family: "Font Awesome 5 Pro";
