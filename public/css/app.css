@@ -728,10 +728,12 @@ article {
   content: "\f059";
   font-weight: 300;
   font-family: "Font Awesome 5 Pro";
+  font-size: 28px;
 }
 
 .summary-heading h2, .summary-heading h3 {
   display: inline;
+  padding-left: 5px;
 }
 
 nav {
