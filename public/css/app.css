@@ -2074,8 +2074,9 @@ ul.toc-list li ul {
     width: 25px;
     text-align: center;
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 5px;
+    padding: 4px 1px;
 }
 
 @media (min-width: 600px) {
