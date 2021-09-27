@@ -1733,7 +1733,6 @@ ul.toc-list li ul {
     }
 
     #rhino_header {
-        justify-self: center;
         padding-bottom: 20px;
         grid-gap: 0;
     }
