@@ -720,6 +720,11 @@ article {
     color: unset;
 }
 
+.summary-heading h2, .summary-heading h3 {
+  display: inline;
+  padding-bottom: 10px;
+}
+
 nav {
     display: inline-block;
     grid-area: 1 / 2 / 2 / 3;
