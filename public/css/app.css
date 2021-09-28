@@ -1885,7 +1885,7 @@ ul.toc-list li ul {
       grid-template-columns: auto;
     }
 
-    .rhino-security-text.card-header {
+    .rhino-security-text .card-header {
       text-align: center;
     }
 
