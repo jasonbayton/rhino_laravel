@@ -2130,20 +2130,6 @@ ul.toc-list li ul {
     }
 }
 
-@media (max-width: 350px) {
-
-    #bayton_text {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 300px) {
-
-    #bayton {
-        padding: 30px 0;
-    }
-}
-
 @media (min-width: 600px) {
     #home_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
