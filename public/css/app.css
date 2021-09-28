@@ -2134,7 +2134,7 @@ ul.toc-list li ul {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     #home_container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
