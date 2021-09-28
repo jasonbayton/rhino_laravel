@@ -1714,6 +1714,14 @@ ul.toc-list li ul {
 
 @media (max-width: 900px) {
 
+    .flexed-card .card-text {
+      padding-left: 15px;
+    }
+
+    .flexed-card {
+      grid-template-columns: auto;
+    }
+
     .mobile-hidden {
         display: none;
     }
@@ -2152,20 +2160,10 @@ ul.toc-list li ul {
     color: unset;
 }
 
-.flexed-card:visited {
-    display: flex;
-}
-
-.flexed-card:hover {
-    height: unset;
-    /*margin: 0;*/
-    /*padding: 0;*/
-    display: flex;
-}
-
 .flexed-card {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 2fr auto;
 }
 
 .get-help {
