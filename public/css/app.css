@@ -265,10 +265,8 @@ code {
 }
 
 pre {
-    background: #333;
+    background: #f6f6f6;
     font-family: courier, monospace;
-    color: var(--bright);
-    background-color: var(--dark);
     border-radius: 6px;
     padding: 16px;
     white-space: pre-wrap;
