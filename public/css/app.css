@@ -262,10 +262,6 @@ cite {
 
 code {
     font-family: courier, monospace;
-    color: var(--bright);
-    background-color: var(--dark);
-    border-radius: 6px;
-    padding: 2px 7px;
 }
 
 pre {
