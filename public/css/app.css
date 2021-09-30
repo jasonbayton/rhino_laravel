@@ -495,10 +495,13 @@ article {
 .quick-search {
     border-bottom: 4px solid #fff;
     align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav-quick-search {
     border-bottom: 4px solid #dfdfdf;
+    display: grid;
 }
 
 .search-input {
@@ -661,7 +664,7 @@ article {
     }
 
     #search_container {
-      display: grid;
+      display: block;
     }
 
     nav #nav_links {
