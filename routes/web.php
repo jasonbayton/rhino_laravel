@@ -1,7 +1,5 @@
 <?php
 
-use App\Services\MenuService;
-use App\Services\ContentService;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\SearchController;
@@ -9,13 +7,6 @@ use App\Http\Controllers\ContentController;
 use App\Http\Controllers\ExportToPdfController;
 use App\Http\Controllers\ContentDeployController;
 use App\Http\Controllers\AppDeploymentController;
-
-
-Route::get('/test', function (MenuService $menu) {
-	dd($menu->getMainMenu());
-
-
-});
 
 Route::feeds();
 Route::get('content-deploy', [ContentDeployController::class, '__invoke']);
