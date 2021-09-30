@@ -24,6 +24,14 @@
 					<i class="fas fa-clouds-moon"></i>
 				</div-->
 			</nav>
+			<div id="search_container_nav">
+				<form action="/search" method="GET" class="quick-search nav-quick-search">
+					<input type="text" placeholder="Search..." name="search" class="search-input nav-search-input">
+					<button class="search-button nav-search-button">
+						<i class="fal fa-search"></i>
+					</button>
+				</form>
+			</div>
 			<div class="burger" onclick="toggleMainMenu(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>

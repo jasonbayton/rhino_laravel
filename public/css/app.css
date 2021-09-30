@@ -444,6 +444,18 @@ article {
     grid-row-gap: 0px;
 }
 
+#search_container_nav {
+    background-color: var(--background);
+    padding: 10px 20px;
+    font-size: 22px;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-area: 1/2/2/3;
+}
+
 .rhino_search {
     border-bottom: 3px solid #fff;
     justify-self: right;
@@ -481,6 +493,10 @@ article {
     align-items: stretch;
 }
 
+.nav-quick-search {
+    border-bottom: 0px;
+}
+
 .search-input {
     border: none;
     background: #636cf5;
@@ -489,10 +505,19 @@ article {
     flex-grow: 1;
 }
 
+.nav-search-input {
+  background: var(--background);
+}
+
 .search-input::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #fff;
     font-size: 14pt;
+}
+
+.nav-search-input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: var(--text);
 }
 
 .search-input:-moz-placeholder {
@@ -502,9 +527,9 @@ article {
     font-size: 14pt;
 }
 
-.search-input::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #fff;
+.nav-search-input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: var(--text);
     opacity: 1;
     font-size: 14pt;
 }
@@ -515,11 +540,25 @@ article {
     font-size: 14pt;
 }
 
+.nav-search-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--text);
+    font-size: 14pt;
+}
+
 .search-button {
     border: none;
     color: var(--bright);
     box-shadow: none;
     background: #636cf5;
+    font-size: 20pt;
+}
+
+.nav-search-button {
+    border: none;
+    color: var(--text);
+    box-shadow: none;
+    background: var(--background);
     font-size: 20pt;
 }
 
