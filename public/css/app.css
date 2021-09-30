@@ -309,6 +309,10 @@ th, td {
     color: #f6f6f6;
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
+
 .regular {
     font-weight: 400;
 }
