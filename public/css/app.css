@@ -661,7 +661,7 @@ article {
     }
 
     #search_container {
-      display: block;
+      display: grid;
     }
 
     nav #nav_links {
