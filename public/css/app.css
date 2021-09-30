@@ -1191,6 +1191,13 @@ details.docnav-topic {
     padding: 0 8px 10px;
 }
 
+.docnav-topic > summary {
+  list-style: none;
+}
+.docnav-topic > summary::-webkit-details-marker {
+  display: none;
+}
+
 button#back_button, button#next_button {
     font-size: 22px;
     padding: 10px 40px;
