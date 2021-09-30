@@ -19,4 +19,10 @@ class MenuService {
 			return [$item->topic => $item];
 		});
 	}
+
+	public function getSecurityMenu() {
+		$contentService = resolve(ContentService::class);
+
+		return $contentService->all()->where('parent', 'Security');
+	}
 }
