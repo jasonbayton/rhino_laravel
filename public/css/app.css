@@ -1326,7 +1326,7 @@ ul.related-posts-list li a {
 
 section#grid_container {
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 320px auto;
     grid-template-rows: auto;
     grid-column-gap: 30px;
     grid-row-gap: 0px;
