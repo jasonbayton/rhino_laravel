@@ -442,6 +442,7 @@ article {
     grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    display: none;
 }
 
 #search_container_nav {
@@ -635,6 +636,14 @@ article {
 @media (min-width: 600px) {
     .quick-search {
         justify-self: right;
+    }
+
+    #search_container_nav {
+      display: none;
+    }
+
+    #search_container {
+      display: block;
     }
 
     #mobile_aside_contents {
