@@ -638,14 +638,6 @@ article {
         justify-self: right;
     }
 
-    #search_container_nav {
-      display: none;
-    }
-
-    #search_container {
-      display: block;
-    }
-
     #mobile_aside_contents {
         display: none;
     }
@@ -658,6 +650,14 @@ article {
 @media screen and (max-width: 600px) {
     .rhino_search {
         float: none;
+    }
+
+    #search_container_nav {
+      display: none;
+    }
+
+    #search_container {
+      display: block;
     }
 
     nav #nav_links {
