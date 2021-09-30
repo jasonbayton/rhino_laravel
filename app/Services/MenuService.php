@@ -10,7 +10,7 @@ class MenuService {
 		return collect(Yaml::parseFile(resource_path('yaml/menu.yml')));
 	}
 
-	public function getSupportMenu() {
+	public function getSupportMenu(): Collection {
 		$contentService = resolve(ContentService::class);
 
 		$supportContent = $contentService->all()->where('parent', 'Support');
@@ -20,7 +20,7 @@ class MenuService {
 		});
 	}
 
-	public function getSecurityMenu() {
+	public function getSecurityMenu(): Collection {
 		$contentService = resolve(ContentService::class);
 
 		return $contentService->all()->where('parent', 'Security');
