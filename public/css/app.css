@@ -459,6 +459,7 @@ article {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-area: 1/2/2/3;
+    align-items: center;
 }
 
 .rhino_search {
@@ -493,13 +494,11 @@ article {
 
 .quick-search {
     border-bottom: 4px solid #fff;
-    display: flex;
-    justify-content: flex-start;
     align-items: stretch;
 }
 
 .nav-quick-search {
-    border-bottom: 0px;
+    border-bottom: 4px solid #dfdfdf;
 }
 
 .search-input {
@@ -513,6 +512,7 @@ article {
 .nav-search-input {
   background: var(--background);
   color: var(--text);
+  padding: 15px 15px;
 }
 
 .search-input::-webkit-input-placeholder {
