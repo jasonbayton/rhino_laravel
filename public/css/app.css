@@ -446,7 +446,7 @@ article {
 
 #search_container_nav {
     background-color: var(--background);
-    padding: 10px 20px;
+    padding: 0;
     font-size: 22px;
     position: relative;
     display: grid;
@@ -507,6 +507,7 @@ article {
 
 .nav-search-input {
   background: var(--background);
+  color: var(--text);
 }
 
 .search-input::-webkit-input-placeholder {
