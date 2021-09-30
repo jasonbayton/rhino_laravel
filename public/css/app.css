@@ -1078,12 +1078,15 @@ h3.section-title {
     font-weight: 300;
 }
 
-.content-grid {
-    margin: 2em;
-    display: grid;
-    gap: 20px;
-    grid-auto-flow: dense;
-    grid-template-columns: minmax(100px, max-content) repeat(auto-fit, 33%);
+
+@media (min-width: 900px) {
+    .content-grid {
+        margin: 2em;
+        display: grid;
+        gap: 20px;
+        grid-auto-flow: dense;
+        grid-template-columns: minmax(100px, max-content) repeat(auto-fit, 33%);
+    }
 }
 
 .grid-topic {
@@ -2148,8 +2151,15 @@ ul.toc-list li ul {
     section#content_container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-column-gap: 0px;
-        padding-right: 0px;
+        grid-column-gap: 0;
+        padding-right: 0;
+    }
+
+    section#grid_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        padding-right: 0;
     }
 
     #content_container aside {

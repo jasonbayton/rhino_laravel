@@ -19,10 +19,16 @@ class ContentController extends Controller {
 
 		$path = Str::before(request()->path(), '/');
 
+		$method = 'get' . ucfirst($path) . 'Menu';
 
-		$menu = $menuService->getSupportMenu();
+		if (method_exists($menuService, $method)) {
+			$menu = $menuService->$method();
+		} else {
+			$menu = $menuService->getSupportMenu();
+		}
 
 		return view($documentType, [
+			'nav' => 'navs.' . $path,
 			'content' => $content,
 			'navigation' => $contentService->getNavEntries($path),
 			'topics' => $contentService->getTopicEntries($content->parentID, Str::before($route, '/')),

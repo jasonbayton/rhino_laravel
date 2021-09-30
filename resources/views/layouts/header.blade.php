@@ -49,7 +49,6 @@
 							{{ $menu['name'] }}
 						</summary>
 						<ul>
-							<li><a href="{{ $menu['href'] }}">{{ $menu['name'] }}</a></li>
 							@if(isset($menu['items']))
 								@foreach($menu['items'] as $subMenuItem)
 									<li><a href="{{ $subMenuItem['href'] }}">{{ $subMenuItem['name'] }}</a></li>
