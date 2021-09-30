@@ -1147,20 +1147,21 @@ h3.section-title {
 }
 
 .docnav-topic ul li::marker {
-    content: "\f15c";
+    /* content: "\f15c";
     font-weight: 300;
     font-family: "Font Awesome 5 Pro";
-    padding-right: 5px;
+    padding-right: 5px; */
 }
 
 .docnav-topic ul li a {
     font-size: 16px;
+    border: 0;
 }
 
 .docnav-topic-title::marker {
-    font-family: "Font Awesome 5 Pro";
+    /*font-family: "Font Awesome 5 Pro";
     content: "\f07b";
-    font-weight: 300;
+    font-weight: 300; */
 }
 
 summary.docnav-topic-title {
@@ -1182,10 +1183,12 @@ details.docnav-topic {
 
 .docnav-topic ul {
     padding-inline-start: 25px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .docnav-topic ul li {
-    padding: 0 8px 15px;
+    padding: 0 8px 10px;
 }
 
 button#back_button, button#next_button {
