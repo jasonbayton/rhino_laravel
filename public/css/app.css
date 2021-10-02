@@ -578,7 +578,7 @@ article {
     border: none;
     width: 250px;
     padding: 10px 15px;
-    color: var(--bright);
+    color: var(--text);
     font-size: 14pt;
 }
 
@@ -588,29 +588,33 @@ article {
     background: none;
     box-shadow: none;
     font-size: 25px;
-    color: var(--bright);
+    color: var(--text);
 }
 
 .front-search-input::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     font-size: 14pt;
+    color: #f6f6f6
 }
 
 .front-search-input:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     opacity: 1;
     font-size: 14pt;
+    color: #f6f6f6
 }
 
 .front-search-input::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     opacity: 1;
     font-size: 14pt;
+    color: #f6f6f6
 }
 
 .front-search-input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     font-size: 14pt;
+    color: #f6f6f6
 }
 
 .article-bottom-links {
