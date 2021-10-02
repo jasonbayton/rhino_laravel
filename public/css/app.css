@@ -1901,6 +1901,7 @@ ul.toc-list li ul {
 .numbered-instructions ol {
     list-style: none;
     counter-reset: item;
+    position: relative;
 }
 
 .numbered-instructions ol li {
@@ -1920,6 +1921,8 @@ ul.toc-list li ul {
     font-size: 14px;
     margin-bottom: 5px;
     padding: 4px 1px;
+    position: absolute;
+    left: 0;
 }
 
 .numbered-instructions ol li > ol li::before {
