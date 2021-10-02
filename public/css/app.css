@@ -1933,6 +1933,10 @@ ul.toc-list li ul {
     content: counter(item, lower-latin)!important;
 }
 
+.numbered-instructions ol li ol {
+    margin-top: 5px;
+}
+
 
 /* Media */
 
