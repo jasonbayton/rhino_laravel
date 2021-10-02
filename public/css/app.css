@@ -1898,6 +1898,10 @@ ul.toc-list li ul {
     margin: 0 20px 0 0;
 }
 
+.numbered-instructions {
+    padding-left: 2px;
+}
+
 .numbered-instructions ol {
     list-style: none;
     counter-reset: item;
