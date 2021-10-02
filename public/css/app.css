@@ -594,27 +594,27 @@ article {
 .front-search-input::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     font-size: 14pt;
-    color: #f6f6f6
+    color: #c8c8c8
 }
 
 .front-search-input:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     opacity: 1;
     font-size: 14pt;
-    color: #f6f6f6
+    color: #c8c8c8
 }
 
 .front-search-input::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     opacity: 1;
     font-size: 14pt;
-    color: #f6f6f6
+    color: #c8c8c8
 }
 
 .front-search-input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     font-size: 14pt;
-    color: #f6f6f6
+    color: #c8c8c8
 }
 
 .article-bottom-links {
