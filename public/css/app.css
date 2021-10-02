@@ -1204,6 +1204,10 @@ details.docnav-topic {
     padding: 0 0 10px;
 }
 
+#menu_overlay .docnav-topic ul li {
+    padding: 0;
+}
+
 .docnav-topic > summary {
   list-style: none;
 }
