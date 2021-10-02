@@ -53,7 +53,7 @@
 					@endif
 					<details class="docnav-topic">
 						<summary class="docnav-topic-title">
-							<a href="{{ $menu['href'] }}">{{ $menu['name'] }}</a>
+							{{ $menu['name'] }}
 						</summary>
 						<ul>
 							@if(isset($menu['items']))
