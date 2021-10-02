@@ -1,6 +1,6 @@
 <div id="aside_page">
 	<div class="aside-title" style="cursor: pointer" onclick="toggleNavMenu()">
-		<h2>{{ $content->topic !== '' ? $content->topic : 'Navigation' }}</h2>
+		<h2>Navigation</h2>
 	</div>
 	<div id="aside-menu" class="aside-content-hidden">
 		@foreach($menu as $header => $entries)
