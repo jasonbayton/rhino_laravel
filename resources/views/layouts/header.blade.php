@@ -44,9 +44,15 @@
 			</div>
 			<div class="menu_overlay_content">
 				@foreach($mainMenu as $menu)
+					@if(isset($menu['href']))
+					<div class="docnav-topic">
+						<div class="docnav-topic-title">
+							<a href="{{ $menu['href'] }}">{{ $menu['name'] }}</a>
+						</div>
+					</div>
 					<details class="docnav-topic">
 						<summary class="docnav-topic-title">
-							{{ $menu['name'] }}
+							<a href="{{ $menu['href'] }}">{{ $menu['name'] }}</a>
 						</summary>
 						<ul>
 							@if(isset($menu['items']))
