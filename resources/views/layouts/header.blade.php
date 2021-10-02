@@ -63,6 +63,7 @@
 							@endif
 						</ul>
 					</details>
+					@endif
 				@endforeach
 			</div>
 		</div>
