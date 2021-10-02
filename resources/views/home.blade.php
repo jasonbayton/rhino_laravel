@@ -90,12 +90,11 @@
 			<div>
 				<a href="/support" class="card">
 					<div class="card-icon">
-						<i class="fas fa-question-circle"></i>
+						<i class="fas fa-user-headset"></i>
 					</div>
-					<div class="card-header">FAQs</div>
+					<div class="card-header">Knowledge base</div>
 					<div class="card-text">
-						Product non-specific frequently asked questions. Check here if you can't find and answer
-						elsewhere
+						For all of your support needs. Check here if you have a question that demands an answer
 					</div>
 				</a>
 			</div>
