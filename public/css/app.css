@@ -1173,6 +1173,11 @@ summary.docnav-topic-title {
     font-weight: 300;
 }
 
+#menu_overlay .docnav-topic-title {
+    font-size: 22px;
+    font-weight: 300;
+}
+
 summary {
     cursor: pointer;
 }
@@ -1182,6 +1187,10 @@ details.docnav-topic ul {
 }
 
 details.docnav-topic {
+    padding-bottom: 20px;
+}
+
+#menu_overlay .docnav-topic {
     padding-bottom: 20px;
 }
 
