@@ -50,7 +50,7 @@
 							<a href="{{ $menu['href'] }}">{{ $menu['name'] }}</a>
 						</div>
 					</div>
-					@endif
+					@else
 					<details class="docnav-topic">
 						<summary class="docnav-topic-title">
 							{{ $menu['name'] }}
