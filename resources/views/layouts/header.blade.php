@@ -39,9 +39,9 @@
 			</div>
 		</div>
 		<div id="menu_overlay" class="menu_overlay_hidden">
-			<div class="menu_overlay_title">
+			<h2 class="menu_overlay_title">
 				Main
-			</div>
+			</h2>
 			<div class="menu_overlay_content">
 				@foreach($mainMenu as $menu)
 					@if(isset($menu['href']))
