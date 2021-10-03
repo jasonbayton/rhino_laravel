@@ -1,13 +1,23 @@
-- name: "Device Support"
+- name: "Devices"
   href:
   items:
+    - name: "Rhino DS"
+      href: /devices/ds
+    - name: "Rhino T5se"
+      href: /devices/t5se
+    - name: "Rhino R6"
+      href: /devices/r6
     - name: "Rhino T8"
       href: /devices/t8
     - name: "Rhino C10"
       href: /devices/c10
+    - name: "Rhino M10p"
+      href: /devices/m10p
+    - name: "Rhino K27p"
+      href: /devices/k27p
 - name: "Support"
   href: /support
 - name: "Security"
   href: /security
-- name: "Contact Us"
+- name: "Contact Rhino"
   href: /support/escalate
