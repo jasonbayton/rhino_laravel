@@ -691,6 +691,10 @@ article {
         font-size: 20pt;
     }
 
+    .menu_overlay_title {
+      font-size: 20pt;
+    }
+
     .toc-content-hidden {
         display: none;
     }
@@ -729,7 +733,7 @@ article {
     }
 
     #menu_overlay {
-        background: var(--rhino-blue);
+        background: #333333;
         height: 100%;
         width: calc(100% - 40px);
         z-index: 999;
@@ -752,9 +756,9 @@ article {
 }
 
 .menu_overlay_title {
-    font-size: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
+    margin-top: 0;
 }
 
 .menu_overlay_content {
