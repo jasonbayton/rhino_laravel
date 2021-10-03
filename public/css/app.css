@@ -1177,6 +1177,12 @@ summary.docnav-topic-title {
     font-weight: 300;
 }
 
+summary.docnav-topic-title::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Pro';
+    padding-left: 10px;
+}
+
 #menu_overlay .docnav-topic-title {
     font-size: 22px;
     font-weight: 300;
