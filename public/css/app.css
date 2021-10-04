@@ -1399,10 +1399,6 @@ section#content_container {
     padding: 20px 0;
 }
 
-.device-image {
-  justify-self: center;
-}
-
 .device-details item {
     display: block;
 }
@@ -2119,6 +2115,10 @@ ul.toc-list li ul {
       grid-template-rows: auto;
       grid-column-gap: 0px;
       grid-row-gap: 20px;
+    }
+
+    .device-image {
+      justify-self: center;
     }
 
     #latest_posts_container {
