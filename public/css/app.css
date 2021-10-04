@@ -707,6 +707,7 @@ article {
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
+        margin-left: 10px;
     }
 
     .change .bar1 {
