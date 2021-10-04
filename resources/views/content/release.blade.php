@@ -40,14 +40,15 @@
 					  </tr>
 					</thead>
 					<tbody>
+						@foreach($content->getChildren() as $result)
 					  <tr>
 					    <td class="tg-0lax">
-								@if($content->softwaresku)
+								@if($result->softwaresku)
 								{{ $result->softwaresku }}
 								@endif
 							</td>
 					    <td class="tg-0lax">
-								@if($content->releasetype)
+								@if($result->releasetype)
 								{{ $result->releasetype }}
 								@endif
 							</td>
@@ -55,11 +56,12 @@
 								{{ $result->title }}
 							</td>
 					    <td class="tg-0lax">
-								@if($content->softwarespl)
+								@if($result->softwarespl)
 								{{ $result->softwarespl }}
 								@endif
 							</td>
 					  </tr>
+						@endforeach
 					</tbody>
 				</table>
 
