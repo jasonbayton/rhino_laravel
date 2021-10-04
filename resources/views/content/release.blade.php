@@ -19,7 +19,7 @@
 				<div id="literal_content" class="js-toc-content">
 					{!! $content->content() !!}
 				</div>
-
+			@endif
 			<h2>Releases</h2>
 			<div id="releases_list">
 				<table class="tg" id="support_table">
