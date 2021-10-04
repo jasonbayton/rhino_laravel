@@ -11,6 +11,7 @@ class ContentController extends Controller {
 	protected array $documentTypes = [
 		'doc_parent' => 'content.doc',
 		'grid' => 'content.grid',
+		'release' => 'content.release',
 	];
 
 	public function __invoke(string $route, ContentService $contentService, MenuService $menuService) {
