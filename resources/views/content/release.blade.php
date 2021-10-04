@@ -43,7 +43,9 @@
 						@foreach($content->getChildren() as $result)
 					  <tr>
 					    <td class="tg-0lax">
-								{{ $result->softwaresku }}
+								@isset($result->softwaresku)
+									{{ $result->softwaresku }}
+								@endisset
 							</td>
 					    <td class="tg-0lax">
 								{{ $result->releasetype }}
