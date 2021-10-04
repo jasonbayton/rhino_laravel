@@ -14,7 +14,7 @@
     <meta property="og:url" content="{{ config('app.url') }}"/>
 
     <!-- Scripts -->
-    <!--script src="{{ asset('js/darkmode.js') }}"></script-->
+    <script src="{{ asset('js/darkmode.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
