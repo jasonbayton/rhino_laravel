@@ -1695,9 +1695,17 @@ footer {
     color: var(--bright);
 }
 
+.text-primary {
+    color: var(--primary);
+}
+
 .callout-success {
     background-color: var(--contrast-secondary);
     color: var(--bright);
+}
+
+.text-success {
+    color: var(--contrast-secondary);
 }
 
 .callout-danger {
@@ -1705,9 +1713,17 @@ footer {
     color: var(--bright);
 }
 
+.text-danger {
+    color: var(--contrast-tertiary);
+}
+
 .callout-warning {
     background-color: var(--contrast);
     color: var(--bright);
+}
+
+.text-warning {
+    color: var(--contrast);
 }
 
 .callout-info {
@@ -1715,9 +1731,17 @@ footer {
     color: var(--bright);
 }
 
+.text-info {
+    color: var(--accent);
+}
+
 .callout-dark {
     background-color: var(--dark);
     color: var(--bright);
+}
+
+.text-dark {
+    color: var(--dark);
 }
 
 /*Tocbot*/
