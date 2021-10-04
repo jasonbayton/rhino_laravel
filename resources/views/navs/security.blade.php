@@ -3,7 +3,7 @@
 		<h2>Navigation</h2>
 	</div>
 	<div id="aside-menu" class="aside-content-hidden">
-		<ul>
+		<ul class="docnav-topic">
 			@foreach($menu as $header => $entry)
 				<li>
 					<a href="{{ $entry->url }}">{{ $entry->title }}</a>
