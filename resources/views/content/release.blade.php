@@ -54,7 +54,7 @@
 							</td>
 					    <td class="tg-0lax">
 								@isset($result->title)
-									{{ $result->title }}
+									<a href="{{ $result->url }}">{{ $result->title }}</a>
 								@endisset
 							</td>
 					    <td class="tg-0lax">
