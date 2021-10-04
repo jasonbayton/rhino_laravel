@@ -1952,7 +1952,7 @@ ul.toc-list li ul {
 
 .numbered-instructions ol li {
     counter-increment: item;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .numbered-instructions ol li:before {
@@ -1976,7 +1976,7 @@ ul.toc-list li ul {
 }
 
 .numbered-instructions ol li ol {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 #darktoggle {
