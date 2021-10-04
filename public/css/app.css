@@ -1398,6 +1398,11 @@ section#content_container {
 .device-details {
     padding: 20px 0;
 }
+
+.device-image {
+  justify-self: center;
+}
+
 .device-details item {
     display: block;
 }
