@@ -63,7 +63,6 @@
 					@endforeach
 				</ul>
 			</div>
-			@endif
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
 							style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
