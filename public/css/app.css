@@ -751,9 +751,15 @@ article {
     }
 }
 
-.menu_overlay_title {
-    padding-bottom: 10px;
+#menu_header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
     border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.menu_overlay_title {
     margin-top: 0;
 }
 
@@ -1965,6 +1971,12 @@ ul.toc-list li ul {
     margin-top: 5px;
 }
 
+#darktoggle {
+  justify-self: end;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
 
 /* Media */
 
@@ -2034,12 +2046,6 @@ ul.toc-list li ul {
     #nav_links a:hover {
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    #darktoggle {
-        justify-self: center;
-        padding-top: 20px;
-        cursor: pointer;
     }
 
     .aside-content-hidden {
