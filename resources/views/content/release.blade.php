@@ -42,16 +42,22 @@
 					<tbody>
 					  <tr>
 					    <td class="tg-0lax">
+								@if($content->softwaresku)
 								{{ $result->softwaresku }}
+								@endif
 							</td>
 					    <td class="tg-0lax">
+								@if($content->releasetype)
 								{{ $result->releasetype }}
+								@endif
 							</td>
 					    <td class="tg-0lax">
 								{{ $result->title }}
 							</td>
 					    <td class="tg-0lax">
+								@if($content->softwarespl)
 								{{ $result->softwarespl }}
+								@endif
 							</td>
 					  </tr>
 					</tbody>
