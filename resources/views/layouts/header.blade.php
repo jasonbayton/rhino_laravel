@@ -16,14 +16,14 @@
 					RHINO
 				</div>
 			</a>
-			<nav>
-				<!--div id="nav_links">
+			<!--nav>
+				<div id="nav_links">
 					<a href="/support">Support</a> <a href="/security">Security</a>
 				</div>
 				<div id="darktoggle">
 					<i class="fas fa-clouds-moon"></i>
-				</div-->
-			</nav>
+				</div>
+			</nav-->
 			<div id="search_container_nav">
 				<form action="/search" method="GET" class="quick-search nav-quick-search">
 					<input type="text" placeholder="Search..." name="search" class="search-input nav-search-input">
@@ -39,9 +39,14 @@
 			</div>
 		</div>
 		<div id="menu_overlay" class="menu_overlay_hidden">
-			<h2 class="menu_overlay_title">
-				Main
-			</h2>
+			<div id="menu_header">
+				<h2 class="menu_overlay_title">
+					Menu
+				</h2>
+				<div id="darktoggle">
+					<i class="fas fa-clouds-moon"></i>
+				</div>
+			</div>
 			<div class="menu_overlay_content">
 				@foreach($mainMenu as $menu)
 					@if(isset($menu['href']))
