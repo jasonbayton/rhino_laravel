@@ -4,6 +4,9 @@
 	</div>
 	<div id="aside-menu" class="aside-content-hidden docnav-topic">
 		<ul>
+			<li>
+				<a href="/security">Security</a>
+			</li>
 			@foreach($menu as $header => $entry)
 				<li>
 					<a href="{{ $entry->url }}">{{ $entry->title }}</a>
@@ -18,6 +21,9 @@
 				</li>
 				@endif
 			@endforeach
+			<li>
+				<a href="/support">Knowledge base</a>
+			</li>
 		</ul>
 	</div>
 </div>
