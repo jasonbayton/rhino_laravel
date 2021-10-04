@@ -43,22 +43,16 @@
 						@foreach($content->getChildren() as $result)
 					  <tr>
 					    <td class="tg-0lax">
-								@if($result->softwaresku)
 								{{ $result->softwaresku }}
-								@endif
 							</td>
 					    <td class="tg-0lax">
-								@if($result->releasetype)
 								{{ $result->releasetype }}
-								@endif
 							</td>
 					    <td class="tg-0lax">
 								{{ $result->title }}
 							</td>
 					    <td class="tg-0lax">
-								@if($result->softwarespl)
 								{{ $result->softwarespl }}
-								@endif
 							</td>
 					  </tr>
 						@endforeach
