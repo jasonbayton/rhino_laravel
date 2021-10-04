@@ -30,6 +30,9 @@ class ContentEntry implements Feedable {
 	public $topic;
 	public $order;
 	public $appliesTo;
+	public $softwaresku;
+	public $releasetype;
+	public $softwarespl;
 	public $yamlVars;
 
 	public function __construct(array $entry) {
@@ -48,6 +51,10 @@ class ContentEntry implements Feedable {
 		$this->childTopics = $entry['childTopics'] ?? [];
 		$this->topic = $entry['topic'];
 		$this->order = $entry['order'] ?? 0;
+		$this->appliesTo = $entry['appliesTo'] ?? [];
+		$this->softwaresku = $entry['softwaresku'] ?? [];
+		$this->releasetype = $entry['releasetype'] ?? [];
+		$this->softwarespl = $entry['softwarespl'] ?? [];
 		$this->appliesTo = $entry['appliesTo'] ?? [];
 	}
 
@@ -147,6 +154,6 @@ class ContentEntry implements Feedable {
 			->summary($this->content())
 			->updated($this->updated ?? $this->date)
 			->link(url($this->url))
-			->author('Jason Bayton');
+			->author('Rhino Team');
 	}
 }
