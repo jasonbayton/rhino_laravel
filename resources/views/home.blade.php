@@ -78,7 +78,7 @@
 			</div>
 			<div>
 				<a href="#" class="card">
-					<div class="card-icon">
+					<div class="card-icon card-disabled">
 						<!--i class="fas fa-play-circle"></i--><i class="far fa-construction"></i>
 					</div>
 					<div class="card-header">Product Videos</div>
@@ -132,7 +132,7 @@
 			</div>
 			<div>
 				<a href="#" class="card">
-					<div class="card-icon">
+					<div class="card-icon card-disabled">
 						<!--i class="fas fa-comments-alt"></i--><i class="far fa-construction"></i>
 					</div>
 					<div class="card-header">Community Forum</div>

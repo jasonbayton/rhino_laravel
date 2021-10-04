@@ -1915,6 +1915,11 @@ ul.toc-list li ul {
     color: #646cf5;
 }
 
+.card-disabled {
+  color: var(--text);
+  opacity: 0.2;
+}
+
 .rhino-security-icon {
     color: var(--rhino-blue);
     margin: 0 20px 0 0;
