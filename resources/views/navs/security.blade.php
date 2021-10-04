@@ -2,8 +2,8 @@
 	<div class="aside-title" onclick="toggleNavMenu()">
 		<h2>Navigation</h2>
 	</div>
-	<div id="aside-menu" class="aside-content-hidden">
-		<ul class="docnav-topic">
+	<div id="aside-menu" class="aside-content-hidden docnav-topic">
+		<ul>
 			@foreach($menu as $header => $entry)
 				<li>
 					<a href="{{ $entry->url }}">{{ $entry->title }}</a>
