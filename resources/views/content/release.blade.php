@@ -48,13 +48,19 @@
 								@endisset
 							</td>
 					    <td class="tg-0lax">
-								{{ $result->releasetype }}
+								@isset($result->releasetype)
+									{{ $result->releasetype }}
+								@endisset
 							</td>
 					    <td class="tg-0lax">
-								{{ $result->title }}
+								@isset($result->title)
+									{{ $result->title }}
+								@endisset
 							</td>
 					    <td class="tg-0lax">
-								{{ $result->softwarespl }}
+								@isset($result->softwarespl)
+									{{ $result->softwarespl }}
+								@endisset
 							</td>
 					  </tr>
 						@endforeach
