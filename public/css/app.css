@@ -698,7 +698,6 @@ article {
     .burger {
         display: block;
         cursor: pointer;
-        width: 50px;
     }
 
     .bar1, .bar2, .bar3 {
