@@ -18,6 +18,13 @@
 - name: "Support"
   href: /support
 - name: "Security"
-  href: /security
+  href:
+  items:
+    - name: "Rhino security overview"
+      href: /security
+    - name: "Software releases"
+      href: /security/releases
+    - name: "Vulnerability disclosure"
+      href: /security/vulnerability-disclosure
 - name: "Contact Rhino"
   href: /support/escalate
