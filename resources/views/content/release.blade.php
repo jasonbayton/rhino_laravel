@@ -66,8 +66,10 @@
 								@endisset
 							</td>
 					    <td class="tg-0lax">
-								@isset($result->otapackageurl) && $result->otapackageurl !== '')
+								@isset($result->otapackageurl)
+								@if($result->otapackageurl !== '')
 									<a href="{{ $result->otapackageurl }}"><i class="far fa-cloud-download-alt"></i></a>
+								@endif
 								@endisset
 							</td>
 					  </tr>
