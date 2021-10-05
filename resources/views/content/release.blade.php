@@ -37,6 +37,9 @@
 					    <th class="tg-0lax">
 								SPL
 							</th>
+					    <th class="tg-0lax">
+								OTA download
+							</th>
 					  </tr>
 					</thead>
 					<tbody>
@@ -60,6 +63,11 @@
 					    <td class="tg-0lax">
 								@isset($result->softwarespl)
 									{{ $result->softwarespl }}
+								@endisset
+							</td>
+					    <td class="tg-0lax">
+								@isset($result->otadownload)
+									<a href="{{ $result->otadownload }}"><i class="far fa-cloud-download-alt"></i></a>
 								@endisset
 							</td>
 					  </tr>
