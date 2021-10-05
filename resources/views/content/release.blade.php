@@ -38,7 +38,7 @@
 								SPL
 							</th>
 					    <th class="tg-0lax">
-								OTA DL
+								OTA
 							</th>
 					  </tr>
 					</thead>
