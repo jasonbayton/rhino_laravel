@@ -50,6 +50,7 @@ class ContentEntry implements Feedable {
 		$this->parentID = $entry['parentID'] ?? null;
 		$this->childTopics = $entry['childTopics'] ?? [];
 		$this->topic = $entry['topic'];
+		$this->softwaresku = $entry['softwaresku'];
 		$this->order = $entry['order'] ?? 0;
 		$this->appliesTo = $entry['appliesTo'] ?? [];
 	}
