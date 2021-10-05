@@ -22,6 +22,8 @@
 			@endif
 			<h2>Releases</h2>
 			<div id="releases_list">
+				@foreach($content->getChildren() as $skuarray)
+					@foreach($skuarray->softwaresku)
 				<table class="tg" id="support_table">
 					<thead>
 					  <tr>
@@ -66,6 +68,8 @@
 						@endforeach
 					</tbody>
 				</table>
+					@endforeach
+				@endforeach
 			</div>
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
