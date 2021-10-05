@@ -29,7 +29,7 @@
 								SKU
 							</th>
 					    <th class="tg-0lax">
-								TYPE
+								Type
 							</th>
 					    <th class="tg-0lax">
 								Build #
@@ -38,7 +38,7 @@
 								SPL
 							</th>
 					    <th class="tg-0lax">
-								OTA download
+								OTA DL
 							</th>
 					  </tr>
 					</thead>
