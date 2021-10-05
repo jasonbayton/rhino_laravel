@@ -23,6 +23,7 @@
 			<h2>Releases</h2>
 			<div id="releases_list">
 				@foreach($content->getChildren() as $skuarray)
+				@isset($result->softwaresku)
 					@foreach($skuarray->softwaresku)
 				<table class="tg" id="support_table">
 					<thead>
@@ -69,6 +70,7 @@
 					</tbody>
 				</table>
 					@endforeach
+				@endisset	
 				@endforeach
 			</div>
 			<div class="article-bottom-links">
