@@ -33,7 +33,7 @@ class ContentEntry implements Feedable {
 	public $softwaresku;
 	public $releasetype;
 	public $softwarespl;
-	public $otadownload;
+	public $otapackageurl;
 	public $yamlVars;
 
 	public function __construct(array $entry) {
@@ -55,7 +55,7 @@ class ContentEntry implements Feedable {
 		$this->softwaresku = $entry['softwaresku'] ?? '';
 		$this->softwarespl = $entry['softwarespl'] ?? '';
 		$this->releasetype = $entry['releasetype'] ?? '';
-		$this->otadownload = $entry['otadownload'] ?? '';
+		$this->otapackageurl = $entry['otapackageurl'] ?? '';
 		$this->appliesTo = $entry['appliesTo'] ?? [];
 	}
 

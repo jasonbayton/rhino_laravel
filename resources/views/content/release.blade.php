@@ -66,8 +66,8 @@
 								@endisset
 							</td>
 					    <td class="tg-0lax">
-								@isset($result->otadownload)
-									<a href="{{ $result->otadownload }}"><i class="far fa-cloud-download-alt"></i></a>
+								@isset($result->otapackageurl)
+									<a href="{{ $result->otapackageurl }}"><i class="far fa-cloud-download-alt"></i></a>
 								@endisset
 							</td>
 					  </tr>
