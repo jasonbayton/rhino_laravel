@@ -51,7 +51,7 @@ class ContentEntry implements Feedable {
 		$this->childTopics = $entry['childTopics'] ?? [];
 		$this->topic = $entry['topic'];
 		$this->order = $entry['order'] ?? 0;
-		$this->softwaresku = $entry['softwaresku'];
+		$this->softwaresku = $entry['softwaresku'] ??;
 		$this->appliesTo = $entry['appliesTo'] ?? [];
 	}
 
