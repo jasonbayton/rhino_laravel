@@ -66,12 +66,6 @@
 						@endforeach
 					</tbody>
 				</table>
-
-				<ul>
-					@foreach($content->getChildren() as $result)
-						<li><a href="{{ $result->url }}">{{ $result->title }}</a></li>
-					@endforeach
-				</ul>
 			</div>
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
