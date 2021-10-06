@@ -8,7 +8,7 @@ class AssetController extends Controller {
 
 	public function __invoke(string $route) {
 		try {
-			return Storage::download($route);
+			return Storage::drive('assets')->download('/'. $route);
 		} catch (\Throwable $throwable) {
 			abort(404);
 		}
