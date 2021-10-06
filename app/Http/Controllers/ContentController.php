@@ -19,7 +19,7 @@ class ContentController extends Controller {
 		$content = $contentService->getByUrl($route);
 
 		// Handle people loading content directly which is not published
-		if ($content->published !== 'true' || 'private') {
+		if ($content->published === 'false') {
 			abort(404);
 		}
 
