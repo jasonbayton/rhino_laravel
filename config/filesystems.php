@@ -35,6 +35,11 @@ return [
             'root' => storage_path('app'),
         ],
 
+	    'assets' => [
+            'driver' => 'local',
+            'root' => storage_path(config('database.content_location') . '/assets'),
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),

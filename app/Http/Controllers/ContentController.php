@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Str;
 use App\Services\MenuService;
 use App\Services\ContentService;
+use Illuminate\Support\Facades\Log;
 
 class ContentController extends Controller {
 
@@ -26,6 +27,12 @@ class ContentController extends Controller {
 			$menu = $menuService->$method();
 		} else {
 			$menu = $menuService->getSupportMenu();
+		}
+
+		// This is to handle unexpected views
+		if (!view()->exists($documentType) || !view()->exists('navs.' . $path)) {
+			Log::error('A view was loaded which did not exist for path ' . $path);
+			abort(404);
 		}
 
 		return view($documentType, [

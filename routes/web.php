@@ -17,6 +17,6 @@ Route::get('/search', [SearchController::class, '__invoke']);
 Route::get('/pdf-export{content}', [ExportToPdfController::class, '__invoke'])
 	->where('content', '.*')
 	->name('export-to-pdf');
-Route::get('/assets/{route}', [AssetController::class, '__invoke'])->where('route', '.*');
+Route::get('/_assets/{route}', [AssetController::class, '__invoke'])->where('route', '.*');
 Route::get('{route}', [ContentController::class, '__invoke'])->where('route', '.*');
 
