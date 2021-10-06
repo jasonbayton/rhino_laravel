@@ -29,13 +29,6 @@ class ContentServiceTest extends TestCase {
 	}
 
 	/** @test */
-	public function testGetNavEntriesReturnsTheCorrectAmount() {
-		$navEntries = $this->contentService->getNavEntries();
-
-		$this->assertCount(2, $navEntries);
-	}
-
-	/** @test */
 	public function testContentCanReturnCorrectChildren() {
 		$entry = $this->contentService->getByUrl('security/releases/t8');
 
@@ -47,12 +40,6 @@ class ContentServiceTest extends TestCase {
 		$entries = $this->contentService->search('rhino');
 
 		$this->assertCount(3, $entries);
-	}
-
-	/** @test */
-	public function testCanReturnTheCorrectAmountOfTopics() {
-		$entries = $this->contentService->getTopicEntries('Support');
-		$this->assertCount(2, $entries);
 	}
 
 }

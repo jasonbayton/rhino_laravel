@@ -8,55 +8,52 @@ use Spatie\Feed\FeedItem;
 use Mni\FrontYAML\Parser;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 use App\Services\ContentService;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Date;
 
 class ContentEntry implements Feedable {
 
-	public $title;
-	public $subtitle;
-	public $featuredImage;
-	public $featured;
-	public $date;
-	public $updated;
-	public $url;
-	public $type;
-	public $published;
-	public $parent;
-	public $is_parent;
-	public $parentID;
-	public $childTopics;
-	public $topic;
-	public $order;
-	public $appliesTo;
-	public $softwaresku;
-	public $releasetype;
-	public $softwarespl;
-	public $otapackageurl;
-	public $yamlVars;
+	/** @var bool  */
+	public bool $is_parent;
+
+	/** @var array|string[]  */
+	private array $casts = [
+		'date' => 'datetime',
+		'updated' => 'datetime',
+		'featured' => 'makeBool',
+	];
 
 	public function __construct(array $entry) {
-		$this->title = $entry['title'];
-		$this->subtitle = $entry['subtitle'] ?? '';
-		$this->featuredImage = $entry['featuredImage'] ?? '';
-		$this->featured = $entry['featured'] === 'true';
-		$this->date = Date::parse($entry['date']);
-		$this->updated = $entry['updated'] ? Date::parse($entry['updated']) : null;
-		$this->url = $entry['url'];
-		$this->type = $entry['type'];
-		$this->published = $entry['published'] === 'true';
-		$this->parent = $entry['parent'];
+		collect($entry)->each(function ($item, $key) {
+			if ($item === '') {
+				$item = null;
+			}
+
+			if (Arr::has($this->casts, $key)) {
+				$castMethod = 'cast' . Str::studly($this->casts[$key]);
+
+				if (!method_exists($this, $castMethod)) {
+					throw new \Exception('The selected cast type for this key does not exist. Please check the cast type');
+				}
+
+				$item = $this->$castMethod($item);
+			}
+
+			$this->$key = $item;
+		});
+
+		// These are hardcoded for legacy reasons
 		$this->is_parent = Arr::has($entry, 'is_parent') && $entry['is_parent'] === 'true';
-		$this->parentID = $entry['parentID'] ?? null;
-		$this->childTopics = $entry['childTopics'] ?? [];
-		$this->topic = $entry['topic'];
-		$this->order = $entry['order'] ?? 0;
-		$this->softwaresku = $entry['softwaresku'] ?? '';
-		$this->softwarespl = $entry['softwarespl'] ?? '';
-		$this->releasetype = $entry['releasetype'] ?? '';
-		$this->otapackageurl = $entry['otapackageurl'] ?? '';
-		$this->appliesTo = $entry['appliesTo'] ?? [];
+	}
+
+	private function castDateTime($value): ?Carbon {
+		return $value ? Date::parse($value) : null;
+	}
+
+	private function castMakeBool($value) {
+		return $value === 'true';
 	}
 
 	public function content(): string {
@@ -82,20 +79,6 @@ class ContentEntry implements Feedable {
 
 	public function breadcrumb(): string {
 		return $this->parent . ' <i class="fas fa-caret-right"></i> ' . $this->topic;
-	}
-
-	public function getRelatedContent() {
-		$contentService = new ContentService();
-		return $contentService->all()
-			->filter(fn($entry) => $entry->parentID)
-			->filter(fn($entry) => $entry->parentID === $this->parent)
-			->sortBy('order')
-			->map(fn($entry) => [
-				collect($entry->childTopics)->map(fn($childTopic) => [
-					'topic' => $childTopic,
-					'entries' => $contentService->getByTopic($childTopic),
-				]),
-			])->first();
 	}
 
 	public function getParent(): ?ContentEntry {
@@ -156,5 +139,21 @@ class ContentEntry implements Feedable {
 			->updated($this->updated ?? $this->date)
 			->link(url($this->url))
 			->author('Rhino Team');
+	}
+
+	public function __call($name, $arguments) {
+		if (method_exists($this, $name)) {
+			return $this->$name(...$arguments);
+		}
+
+		throw new \Exception('Uh oh, you used a method name that does not exist. Please check and try again');
+	}
+
+	public function __get($name) {
+		if (property_exists($this, $name)) {
+			return $this->$name;
+		}
+
+		return null;
 	}
 }

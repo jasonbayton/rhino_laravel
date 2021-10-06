@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot(MenuService $menuService) {
+		if ($this->app->environment('local')) {
+			config(['trustedproxy.proxies' => '*']);
+		}
+
 		$mainMenu = $menuService->getMainMenu();
 		if ($mainMenu) {
 			View::share('mainMenu', $mainMenu);
