@@ -20,7 +20,7 @@ class ContentController extends Controller {
 
 		// Handle people loading content directly which is not published
 		if ($content->published === 'false') {
-			abort(404);
+			$content = $contentService->notFound();
 		}
 
 		$documentType = $this->documentTypes[$content->type] ?? 'content.doc';
