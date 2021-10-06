@@ -17,6 +17,12 @@ class ContentController extends Controller {
 
 	public function __invoke(string $route, ContentService $contentService, MenuService $menuService) {
 		$content = $contentService->getByUrl($route);
+
+		// Handle people loading content directly which is not published
+		if ($content->published !== 'true' || 'private') {
+			abort(404);
+		}
+
 		$documentType = $this->documentTypes[$content->type] ?? 'content.doc';
 
 		$path = Str::before(request()->path(), '/');

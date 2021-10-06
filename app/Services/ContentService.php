@@ -16,11 +16,11 @@ class ContentService {
 	}
 
 	public static function getAllFeedItems(): Collection {
-		return (new ContentService())->all()->where('published', '===', true);
+		return (new ContentService())->all()->where('published', '===', 'true');
 	}
 
 	public function all(): Collection {
-		return $this->content;
+		return $this->content->where('published', '===', 'true');
 	}
 
 	public function home(): ContentEntry {

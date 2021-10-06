@@ -83,7 +83,7 @@ class ContentEntry implements Feedable {
 
 	public function getParent(): ?ContentEntry {
 		$contentService = new ContentService();
-		return $contentService->all()->where('parentID', '===', $this->parent)->first();
+		return $contentService->all()->firstWhere('parentID', '===', $this->parent);
 	}
 
 	public function getChildren(): Collection {
@@ -92,12 +92,10 @@ class ContentEntry implements Feedable {
 	}
 
 	public function getAppliesToImages(): ?Collection {
-		return collect($this->appliesTo)->map(function ($device) {
-			return [
-				'image' => '/assets/rhino-' . strtolower($device) . '.png',
-				'device' => $device,
-			];
-		});
+		return collect($this->appliesTo)->map(fn($device) => [
+			'image' => '/assets/rhino-' . strtolower($device) . '.png',
+			'device' => $device,
+		]);
 	}
 
 	public function mailingSignup(): ?string {
