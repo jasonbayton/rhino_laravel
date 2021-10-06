@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ContentEntryTest.testCanHandleStringRepresentationsOfBooleansWhenValueIsEmptyString" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+    <CommandLine>
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="Ubuntu-20.04" />
+      </PhpTestInterpreterSettings>
+    </CommandLine>
+    <TestRunner class="Tests\Unit\Dtos\ContentEntryTest" configuration_file="/var/www/rhino.local/public_html/phpunit.xml" coverage_engine="PHPDBG" file="$PROJECT_DIR$/tests/Unit/Dtos/ContentEntryTest.php" method="testCanHandleStringRepresentationsOfBooleansWhenValueIsEmptyString" scope="XML" />
+    <method v="2" />
+  </configuration>
+</component>
