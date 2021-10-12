@@ -88,7 +88,7 @@ class ContentEntry implements Feedable {
 
 	public function getChildren(): Collection {
 		$contentService = new ContentService();
-		return $contentService->all()->where('parent', '===', $this->parentID)->sortByDesc('date') ?? collect();
+		return $contentService->all()->whereNotNull('parent')->where('parent', '===', $this->parentID)->sortByDesc('date') ?? collect();
 	}
 
 	public function getAppliesToImages(): ?Collection {
