@@ -40,6 +40,10 @@
 					    <th class="tg-0lax">
 								OTA
 							</th>
+							</th>
+					    <th class="tg-0lax">
+								Full
+							</th>
 					  </tr>
 					</thead>
 					<tbody>
@@ -69,6 +73,14 @@
 								@isset($result->otapackageurl)
 								@if($result->otapackageurl !== '')
 									<a href="{{ $result->otapackageurl }}"><i class="far fa-cloud-download-alt"></i></a>
+								@endif
+								@endisset
+							</td>
+							</td>
+					    <td class="tg-0lax">
+								@isset($result->otafullurl)
+								@if($result->otafullurl !== '')
+									<a href="{{ $result->otapackageurl }}"><i class="fas fa-cloud-download-alt"></i></a>
 								@endif
 								@endisset
 							</td>
