@@ -78,9 +78,9 @@
 							</td>
 							</td>
 					    <td class="tg-0lax">
-								@isset($result->otafullurl)
-								@if($result->otafullurl !== '')
-									<a href="{{ $result->otafullurl }}"><i class="fas fa-cloud-download-alt"></i></a>
+								@isset($result->fullotaurl)
+								@if($result->fullotaurl !== '')
+									<a href="{{ $result->fullotaurl }}"><i class="fas fa-cloud-download-alt"></i></a>
 								@endif
 								@endisset
 							</td>
