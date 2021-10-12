@@ -90,14 +90,13 @@
 				</table>
 			</div>
 			<br>
-			<b>Legend</b> <br>
-			<b>SKU</b> - The unique software branch. Global is 001, for reference <br>
+			<p><b>Legend</b></p>
+			<p><b>SKU</b> - The unique software branch. Global is 001, for reference <br>
 			<b>Type</b> - The type of release: maintenance (MR), security (SMR), launch (LR), or initial (IR) <br>
 			<b>Build #</b> - The build number of the software release, used for checking software version applied to the device <br>
 			<b>SPL</b> - The Security Patch Level applied, these update on a 90 day basis and ensure vulnerabilities are fixed <br>
-			<b>OTA<b> - The zip file containing the update, use ADB sideload or drop the zip on SD to update <br>
-			<b>Full</b> - The zip file containing the <i>full</i> update package, can be applied over any previous software version (but not a newer)
-			<br>
+			<b>OTA</b> - The zip file containing the update, use ADB sideload or drop the zip on SD to update <br>
+			<b>Full</b> - The zip file containing the <i>full</i> update package, can be applied over any previous software version (but not a newer)</p>
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
 							style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
