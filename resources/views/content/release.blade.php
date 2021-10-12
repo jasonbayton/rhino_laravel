@@ -80,7 +80,7 @@
 					    <td class="tg-0lax">
 								@isset($result->otafullurl)
 								@if($result->otafullurl !== '')
-									<a href="{{ $result->otapackageurl }}"><i class="fas fa-cloud-download-alt"></i></a>
+									<a href="{{ $result->otafullurl }}"><i class="fas fa-cloud-download-alt"></i></a>
 								@endif
 								@endisset
 							</td>
