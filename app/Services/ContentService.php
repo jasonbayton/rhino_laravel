@@ -60,6 +60,10 @@ class ContentService {
 		return $this->parents()->get($parent) ?? $this->notFound();
 	}
 
+	public function getSkuGroups() {
+		return $this->content->whereNotNull('softwaresku')->groupBy('softwaresku');
+	}
+
 	public function search(string $keyword, bool $exact = false) {
 		$searchParams = collect(explode(' ' , $keyword))->map(fn($keyword) => strtolower($keyword))->toArray();
 

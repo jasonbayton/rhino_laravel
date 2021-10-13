@@ -10,18 +10,16 @@
 			@foreach($menu as $header => $entry)
 				<li>
 					<a href="{{ $entry->url }}">{{ $entry->title }}</a>
-					@if($entry->getChildren())
-
+					@if($entry->getChildren()->isNotEmpty())
 						<ul>
-
 							@foreach($entry->getChildren() as $child)
 								<li>
 									<a href="{{ $child->url }}">{{ $child->title }}</a>
 								</li>
 							@endforeach
 						</ul>
+					@endif
 				</li>
-				@endif
 			@endforeach
 			<li>
 				<a href="/support">Knowledge base</a>
