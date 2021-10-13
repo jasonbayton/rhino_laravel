@@ -77,19 +77,19 @@
 				</a>
 			</div>
 			<div>
-				<a href="#" class="card">
-					<div class="card-icon card-disabled">
-						<!--i class="fas fa-play-circle"></i--><i class="far fa-construction"></i>
+				<a href="/security/releases" class="card">
+					<div class="card-icon text-success">
+						<!--i class="fas fa-play-circle"></i--><i class="fas fa-rocket-launch"></i>
 					</div>
-					<div class="card-header">Product Videos</div>
+					<div class="card-header">Software releases</div>
 					<div class="card-text">
-						Coming soon: View product videos covering common topics including issues, setup, troubleshooting and more
+						View release changelogs for your Rhino devices, and download releases for offline application
 					</div>
 				</a>
 			</div>
 			<div>
 				<a href="/support" class="card">
-					<div class="card-icon">
+					<div class="card-icon rhino-purple">
 						<i class="fas fa-user-headset"></i>
 					</div>
 					<div class="card-header">Knowledge base</div>
@@ -100,15 +100,14 @@
 			</div>
 			<div class="rhino-security">
 				<a href="/security" class="card flexed-card">
-					<div class="card-icon rhino-security-icon">
+					<div class="card-icon rhino-security-icon rhino-blue">
 						<i class="fas fa-shield-check"></i>
 					</div>
 					<div class="rhino-security-text">
 						<div class="card-header">Rhino Security</div>
 						<div class="card-text">
 							View release notes for system updates, support lifecycle for Rhino devices, download OTA
-							updates
-							for offline deployment and view or participate in the Rhino vulnerability program.
+							updates	for offline deployment and view or participate in the Rhino vulnerability program.
 						</div>
 					</div>
 				</a>
@@ -124,8 +123,7 @@
 							<p>Checked our docs and still need help? Suffering issues that may require an RMA under
 								warranty, or repair outside of warranty?</p>
 							<p>Click through for guidance on what to collect before reaching out, and means of contact
-								once
-								you're ready to talk to the Rhino team</p>
+								once you're ready to talk to the Rhino team</p>
 						</div>
 					</div>
 				</a>

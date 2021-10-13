@@ -6,11 +6,12 @@
 		<ul>
 			<li>
 				<a href="/security">Security</a>
-			</li>
+			<ul>
 			@foreach($menu as $header => $entry)
 				<li>
 					<a href="{{ $entry->url }}">{{ $entry->title }}</a>
 					@if($entry->getChildren()->isNotEmpty())
+
 						<ul>
 							@foreach($entry->getChildren() as $child)
 								<li>
@@ -21,6 +22,8 @@
 					@endif
 				</li>
 			@endforeach
+		</ul>
+	</li>
 			<li>
 				<a href="/support">Knowledge base</a>
 			</li>
