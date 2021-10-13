@@ -89,7 +89,7 @@
 			</div>
 			<div>
 				<a href="/support" class="card">
-					<div class="card-icon">
+					<div class="card-icon rhino-purple">
 						<i class="fas fa-user-headset"></i>
 					</div>
 					<div class="card-header">Knowledge base</div>
@@ -100,7 +100,7 @@
 			</div>
 			<div class="rhino-security">
 				<a href="/security" class="card flexed-card">
-					<div class="card-icon rhino-security-icon">
+					<div class="card-icon rhino-security-icon rhino-blue">
 						<i class="fas fa-shield-check"></i>
 					</div>
 					<div class="rhino-security-text">
