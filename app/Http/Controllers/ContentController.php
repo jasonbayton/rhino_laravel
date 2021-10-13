@@ -47,6 +47,7 @@ class ContentController extends Controller {
 			'content' => $content,
 			'navigation' => $contentService->getNavEntries($path),
 			'topics' => $contentService->getTopicEntries($content->parentID, Str::before($route, '/')),
+			'allTopics' => $contentService->getTopicEntries(null, Str::before($route, '/')),
 			'menu' => $menu,
 		]);
 	}

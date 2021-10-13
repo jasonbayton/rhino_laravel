@@ -11,7 +11,9 @@
 				<li>
 					<a href="{{ $entry->url }}">{{ $entry->title }}</a>
 					@if($entry->getChildren())
+
 						<ul>
+
 							@foreach($entry->getChildren() as $child)
 								<li>
 									<a href="{{ $child->url }}">{{ $child->title }}</a>

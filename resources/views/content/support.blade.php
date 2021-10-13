@@ -11,7 +11,7 @@
             </h2>
             <!-- foreach topic, output docs in a UL -->
             <div class="content-grid">
-            @foreach($topics as $header => $topic)
+            @foreach($allTopics as $header => $topic)
             <div class="grid-topic">
                 <div class="grid-topic-title">
                 <h4>{{ $header }}</h4>
