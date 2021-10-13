@@ -10,6 +10,20 @@
                 {{ $content->title }}
             </h2>
             <!-- foreach topic, output docs in a UL -->
+            <div class="content-grid">
+            @foreach($topics as $header => $topic)
+            <div class="grid-topic">
+                <div class="grid-topic-title">
+                <h4>{{ $header }}</h4>
+                </div>
+                <ul>
+                    @foreach($topic as $article)
+                        <li>{{ $article->title }}</li>
+                    @endforeach
+                </ul>
+              </div>
+            @endforeach
+          </div>
             @foreach(array_chunk($content->getChildren()->toArray(), 3) as $chunk)
                 <div class="content-grid">
                     @foreach($chunk as $entry)
