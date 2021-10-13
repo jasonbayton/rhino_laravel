@@ -90,15 +90,12 @@
 				</table>
 				<small>
 				<p>
-					<b>Legend</b>
-				</p>
-				<p>
-					<b>SKU</b> - The unique software branch. Global is 001, for reference <br>
-					<b>Type</b> - The type of release: maintenance (MR), security (SMR), launch (LR), or initial (IR) <br>
-					<b>Build #</b> - The build number of the software release, used for checking software version applied to the device <br>
-					<b>SPL</b> - The Security Patch Level applied, these update on a 90 day basis and ensure vulnerabilities are fixed <br>
-					<b>OTA</b> - The zip file containing the update, use ADB sideload or drop the zip on SD to update <br>
-					<b>Full</b> - The zip file containing the <i>full</i> update package, can be applied over any previous software version (but not a newer)
+					<b>SKU</b> - The unique software branch. Global is 001, for reference. <br>
+					<b>Type</b> - The type of release: maintenance (MR), security (SMR), launch (LR), or initial (IR). <br>
+					<b>Build #</b> - The build number of the software release. <br>
+					<b>SPL</b> - The Security Patch Level applied, these are published by Google monthly, and applied to Rhino devices on a 90 day basis. <br>
+					<b>OTA</b> - The OTA file containing the standard, incremental update normally sent to devices. Use <a href="/support/update-via-adb">ADB sideload</a> or <a href="/support/update-via-sdcard">SD upgrade</a> to update. <br>
+					<b>Full</b> - The OTA file containing the <i>full</i> update package which can be applied over any <b>previous</b> software version to bring the device up to date immediately, avoiding multiple incremental updates. Use <a href="/support/update-via-adb">ADB sideload</a> or <a href="/support/update-via-sdcard">SD upgrade</a> to update.
 				</p>
 				</small>
 			</div>
