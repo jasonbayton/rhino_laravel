@@ -16,18 +16,20 @@
 				<div id="article_subtitle">{{ $content->subtitle }}</div>
 			@endif
 			@if($content->content())
-				<div id="literal_content" class="js-toc-content">
+				<div id="literal_content">
 					{!! $content->content() !!}
-					<p>Your Rhino {{ $content->parentID }} is updated throughout it's device lifecycle, no later than 90 days after Google releases
-						their monthly bulletins for security releases, and more often for additional security or functionality fixes as reported by customers
-						and partners.</p>
-					<p>When an update is released for a Rhino device, it may take a period of time for the device to download, update, and ultimately reboot
-						into the new software version. Network conditions, enterprise policies, global replication across OTA servers, and more, may all impact
-						the time taken for the update to become available.</p>
-					<p>The releases below are in date order (newest > oldest). For release information, please click the build number of a release, or to
-						directly download the update, either incremental or full, click the respective download icon.</p> 
 				</div>
 			@endif
+			<div id="literal_content">
+				<p>Your Rhino {{ $content->parentID }} is updated throughout it's device lifecycle, no later than 90 days after Google releases
+					their monthly bulletins for security releases, and more often for additional security or functionality fixes as reported by customers
+					and partners.</p>
+				<p>When an update is released for a Rhino device, it may take a period of time for the device to download, update, and ultimately reboot
+					into the new software version. Network conditions, enterprise policies, global replication across OTA servers, and more, may all impact
+					the time taken for the update to become available.</p>
+				<p>The releases below are in date order (newest > oldest). For release information, please click the build number of a release, or to
+					directly download the update, either incremental or full, click the respective download icon.</p>
+			</div>
 			<h2>Releases</h2>
 			<div id="releases_list">
 				<table class="tg" id="support_table">
