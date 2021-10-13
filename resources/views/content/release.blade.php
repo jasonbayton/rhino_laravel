@@ -32,7 +32,8 @@
 			</div>
 			<h2>Releases</h2>
 			<div id="releases_list">
-				<table class="tg" id="support_table">
+				<div id="support_table">
+				<table class="tg">
 					<thead>
 					  <tr>
 					    <th class="tg-0lax">
@@ -98,7 +99,6 @@
 						@endforeach
 					</tbody>
 				</table>
-				<small>
 				<p>
 					<b>SKU</b> - The unique software branch. Global is 001, for reference. <br>
 					<b>Type</b> - The type of release: maintenance (MR), security (SMR), launch (LR), or initial (IR). <br>
@@ -107,7 +107,7 @@
 					<b>OTA</b> - The OTA file containing the standard, incremental update normally sent to devices. Use <a href="/support/update-via-adb">ADB sideload</a> or <a href="/support/update-via-sdcard">SD upgrade</a> to update. <br>
 					<b>Full</b> - The OTA file containing the <i>full</i> update package which can be applied over any <b>previous</b> software version to bring the device up to date immediately, avoiding multiple incremental updates. Use <a href="/support/update-via-adb">ADB sideload</a> or <a href="/support/update-via-sdcard">SD upgrade</a> to update.
 				</p>
-				</small>
+			</div>
 			</div>
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
