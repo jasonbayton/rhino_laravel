@@ -6,7 +6,6 @@
 		<ul>
 			<li>
 				<a href="/security">Security</a>
-			</li>
 			<ul>
 			@foreach($menu as $header => $entry)
 				<li>
@@ -23,6 +22,7 @@
 				@endif
 			@endforeach
 		</ul>
+	</li>
 			<li>
 				<a href="/support">Knowledge base</a>
 			</li>
