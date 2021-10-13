@@ -47,7 +47,7 @@ class ContentService {
 	}
 
 	public function getTopicEntries(?string $parentId = '', ?string $rootPath = ''): ?Collection {
-		$content = $this->content;
+		$content = $this->content->whereNotNull('topic');
 		if ($parentId) {
 			$content = $this->content->where('parentID', $parentId);
 		}

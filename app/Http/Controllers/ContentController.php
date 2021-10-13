@@ -13,6 +13,7 @@ class ContentController extends Controller {
 		'doc_parent' => 'content.doc',
 		'grid' => 'content.grid',
 		'release' => 'content.release',
+		'support' => 'content.support',
 	];
 
 	public function __invoke(string $route, ContentService $contentService, MenuService $menuService) {
