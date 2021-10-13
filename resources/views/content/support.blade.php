@@ -18,7 +18,7 @@
                 </div>
                 <ul>
                     @foreach($topic as $article)
-                        <li>{{ $article->title }}</li>
+                        <li><a href="{{ $article->url }}">{{ $article->title }}</a></li>
                     @endforeach
                 </ul>
               </div>
