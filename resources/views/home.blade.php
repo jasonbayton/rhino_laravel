@@ -107,8 +107,7 @@
 						<div class="card-header">Rhino Security</div>
 						<div class="card-text">
 							View release notes for system updates, support lifecycle for Rhino devices, download OTA
-							updates
-							for offline deployment and view or participate in the Rhino vulnerability program.
+							updates	for offline deployment and view or participate in the Rhino vulnerability program.
 						</div>
 					</div>
 				</a>
@@ -124,8 +123,7 @@
 							<p>Checked our docs and still need help? Suffering issues that may require an RMA under
 								warranty, or repair outside of warranty?</p>
 							<p>Click through for guidance on what to collect before reaching out, and means of contact
-								once
-								you're ready to talk to the Rhino team</p>
+								once you're ready to talk to the Rhino team</p>
 						</div>
 					</div>
 				</a>
