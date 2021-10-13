@@ -19,13 +19,13 @@
 								</li>
 							@endforeach
 						</ul>
-				</li>
+					</li>
 				@endif
 			@endforeach
+		</ul>
 			<li>
 				<a href="/support">Knowledge base</a>
 			</li>
 		</ul>
-	</ul>
 	</div>
 </div>
