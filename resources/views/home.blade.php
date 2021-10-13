@@ -77,13 +77,13 @@
 				</a>
 			</div>
 			<div>
-				<a href="#" class="card">
-					<div class="card-icon card-disabled">
-						<!--i class="fas fa-play-circle"></i--><i class="far fa-construction"></i>
+				<a href="/security/releases" class="card">
+					<div class="card-icon text-success">
+						<!--i class="fas fa-play-circle"></i--><i class="fas fa-rocket-launch"></i>
 					</div>
-					<div class="card-header">Product Videos</div>
+					<div class="card-header">Software releases</div>
 					<div class="card-text">
-						Coming soon: View product videos covering common topics including issues, setup, troubleshooting and more
+						View release changelogs for your Rhino devices, and download releases for offline application
 					</div>
 				</a>
 			</div>
