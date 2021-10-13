@@ -14,6 +14,7 @@
     --background: #fafafa;
     --dat-purple: #474774;
     --rhino-blue: #121ecd;
+    --rhino-purple: #646cf5;
     --secondary-background: #ffffff;
 }
 
@@ -1749,6 +1750,14 @@ footer {
     color: var(--dark);
 }
 
+.rhino-blue {
+  color: var(--rhino-blue);
+}
+
+.rhino-purple {
+  color: var(--rhino-purple);
+}
+
 /*Tocbot*/
 
 .toc {
@@ -1951,7 +1960,6 @@ ul.toc-list li ul {
 
 .card-icon {
     font-size: 183px;
-    color: #646cf5;
 }
 
 .card-disabled {
@@ -1960,7 +1968,6 @@ ul.toc-list li ul {
 }
 
 .rhino-security-icon {
-    color: var(--rhino-blue);
     margin: 0 20px 0 0;
 }
 
