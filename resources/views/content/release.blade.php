@@ -28,7 +28,7 @@
 					into the new software version. Network conditions, enterprise policies, global replication across OTA servers, and more, may all impact
 					the time taken for the update to become available.</p>
 				<p>The releases below are in date order (newest > oldest). For release information, please click the build number of a release, or to
-					directly download the update, either incremental or full, click the respective download icon.</p>
+					directly download the update (either incremental or full) click the respective download icon.</p>
 			</div>
 			<h2>Releases</h2>
 			<div id="releases_list">
