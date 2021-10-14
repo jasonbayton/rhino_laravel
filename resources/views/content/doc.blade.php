@@ -37,7 +37,7 @@
 					<h4 class="applies-to-header">Applies to:</h4>
 					@foreach($content->getAppliesToImages() as $image)
 						<figure class="device-figure">
-							<img src="{{ $image['image'] }}" alt="{{ $image['device'] }}">
+							<a href="/devices/{{ $image['device'] }}"><img src="{{ $image['image'] }}" alt="{{ $image['device'] }}"></a>
 							<figcaption>{{ $image['device'] }}</figcaption>
 						</figure>
 					@endforeach
