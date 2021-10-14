@@ -50,21 +50,5 @@
       Security
     </summary>
     <!-- list all pages with parent Security here -->
-    <ul>
-    @foreach($securitymenu as $header => $entry)
-      <li>
-        <a href="{{ $entry->url }}">{{ $entry->title }}</a>
-        @if($entry->getChildren()->isNotEmpty())
-          <ul>
-            @foreach($entry->getChildren() as $child)
-              <li>
-                <a href="{{ $child->url }}">{{ $child->title }}</a>
-              </li>
-            @endforeach
-          </ul>
-        @endif
-      </li>
-    @endforeach
-    </ul>
 
   </details>
