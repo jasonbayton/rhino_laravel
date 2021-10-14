@@ -26,14 +26,14 @@
       Support
     </summary>
 
-    @foreach($menu as $header => $entries)
+    @foreach($menu as $suheader => $suentries)
 			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic">
 				<summary class="docnav-topic-title">
-					{{ $header }}
+					{{ $suheader }}
 				</summary>
 				<ul>
-					@foreach($entries as $entry)
-						<li><a href="{{ $entry->url }}">{{ $entry->title }}</a></li>
+					@foreach($suentries as $suentry)
+						<li><a href="{{ $entry->url }}">{{ $suentry->title }}</a></li>
 					@endforeach
 				</ul>
 			</details>
