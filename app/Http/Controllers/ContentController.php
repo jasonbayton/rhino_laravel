@@ -36,7 +36,7 @@ class ContentController extends Controller {
 			$menu = $menuService->getSupportMenu();
 		}
 
-		if (method_exists($menuService)) {
+		if (method_exists($menuService, $method)) {
 				$devicesmenu = $menuService->getDevicesMenu();
 				$securitymenu = $menuService->getSupportMenu();
 		}
