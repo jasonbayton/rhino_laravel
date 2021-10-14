@@ -3,7 +3,7 @@
 		<h2>Navigation</h2>
 	</div>
 	<div id="aside-menu" class="aside-content-hidden docnav-topic">
-    <details>
+    <details open>
       <summary class="docnav-topic-heading">
         Devices
       </summary>
@@ -25,13 +25,13 @@
   </ul>
 </details>
 
-<details>
+<details open>
   <summary class="docnav-topic-heading">
     Support
   </summary>
 </details>
 
-<details>
+<details open>
   <summary class="docnav-topic-heading">
     Security
   </summary>
