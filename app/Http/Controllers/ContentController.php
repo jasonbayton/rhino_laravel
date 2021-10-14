@@ -36,11 +36,6 @@ class ContentController extends Controller {
 			$menu = $menuService->getSupportMenu();
 		}
 
-		if (method_exists($menuService, $method)) {
-				$devicesmenu = $menuService->getDevicesMenu();
-				$securitymenu = $menuService->getSecurityMenu();
-		}
-
 		// This is to handle unexpected views
 		if (!view()->exists($documentType) || !view()->exists('navs.' . $path)) {
 			Log::error('A view was loaded which did not exist for path ' . $path);
