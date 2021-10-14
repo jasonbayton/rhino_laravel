@@ -1191,6 +1191,17 @@ summary.docnav-topic-title::after {
     padding-left: 10px;
 }
 
+summary.docnav-topic-heading {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+summary.docnav-topic-heading::after {
+    content: "\f078";
+    font-family: 'Font Awesome 5 Pro';
+    padding-left: 10px;
+}
+
 #menu_overlay .docnav-topic-title {
     font-size: 22px;
     font-weight: 300;
