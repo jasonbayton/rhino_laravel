@@ -34,7 +34,12 @@ class ContentController extends Controller {
 			$menu = $menuService->$method();
 		} else {
 			$menu = $menuService->getSupportMenu();
-		} 
+		}
+
+		if (method_exists($menuService)) {
+				$devicesmenu = $menuService->getDevicesMenu();
+				$securitymenu = $menuService->getSupportMenu();
+		}
 
 		// This is to handle unexpected views
 		if (!view()->exists($documentType) || !view()->exists('navs.' . $path)) {
