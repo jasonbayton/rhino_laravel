@@ -4,7 +4,7 @@
 	</div>
 	<div id="aside-menu" class="aside-content-hidden docnav-topic">
     <ul>
-    @foreach($menu as $header => $entry)
+    @foreach($devicesmenu as $header => $entry)
       <li>
         <a href="{{ $entry->url }}">{{ $entry->title }}</a>
         @if($entry->getChildren()->isNotEmpty())
