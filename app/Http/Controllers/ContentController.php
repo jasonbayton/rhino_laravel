@@ -38,7 +38,7 @@ class ContentController extends Controller {
 
 		if (method_exists($menuService, $method)) {
 				$devicesmenu = $menuService->getDevicesMenu();
-				$securitymenu = $menuService->getSupportMenu();
+				$securitymenu = $menuService->getSecurityMenu();
 		}
 
 		// This is to handle unexpected views
