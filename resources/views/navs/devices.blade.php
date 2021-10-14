@@ -21,23 +21,4 @@
   </ul>
   </div>
 
-  <details>
-    <summary class="docnav-topic-heading">
-      Support
-    </summary>
-
-    @foreach($menu as $suheader => $suentries)
-			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic">
-				<summary class="docnav-topic-title">
-					{{ $suheader }}
-				</summary>
-				<ul>
-					@foreach($suentries as $suentry)
-						<li><a href="{{ $entry->url }}">{{ $suentry->title }}</a></li>
-					@endforeach
-				</ul>
-			</details>
-		@endforeach
-
-  </details>
 </div>
