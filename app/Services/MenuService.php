@@ -25,4 +25,10 @@ class MenuService {
 
 		return $contentService->all()->where('parent', 'Security');
 	}
+
+	public function getDevicesMenu(): Collection {
+		$contentService = resolve(ContentService::class);
+
+		return $contentService->all()->where('parent', 'Devices');
+	}
 }
