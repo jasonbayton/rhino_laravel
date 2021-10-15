@@ -1223,6 +1223,10 @@ details.docnav-topic {
     padding-bottom: 20px;
 }
 
+.nested-details {
+  padding-top: 20px;
+}
+
 #menu_overlay .docnav-topic {
     padding-bottom: 20px;
 }
