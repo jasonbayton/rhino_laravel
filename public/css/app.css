@@ -1202,6 +1202,10 @@ summary.docnav-topic-heading::after {
     padding-left: 10px;
 }
 
+details[open] > summary.docnav-topic-heading::after {
+    content: "\f077";
+}
+
 #menu_overlay .docnav-topic-title {
     font-size: 22px;
     font-weight: 300;
