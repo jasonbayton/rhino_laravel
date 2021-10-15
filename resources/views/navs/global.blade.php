@@ -2,6 +2,7 @@
   <h2>Navigation</h2>
 </div>
 <div id="aside-menu" class="aside-content-hidden docnav-topic">
+  <div class="globnav-wrapper">
   <details @if($content->parent !== '' && strtolower($content->parent) == "devices") open @endif  class="docnav-topic">
     <summary class="docnav-topic-heading">
       Devices
@@ -24,7 +25,8 @@
     @endforeach
     </ul>
   </details>
-
+</div>
+<div class="globnav-wrapper">
   <details @if($content->parent !== '' && strtolower($content->parent) == "support") open @endif  class="docnav-topic">
     <summary class="docnav-topic-heading">
       Support
@@ -44,7 +46,8 @@
 		@endforeach
 </div>
   </details>
-
+</div>
+<div class="globnav-wrapper">
   <details @if($content->parent !== '' && strtolower($content->parent) == "security") open @endif  class="docnav-topic">
     <summary class="docnav-topic-heading">
       Security
@@ -66,5 +69,5 @@
       </li>
     @endforeach
     </ul>
-
   </details>
+</div>
