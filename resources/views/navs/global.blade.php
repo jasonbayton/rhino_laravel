@@ -31,7 +31,7 @@
     </summary>
 
     @foreach($supportmenu as $header => $entries)
-			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic">
+			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic nested-details">
 				<summary class="docnav-topic-title">
 					{{ $header }}
 				</summary>
