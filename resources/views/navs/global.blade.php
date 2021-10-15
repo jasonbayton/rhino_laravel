@@ -25,7 +25,7 @@
     </ul>
   </details>
 
-  <details>
+  <details @if($content->parent !== '' && strtolower($content->parent) == "support") open @endif  class="docnav-topic">
     <summary class="docnav-topic-heading">
       Support
     </summary>
@@ -45,7 +45,7 @@
 
   </details>
 
-  <details>
+  <details @if($content->parent !== '' && strtolower($content->parent) == "security") open @endif  class="docnav-topic">
     <summary class="docnav-topic-heading">
       Security
     </summary>
