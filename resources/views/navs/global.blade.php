@@ -30,7 +30,7 @@
       Support
     </summary>
 
-    @foreach($menu as $header => $entries)
+    @foreach($supportmenu as $header => $entries)
 			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic">
 				<summary class="docnav-topic-title">
 					{{ $header }}

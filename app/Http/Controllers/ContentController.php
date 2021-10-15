@@ -28,16 +28,8 @@ class ContentController extends Controller {
 
 		$path = Str::before(request()->path(), '/');
 
-		$method = 'get' . ucfirst($path) . 'Menu';
-
-		if (method_exists($menuService, $method)) {
-			$menu = $menuService->$method();
-		} else {
-			$menu = $menuService->getSupportMenu();
-		}
-
 		// This is to handle unexpected views
-		if (!view()->exists($documentType) || !view()->exists('navs.' . $path)) {
+		if (!view()->exists($documentType)) {
 			Log::error('A view was loaded which did not exist for path ' . $path);
 			abort(404);
 		}
@@ -48,7 +40,7 @@ class ContentController extends Controller {
 			'navigation' => $contentService->getNavEntries($path),
 			'topics' => $contentService->getTopicEntries($content->parentID, Str::before($route, '/')),
 			'allTopics' => $contentService->getTopicEntries(null, Str::before($route, '/')),
-			'menu' => $menu,
+			'supportmenu' => $menuService->getSupportMenu(),
 			'devicesmenu' => $menuService->getDevicesMenu(),
 			'securitymenu' => $menuService->getSecurityMenu(),
 		]);

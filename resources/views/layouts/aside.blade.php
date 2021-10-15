@@ -1,5 +1,5 @@
 <div class="aside-container">
-    @include($nav)
+    @include('navs.global')
 {{--	@includeWhen($content->type === 'doc', 'layouts.meta')--}}
 {{--	@includeWhen($content->type === 'doc', 'layouts.doc_nav')--}}
 {{--	@includeWhen($content->type === 'doc_parent' || $content->type === 'grid', 'layouts.page_nav')--}}
