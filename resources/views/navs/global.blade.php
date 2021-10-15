@@ -2,7 +2,7 @@
   <h2>Navigation</h2>
 </div>
 <div id="aside-menu" class="aside-content-hidden docnav-topic">
-  <details @if($content->parent !== '' && strtolower(devices) == strtolower($content->parent)) open @endif  class="docnav-topic">
+  <details>
     <summary class="docnav-topic-heading">
       Devices
     </summary>
