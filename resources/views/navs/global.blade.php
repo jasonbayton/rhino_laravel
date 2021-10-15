@@ -29,9 +29,9 @@
     <summary class="docnav-topic-heading">
       Support
     </summary>
-
+    <div class="nested-details">
     @foreach($supportmenu as $header => $entries)
-			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic nested-details">
+			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic">
 				<summary class="docnav-topic-title">
 					{{ $header }}
 				</summary>
@@ -42,7 +42,7 @@
 				</ul>
 			</details>
 		@endforeach
-
+</div>
   </details>
 
   <details @if($content->parent !== '' && strtolower($content->parent) == "security") open @endif  class="docnav-topic">
