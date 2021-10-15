@@ -1202,7 +1202,7 @@ summary.docnav-topic-heading::after {
     padding-left: 10px;
 }
 
-details[open] > summary.docnav-topic-heading::after {
+details[open] > summary.docnav-topic-heading::after,details[open] > summary.docnav-topic-title::after {
     content: "\f077";
 }
 
