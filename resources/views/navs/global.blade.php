@@ -51,7 +51,7 @@
     </summary>
     <!-- list all pages with parent Security here -->
     <ul>
-    @foreach($devicesmenu as $header => $entry)
+    @foreach($securitymenu as $header => $entry)
       <li>
         <a href="{{ $entry->url }}">{{ $entry->title }}</a>
         @if($entry->getChildren()->isNotEmpty())
