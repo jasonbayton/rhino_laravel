@@ -8,13 +8,13 @@
 		<div class="hero-grid">
 			<div class="pull-left">
 				<div id="hero_intro">
-					<h2>Security & Support</h2>
-					<p>All Rhino devices benefit from security
-						updates within 90 days of release from Google,
-						normally sooner, for up to 5 years. Additionally,
-						Rhino devices receive at least one letter upgrade.</p>
-					<p> Looking for manuals, product support, FAQs or
-						something else? Keep scrolling.</p>
+					<h2>Rhino Support</h2>
+					<p>Looking for support for your Rhino device?</p>
+					<p>The support centre offers help articles, FAQs,
+					product guides, user manuals, and more. Use the
+					search function below or click a device/topic accordingly.</p>
+					<p>Rhino publishes all public device updates as they go out. View
+					Software releases for more information, below.</p>
 				</div>
 			</div>
 			<div class="pull-right">
