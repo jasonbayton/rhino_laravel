@@ -56,7 +56,7 @@
     </summary>
     <!-- list all pages with parent Security here -->
 
-    @foreach(securitymenu as $header => $entry)
+    @foreach($securitymenu as $header => $entry)
     @if($entry->getChildren()->isNotEmpty())
     <details class="docnav-topic">
       <summary class="docnav-topic-heading">
