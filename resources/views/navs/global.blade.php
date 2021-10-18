@@ -70,7 +70,7 @@
         @endforeach
       </ul>
     </details>
-    @elseif($entry->getChildren()->isEmpty())
+    @else
 
     <ul>
     @foreach($securitymenu as $header => $entry)
