@@ -53,21 +53,6 @@
       Security
     </summary>
     <!-- list all pages with parent Security here -->
-    @foreach(securitymenu as $header => $entry)
-    @if($entry->getChildren()->isNotEmpty())
-    <details class="docnav-topic">
-      <summary class="docnav-topic-heading">
-        {{ $entry->title }} <a href="{{ $entry->url }}"><i class="fas fa-external-link-alt"></i></a>
-      </summary>
-      <ul>
-        @foreach($entry->getChildren() as $child)
-          <li>
-            <a href="{{ $child->url }}">{{ $child->title }}</a>
-          </li>
-        @endforeach
-      </ul>
-    </details>
-    @else
     <ul>
     @foreach($securitymenu as $header => $entry)
       <li>
@@ -84,6 +69,5 @@
       </li>
     @endforeach
     </ul>
-    @endforeach
   </details>
 </div>
