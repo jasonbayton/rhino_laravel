@@ -66,8 +66,8 @@
           </li>
         @endforeach
       </ul>
+    </details>
     @else
-      
     <ul>
     @foreach($securitymenu as $header => $entry)
       <li>
@@ -84,5 +84,6 @@
       </li>
     @endforeach
     </ul>
+    @endif
   </details>
 </div>
