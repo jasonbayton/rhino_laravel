@@ -1103,7 +1103,17 @@ h3.section-title {
         display: grid;
         gap: 20px;
         grid-auto-flow: dense;
-        grid-template-columns: minmax(100px, max-content) repeat(auto-fit, 33%);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1100px) {
+    .content-grid {
+        margin: 2em;
+        display: grid;
+        gap: 20px;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
