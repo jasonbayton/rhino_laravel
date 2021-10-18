@@ -1185,7 +1185,12 @@ summary.docnav-topic-title {
     font-weight: 300;
 }
 
-summary.docnav-topic-title::after {
+summary.docnav-topic-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+summary.docnav-topic-title::after,summary.docnav-topic-subtitle::after {
     content: "\f078";
     font-family: 'Font Awesome 5 Pro';
     padding-left: 10px;
