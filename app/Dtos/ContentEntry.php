@@ -64,10 +64,9 @@ class ContentEntry implements Feedable {
 		} catch (\Throwable $throwable) {
 			return '';
 		}
-		$fileContent = $extra->text($fileContent);
-		$parsedContent = $parser->parse($fileContent);
+		$parsedContent = $parser->parse($fileContent, false);
 		$this->yamlVars = $parsedContent->getYAML();
-		return $parsedContent->getContent();
+		return $extra->text($parsedContent->getContent());
 	}
 
 	public function readTime(): string {
