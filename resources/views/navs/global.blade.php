@@ -71,3 +71,47 @@
     </ul>
   </details>
 </div>
+
+<div class="globnav-wrapper">
+  <details @if($content->parent !== '' && strtolower($content->parent) == "security") open @endif  class="docnav-topic">
+    <summary class="docnav-topic-heading">
+      Security
+    </summary>
+    <!-- list all pages with parent Security here -->
+
+    @foreach(securitymenu as $header => $entry)
+    @if($entry->getChildren()->isNotEmpty())
+    <details class="docnav-topic">
+      <summary class="docnav-topic-heading">
+        {{ $entry->title }} <a href="{{ $entry->url }}"><i class="fas fa-external-link-alt"></i></a>
+      </summary>
+      <ul>
+        @foreach($entry->getChildren() as $child)
+          <li>
+            <a href="{{ $child->url }}">{{ $child->title }}</a>
+          </li>
+        @endforeach
+      </ul>
+    </details>
+    @elseif($entry->getChildren()->isEmpty())
+
+    <ul>
+    @foreach($securitymenu as $header => $entry)
+      <li>
+        <a href="{{ $entry->url }}">{{ $entry->title }}</a>
+        @if($entry->getChildren()->isNotEmpty())
+          <ul>
+            @foreach($entry->getChildren() as $child)
+              <li>
+                <a href="{{ $child->url }}">{{ $child->title }}</a>
+              </li>
+            @endforeach
+          </ul>
+        @endif
+      </li>
+    @endforeach
+    </ul>
+    @endif
+    @endforeach
+  </details>
+</div>
