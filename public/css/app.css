@@ -1190,7 +1190,7 @@ summary.docnav-topic-subtitle {
     font-weight: 300;
 }
 
-summary.docnav-topic-title::after,summary.docnav-topic-subtitle::after {
+summary.docnav-topic-title::after,summary.docnav-topic-subtitle::after,summary.docnav-topic-heading::after {
     content: "\f078";
     font-family: 'Font Awesome 5 Pro';
     padding-left: 10px;
@@ -1199,12 +1199,6 @@ summary.docnav-topic-title::after,summary.docnav-topic-subtitle::after {
 summary.docnav-topic-heading {
     font-size: 28px;
     font-weight: 300;
-}
-
-summary.docnav-topic-heading::after {
-    content: "\f078";
-    font-family: 'Font Awesome 5 Pro';
-    padding-left: 10px;
 }
 
 details[open] > summary.docnav-topic-heading::after,details[open] > summary.docnav-topic-title::after {
