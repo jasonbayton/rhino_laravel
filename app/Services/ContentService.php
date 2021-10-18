@@ -5,13 +5,14 @@ namespace App\Services;
 use App\Dtos\ContentEntry;
 use Illuminate\Support\Str;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Storage;
 
 class ContentService {
 
 	protected Collection $content;
 
 	public function __construct() {
-		$content = json_decode(file_get_contents(storage_path(config('database.content_location')) . '/content.json'), true);
+		$content = json_decode(Storage::disk('storageRoot')->get('content.json'), true);
 		$this->content = collect($content)->mapInto(ContentEntry::class);
 	}
 

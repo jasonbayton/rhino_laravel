@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;
+use Illuminate\Support\Facades\Artisan;
 
 class AppDeployment extends Command {
 	/**
@@ -41,17 +42,6 @@ class AppDeployment extends Command {
 	 */
 	private $composerLog = [];
 
-
-	/**
-	 * Create a new command instance.
-	 *
-	 * @return void
-	 */
-	public function __construct() {
-		parent::__construct();
-	}
-
-
 	/**
 	 * Execute the console command.
 	 *
@@ -88,7 +78,9 @@ class AppDeployment extends Command {
 			return;
 		}
 
-		$this->info("Succesfully updated the application.");
+		Artisan::call('generate:content');
+
+		$this->info("Successfully updated the application.");
 
 
 	}

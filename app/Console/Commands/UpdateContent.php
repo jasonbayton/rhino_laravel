@@ -36,6 +36,7 @@ class UpdateContent extends Command {
 		});
 
 		//generate the sitemap to make sure its up to date
+		Artisan::call('generate:content');
 		Artisan::call('sitemap:generate');
 		return 0;
 	}
