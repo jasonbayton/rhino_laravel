@@ -60,7 +60,7 @@
       @if($entry->getChildren()->isNotEmpty())
         <details class="docnav-topic">
           <summary class="docnav-topic-heading">
-            {{ $entry->title }} <a href="{{ $entry->url }}"><i class="fas fa-external-link-alt"></i></a>
+            {{ $entry->title }} <sup><a href="{{ $entry->url }}"><i class="fas fa-external-link-alt"></i></a></sup>
           </summary>
           <ul>
             @foreach($entry->getChildren() as $child)
