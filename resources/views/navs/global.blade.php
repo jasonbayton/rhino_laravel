@@ -73,9 +73,11 @@
       @else
       <ul>
         @foreach($securitymenu as $header => $entry)
-          <li>
-            <a href="{{ $entry->url }}">{{ $entry->title }}</a>
-          </li>
+          @if($entry->getChildren()->isEmpty())
+            <li>
+              <a href="{{ $entry->url }}">{{ $entry->title }}</a>
+            </li>
+          @endif
         @endforeach
       </ul>
       @endif
