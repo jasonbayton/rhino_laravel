@@ -1097,12 +1097,12 @@ h3.section-title {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 930px) {
     .content-grid {
         margin: 2em;
         display: grid;
-        gap: 20px;
-        grid-auto-flow: dense;
+        gap: 10px;
+        grid-auto-flow: column;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -1112,7 +1112,7 @@ h3.section-title {
         margin: 2em;
         display: grid;
         gap: 20px;
-        grid-auto-flow: dense;
+        grid-auto-flow: column;
         grid-template-columns: repeat(3, 1fr);
     }
 }
