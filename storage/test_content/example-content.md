@@ -1,3 +1,7 @@
+---
+foo: 'bar'
+---
+
 Google today dropped the most significant update to zero-touch since its introduction with the Google Pixel back in 2016!
 
 Rolling out over the next several months, all GMS certified Android devices – new and existing – running 9.0 or above will support zero-touch by default, with no additional OEM effort required.
