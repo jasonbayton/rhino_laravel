@@ -1201,7 +1201,7 @@ summary.docnav-topic-heading {
     font-weight: 300;
 }
 
-details[open] > summary.docnav-topic-heading::after,details[open] > summary.docnav-topic-title::after {
+details[open] > summary.docnav-topic-heading::after,details[open] > summary.docnav-topic-title::after,details[open] > summary.docnav-topic-subtitle::after {
     content: "\f077";
 }
 
