@@ -58,7 +58,8 @@
 
     @foreach($securitymenu as $header => $entry)
       @if($entry->getChildren()->isNotEmpty())
-        <details class="docnav-topic">
+      <ul>
+        <li><details class="docnav-topic">
           <summary class="docnav-topic-subtitle">
             {{ $entry->title }} <sup><a href="{{ $entry->url }}"><i class="fal fa-external-link-alt"></i></a></sup>
           </summary>
@@ -70,8 +71,8 @@
             @endforeach
           </ul>
         </details>
+      </li>
       @else
-      <ul>
         @foreach($securitymenu as $header => $entry)
           @if($entry->getChildren()->isEmpty())
             <li>
