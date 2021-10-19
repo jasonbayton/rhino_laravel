@@ -14,7 +14,7 @@
             @foreach($allTopics as $header => $topic)
             <div class="grid-topic">
                 <div class="grid-topic-title">
-                <h4>{{ $header }}</h4>
+                <h4 id="{{ $header }}">{{ $header }}</h4>
                 </div>
                 <ul>
                     @foreach($topic as $article)
