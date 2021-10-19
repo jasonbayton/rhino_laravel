@@ -54,7 +54,7 @@
 
 
 <div class="globnav-wrapper">
-<details @if($content->parent !== null && (strtolower($content->parent) == "security" || strtolower($content->parent) == "releases")) open @endif  class="docnav-topic">
+<details @if($content->parent !== null && (strtolower($content->parent) == "security" || strtolower($content->parent) == "releases" || strpos($content->topic, 'Releases') !== false)) open @endif  class="docnav-topic">
   <summary class="docnav-topic-heading">
       Security
     </summary>
