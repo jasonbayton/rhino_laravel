@@ -63,7 +63,7 @@
     @foreach($securitymenu as $header => $entry)
       @if($entry->getChildren()->isNotEmpty())
       <ul>
-        <li><details class="docnav-topic no-padding">
+        <li><details @if($content->parent !== '' && strtolower($content->parent) == $header) open @endif  class="docnav-topic no-padding">
           <summary class="docnav-topic-subtitle">
             {{ $entry->title }} <sup><a href="{{ $entry->url }}"><i class="fal fa-external-link-alt"></i></a></sup>
           </summary>
