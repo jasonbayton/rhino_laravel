@@ -407,8 +407,8 @@ button.arrow-only {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
     background: var(--background);
 }
 
@@ -457,10 +457,11 @@ article {
     position: relative;
     display: grid;
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 20px;
+    grid-row-gap: 0;
     grid-area: 1/2/2/3;
     align-items: center;
+    grid-template-columns: repeat(2, auto);
 }
 
 .rhino_search {
@@ -644,59 +645,7 @@ article {
     border: none;
 }
 
-@media (min-width: 600px) {
-    .quick-search {
-        justify-self: right;
-    }
-
-    #mobile_aside_contents {
-        display: none;
-    }
-
-    #menu_overlay {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .rhino_search {
-        float: none;
-    }
-
-    #search_container_nav {
-      display: none;
-    }
-
-    #search_container {
-      display: block;
-    }
-
-    nav #nav_links {
-        display: none;
-    }
-
-    #aside_contents {
-        display: none;
-    }
-
-    #mobile_aside_contents {
-        display: none;
-    }
-
-    .aside-title h2 {
-        margin: 15px 0;
-        font-size: 20pt;
-    }
-
-    .menu_overlay_title {
-      font-size: 20pt;
-    }
-
-    .toc-content-hidden {
-        display: none;
-    }
-
-    .burger {
+.burger {
         display: block;
         cursor: pointer;
     }
@@ -738,6 +687,10 @@ article {
         padding: 20px;
     }
 
+    /*#menu_overlay {*/
+    /*    display: none;*/
+    /*}*/
+
     .menu_overlay_hidden {
         display: none;
     }
@@ -745,6 +698,58 @@ article {
     .overflow-hidden {
         overflow: hidden;
     }
+
+@media (min-width: 600px) {
+    .quick-search {
+        justify-self: right;
+    }
+
+    #mobile_aside_contents {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .rhino_search {
+        float: none;
+    }
+
+    .nav-quick-search {
+      display: none;
+    }
+
+    #search_container {
+      display: block;
+    }
+
+    nav #nav_links {
+        display: none;
+    }
+
+    #aside_contents {
+        display: none;
+    }
+
+    #mobile_aside_contents {
+        display: none;
+    }
+
+    .aside-title h2 {
+        margin: 15px 0;
+        font-size: 20pt;
+    }
+
+    .menu_overlay_title {
+      font-size: 20pt;
+    }
+
+    .toc-content-hidden {
+        display: none;
+    }
+
+
 
     #mobile_article_contents_list {
         padding: 0 0 15px;

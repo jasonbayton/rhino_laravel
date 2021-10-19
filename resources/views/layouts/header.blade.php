@@ -31,11 +31,11 @@
 						<i class="fal fa-search"></i>
 					</button>
 				</form>
-			</div>
-			<div class="burger" onclick="toggleMainMenu(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
+				<div class="burger" onclick="toggleMainMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
 			</div>
 		</div>
 		<div id="menu_overlay" class="menu_overlay_hidden">
