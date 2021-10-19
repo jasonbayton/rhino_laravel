@@ -44,7 +44,7 @@
             @endif
 						<li><a href="{{ $entry->url }}">{{ $entry->title }}</a></li>
 					@endforeach
-            <li><a href="/support/#{{ $header }}">more...</a>
+            <li><a href="/support/#{{ $header }}">> View more...</a>
 				</ul>
 			</details>
 		@endforeach
