@@ -33,6 +33,9 @@
     </summary>
     <div class="nested-details">
     @foreach($supportmenu as $header => $entries)
+      @if($loop->iteration > 5)
+        @break
+      @endif
 			<details @if($content->topic !== '' && strtolower($header) == strtolower($content->topic)) open @endif  class="docnav-topic">
 				<summary class="docnav-topic-title">
 					{{ $header }}
