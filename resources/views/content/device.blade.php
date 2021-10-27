@@ -38,7 +38,6 @@
 						</div>
 						<ul>
 								@foreach($topic as $article)
-								{{ $article->appliesTo }}
 								@if(in_array($content->parentID, $article->appliesTo))
 										<li><a href="{{ $article->url }}">{{ $article->title }}</a></li>
 								@endif
