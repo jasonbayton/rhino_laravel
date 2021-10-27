@@ -14,6 +14,7 @@ class ContentController extends Controller {
 		'grid' => 'content.grid',
 		'release' => 'content.release',
 		'support' => 'content.support',
+		'device' => 'content.device',
 	];
 
 	public function __invoke(string $route, ContentService $contentService, MenuService $menuService) {
