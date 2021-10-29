@@ -123,10 +123,6 @@ header {
     margin: 0 auto;
 }
 
-.max-width {
-  overflow: hidden;
-}
-
 .left {
     background: var(--rhino-blue);
     color: var(--bright);
@@ -1433,6 +1429,7 @@ section#content_container {
     grid-column-gap: 30px;
     grid-row-gap: 0px;
     padding-right: 20px;
+    overflow: hidden;
 }
 
 .device-details {
