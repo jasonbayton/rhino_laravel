@@ -123,6 +123,10 @@ header {
     margin: 0 auto;
 }
 
+.max-width {
+  overflow: hidden;
+}
+
 .left {
     background: var(--rhino-blue);
     color: var(--bright);
