@@ -1429,7 +1429,6 @@ section#content_container {
     grid-column-gap: 30px;
     grid-row-gap: 0px;
     padding-right: 20px;
-    overflow: hidden;
 }
 
 .device-details {
@@ -1528,9 +1527,13 @@ section#content_container {
   content:"";
   background-color:#000;
   position: absolute;
-  height: 100%;
-  width: 4000px;
-  left: -2000px;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100vw;
+  margin-left: -50%;
+  transform: translateX(-50%);
   z-index: -1;
 }
 
