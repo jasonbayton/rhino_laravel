@@ -1527,14 +1527,11 @@ section#content_container {
   content:"";
   background-color:#000;
   position: absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  width: 100vw;
-  margin-left: -50%;
-  transform: translateX(-50%);
   z-index: -1;
+  width: 100vw;
+  margin-left: 50%;
+  height: 100%
+  transform: translateX(-50%);
 }
 
 .device-wireframe {
