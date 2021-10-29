@@ -1517,7 +1517,7 @@ section#content_container {
     max-width: 500px;
 }
 
-.device-wireframe-wrapper {
+/*.device-wireframe-wrapper {
   background-color: #000;
   color: #fff;
   position: relative;
@@ -1536,7 +1536,7 @@ section#content_container {
 
 .device-wireframe {
   color: white;
-}
+} */
 
 #tag_title {
     display: inline-block;
