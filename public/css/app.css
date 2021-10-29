@@ -1517,10 +1517,23 @@ section#content_container {
     max-width: 500px;
 }
 
-.device-wireframe {
-  margin: 23px -50px;
-  padding: 20px 50px;
+.device-wireframe-wrapper {
   background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.device-wireframe::before {
+  content:"";
+  background-color:#000;
+  position: absolute;
+  height: 100%;
+  width: 4000px;
+  left: -2000px;
+  z-index: -1;
+}
+
+.device-wireframe {
   color: white;
 }
 
