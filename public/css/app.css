@@ -569,7 +569,7 @@ article {
     border: none;
     color: var(--text);
     box-shadow: none;
-    background: var(--background);
+    background: var(--secondary-background);
     font-size: 20pt;
 }
 
