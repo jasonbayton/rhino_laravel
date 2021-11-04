@@ -2320,6 +2320,10 @@ ul.toc-list li ul {
         font-size: 40px;
     }
 
+    #article_subtitle {
+        font-size: 28px;
+    }
+
     section#content_container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
