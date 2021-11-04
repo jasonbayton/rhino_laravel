@@ -32,7 +32,7 @@
     --contrast-tertiary: #a33e0f;
     --text: #cfcfcf;
     --background: #333333;
-    --secondary-background: #666666;
+    --secondary-background: #1d1d1d;
 }
 
 @media (prefers-color-scheme: dark) {
