@@ -15,9 +15,9 @@
             <h3 class="search-heading">
 				Results matching: {{ request()->search }}
             </h3>
-            <ul>
+            <ul class="search-results">
                 @forelse($results as $result)
-                    <li><a href="{{ $result->url }}"><h2>{{ $result->title }}</h2></a>
+                    <li><a href="{{ $result->url }}"><b>{{ $result->title }}</b></a>
                         {{ $result->subtitle }}
                     </li>
 
@@ -30,7 +30,7 @@
             </h3>
             <ul>
                 @forelse($similar as $result)
-                    <li><a href="{{ $result->url }}"><h2>{{ $result->title }}</h2></a>
+                    <li><a href="{{ $result->url }}"><b>{{ $result->title }}</b></a>
                         {{ $result->subtitle }}
                     </li>
                 @empty
