@@ -15,6 +15,7 @@
     --dat-purple: #474774;
     --rhino-blue: #121ecd;
     --rhino-purple: #646cf5;
+    --rhino-deep: #0a0160;
     --secondary-background: #ffffff;
 }
 
@@ -124,7 +125,7 @@ header {
 }
 
 .left {
-    background: var(--rhino-blue);
+    background: var(--rhino-deep);
     color: var(--bright);
 }
 
