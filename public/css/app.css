@@ -410,7 +410,7 @@ button.arrow-only {
     grid-template-rows: auto;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    background: var(--background);
+    background: var(--secondary-background);
 }
 
 article {
