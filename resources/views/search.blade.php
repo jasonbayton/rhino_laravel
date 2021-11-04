@@ -28,7 +28,7 @@
             <h3 class="search-heading">
                 Similar results based on "{{ request()->search }}" if not included above:
             </h3>
-            <ul>
+            <ul class="search-results">
                 @forelse($similar as $result)
                   <li><a href="{{ $result->url }}"><b>{{ $result->title }}</b></a>
                       <div class="search-subtitle">{{ $result->subtitle }}</div>
