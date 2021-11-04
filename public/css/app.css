@@ -465,6 +465,15 @@ article {
     grid-template-columns: repeat(2, auto);
 }
 
+ul.search-results {
+    list-style: none;
+    padding: 0;
+}
+
+ul.search-results li {
+  padding 10px 0;
+}
+
 .rhino_search {
     border-bottom: 3px solid #fff;
     justify-self: right;
