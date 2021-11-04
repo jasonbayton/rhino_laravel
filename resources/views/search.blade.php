@@ -13,25 +13,28 @@
                 to make it better!
             </div-->
             <h3 class="search-heading">
-				Results for: {{ request()->search }}
+				Results matching: {{ request()->search }}
             </h3>
             <ul>
                 @forelse($results as $result)
-                    <li><a href="{{ $result->url }}">{{ $result->title }}</a></li>
+                    <li><a href="{{ $result->url }}"><h2>{{ $result->title }}</h2></a>
+                        {{ $result->subtitle }}
+                    </li>
 
                 @empty
                     <p>No results found for this exact match, check similar results below.</p>
                 @endforelse
             </ul>
             <h3 class="search-heading">
-                Similar Results based on "{{ request()->search }}" if not included above:
+                Similar results based on "{{ request()->search }}" if not included above:
             </h3>
             <ul>
                 @forelse($similar as $result)
-                    <li><a href="{{ $result->url }}">{{ $result->title }}</a></li>
-
+                    <li><a href="{{ $result->url }}"><h2>{{ $result->title }}</h2></a>
+                        {{ $result->subtitle }}
+                    </li>
                 @empty
-                    <p>No results found, or query is vague enough to not require broader search.</p>
+                    <p>No results found, or the search query is vague enough to not require a broader search.</p>
                 @endforelse
             </ul>
         </article>
