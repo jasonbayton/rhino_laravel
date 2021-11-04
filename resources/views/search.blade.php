@@ -18,7 +18,8 @@
             <ul class="search-results">
                 @forelse($results as $result)
                     <li><a href="{{ $result->url }}"><b>{{ $result->title }}</b></a>
-                        {{ $result->subtitle }}
+                        <div class="search-subtitle">{{ $result->subtitle }}</div>
+                        <div class="search-date">{{ $result->date }}</div>
                     </li>
 
                 @empty
