@@ -1484,6 +1484,7 @@ section#content_container {
     font-size: 32px;
     font-weight: 300;
     padding-bottom: 40px;
+    margin-top:-40px;
 }
 
 .device-grid {
