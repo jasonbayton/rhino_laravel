@@ -1120,7 +1120,7 @@ h3.section-title {
     grid-template-columns: repeat(2, 230px);
     grid-template-rows: auto;
     grid-column-gap: 30px;
-    grid-row-gap: 0px;
+    grid-row-gap: 5px;
 }
 
 
