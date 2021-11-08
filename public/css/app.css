@@ -1123,6 +1123,15 @@ h3.section-title {
     grid-row-gap: 5px;
 }
 
+.glance-item {
+    display: grid;
+    grid-template-columns: 34px 100%;
+}
+
+.glance-icon {
+    justify-self: center;
+}
+
 
 @media (min-width: 930px) {
     .content-grid {
