@@ -1115,6 +1115,14 @@ h3.section-title {
     font-weight: 300;
 }
 
+#glance_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
 
 @media (min-width: 930px) {
     .content-grid {
