@@ -418,6 +418,10 @@ article {
     padding: 20px;
 }
 
+.device-intro h2 {
+  margin-top: 0;
+}
+
 #rhino_header {
     padding: 20px 0;
     justify-self: left;
