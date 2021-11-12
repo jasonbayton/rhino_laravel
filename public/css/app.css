@@ -1117,7 +1117,7 @@ h3.section-title {
 
 #glance_grid {
     display: grid;
-    grid-template-columns: repeat(2, 230px);
+    grid-template-columns: minmax(0, 230px) minmax(0, 230px);
     grid-template-rows: auto;
     grid-column-gap: 30px;
     grid-row-gap: 5px;
