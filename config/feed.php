@@ -18,8 +18,8 @@ return [
              */
             'url' => 'feed',
 
-            'title' => 'My feed',
-            'description' => 'The description of the feed.',
+            'title' => 'Rhino Support',
+            'description' => 'Rhino Support',
             'language' => 'en-US',
 
             /*
