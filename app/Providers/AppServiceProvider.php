@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Services\MenuService;
+use App\Services\ContentService;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,5 +32,7 @@ class AppServiceProvider extends ServiceProvider {
 		if ($mainMenu) {
 			View::share('mainMenu', $mainMenu);
 		}
+
+		View::share('contentService', new ContentService);
 	}
 }
