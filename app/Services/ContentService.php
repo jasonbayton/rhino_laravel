@@ -47,6 +47,16 @@ class ContentService {
 		return $this->content->where('topic', '===', $title)->sortBy('order');
 	}
 
+	public function getDocsByDevice(string $device): ?Collection {
+		return $this->getTopicEntries('', '')->map(
+			fn($value) => $value->filter(function ($value) use ($device) {
+				return $value->appliesTo && collect($value->appliesTo)->contains(strtoupper($device));
+			})
+				->values())
+			->filter(fn($value) => count($value));
+
+	}
+
 	public function getTopicEntries(?string $parentId = '', ?string $rootPath = ''): ?Collection {
 		$content = $this->content->whereNotNull('topic');
 		if ($parentId) {
@@ -66,7 +76,7 @@ class ContentService {
 	}
 
 	public function search(string $keyword, bool $exact = false) {
-		$searchParams = collect(explode(' ' , $keyword))->map(fn($keyword) => strtolower($keyword))->toArray();
+		$searchParams = collect(explode(' ', $keyword))->map(fn($keyword) => strtolower($keyword))->toArray();
 
 		return $exact
 			? $this->all()->filter(fn($entry) => Str::containsAll(strtolower($entry->title), $searchParams))
