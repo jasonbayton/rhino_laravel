@@ -7,6 +7,13 @@
 					RHINO
 				</div>
 			</a>
+			<div id="search_container_nav">
+				<div class="burger" onclick="toggleMainMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
 		</div>
 	@else
 		<div id="header_container" class="">
