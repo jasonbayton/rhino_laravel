@@ -26,26 +26,26 @@
 				</div>
 			@endif
 
-			<h2>
-				Product support
-			</h2>
-			<!-- foreach topic, output docs in a UL -->
-			<div class="content-grid">
-				@foreach($allTopics as $header => $topic)
-				<div class="grid-topic">
-						<div class="grid-topic-title">
-						<h4 id="{{ $header }}">{{ $header }}</h4>
-						</div>
-						<ul>
-								@foreach($topic as $article)
-								@if(in_array($content->parentID, $article->appliesTo))
+			@if($contentService->getDocsByDevice($content->model)->count())
+				<h2>
+					Product support
+				</h2>
+				<!-- foreach topic, output docs in a UL -->
+				<div class="content-grid">
+					@foreach($contentService->getDocsByDevice($content->model) as $header => $topic)
+					<div class="grid-topic">
+							<div class="grid-topic-title">
+							<h4 id="{{ $header }}">{{ $header }}</h4>
+							</div>
+							<ul>
+									@foreach($topic as $article)
 										<li><a href="{{ $article->url }}">{{ $article->title }}</a></li>
-								@endif
-								@endforeach
-						</ul>
-					</div>
-				@endforeach
-			</div>
+									@endforeach
+							</ul>
+						</div>
+					@endforeach
+				</div>
+			@endif
 
 			<div class="article-bottom-links">
 				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i

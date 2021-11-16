@@ -47,7 +47,10 @@ class ContentService {
 		return $this->content->where('topic', '===', $title)->sortBy('order');
 	}
 
-	public function getDocsByDevice(string $device): ?Collection {
+	public function getDocsByDevice(?string $device): ?Collection {
+		if (!$device) {
+			return collect();
+		}
 		return $this->getTopicEntries('', '')->map(
 			fn($value) => $value->filter(function ($value) use ($device) {
 				return $value->appliesTo && collect($value->appliesTo)->contains(strtoupper($device));
