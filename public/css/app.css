@@ -407,7 +407,7 @@ button.arrow-only {
 }
 
 #front_header_container .bar1, #front_header_container .bar2, #front_header_container .bar3 {
-  color: var(--bright);
+  background-color: var(--bright);
 }
 
 #header_container {
