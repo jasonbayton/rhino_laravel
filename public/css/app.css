@@ -401,6 +401,15 @@ button.arrow-only {
     z-index: 100;
 }
 
+#front_header_container .burger {
+    align-self: center;
+    justify-self: end;
+}
+
+#front_header_container .bar1, #front_header_container .bar2, #front_header_container .bar3 {
+  color: var(--bright);
+}
+
 #header_container {
     padding: 0 20px;
     font-size: 22px;
