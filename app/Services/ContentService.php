@@ -53,7 +53,7 @@ class ContentService {
 		}
 		return $this->getTopicEntries('', '')->map(
 			fn($value) => $value->filter(function ($value) use ($device) {
-				return $value->appliesTo && collect($value->appliesTo)->contains(strtoupper($device));
+				return $value->appliesTo && collect($value->appliesTo)->map(fn($applies) => strtolower(($applies)))->contains(strtolower($device));
 			})
 				->values())
 			->filter(fn($value) => count($value));
