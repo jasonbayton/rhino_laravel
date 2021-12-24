@@ -51,6 +51,20 @@ class GenerateContentJson extends Command {
 				"topic" => "",
 				"order" => "0",
 			],
+			"warranty" => [
+				"title" => "View Your Device Warranty",
+				"subtitle" => "View Your Device Warranty Details",
+				"featuredImage" => "",
+				"featured" => "false",
+				"date" => "2021-01-01",
+				"updated" => "2021-01-10",
+				"url" => "/warranty",
+				"type" => "page",
+				"published" => "private",
+				"parent" => "",
+				"topic" => "",
+				"order" => "0",
+			],
 		];
 
 		$dirs = Storage::disk('content')->files(null, true);
