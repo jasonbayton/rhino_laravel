@@ -70,10 +70,12 @@ class GenerateContentJson extends Command {
 		$merged = array_merge($current, $content->toArray());
 
 		// Delete the original file
-		Storage::disk('storageRoot')->delete('content.json');
+		if (Storage::disk('storageRoot')->exists('content.json')) {
+			Storage::disk('storageRoot')->delete('content.json');
+		}
 
 		// Write a new file
-		Storage::disk('storageRoot')->write('content.json', json_encode($merged, JSON_UNESCAPED_SLASHES));
+		Storage::disk('storageRoot')->put('content.json', json_encode($merged, JSON_UNESCAPED_SLASHES));
 
 		$this->info('The content JSON file has been generated successfully');
 

@@ -24,6 +24,10 @@ class AppServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot(MenuService $menuService) {
+		if ($this->app->runningInConsole()) {
+			return;
+		}
+
 		if ($this->app->environment('local')) {
 			config(['trustedproxy.proxies' => '*']);
 		}
@@ -32,6 +36,7 @@ class AppServiceProvider extends ServiceProvider {
 		if ($mainMenu) {
 			View::share('mainMenu', $mainMenu);
 		}
+
 
 		View::share('contentService', new ContentService);
 	}
