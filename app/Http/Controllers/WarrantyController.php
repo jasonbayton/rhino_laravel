@@ -15,13 +15,9 @@ class WarrantyController extends Controller {
 
 	public function __invoke(Request $request, ContentService $contentService, MenuService $menuService): Response {
 		$content = $contentService->getByUrl('/warranty');
-
-
 		$imei = $request->imei;
 
 		$warranty = null;
-
-		$documentType = $this->documentTypes[$content->type] ?? 'content.doc';
 
 		$path = Str::before(request()->path(), '/');
 
@@ -35,17 +31,12 @@ class WarrantyController extends Controller {
 			} else {
 				$warranty = new DeviceWarranty($response->json('value')[1]);
 			}
-
-
 		}
-
 
 		return response()->view('warranty', [
 			'nav' => 'navs.' . $path,
 			'content' => $content,
 			'navigation' => $contentService->getNavEntries($path),
-//			'topics' => $contentService->getTopicEntries($content->parentID, Str::before($route, '/')),
-//			'allTopics' => $contentService->getTopicEntries(null, Str::before($route, '/')),
 			'supportmenu' => $menuService->getSupportMenu(),
 			'devicesmenu' => $menuService->getDevicesMenu(),
 			'securitymenu' => $menuService->getSecurityMenu(),
