@@ -56,12 +56,7 @@
 				</div>
 			</a>
 			<div id="search_container_nav">
-				<form action="/search" method="GET" class="quick-search nav-quick-search">
-					<input type="text" placeholder="Search..." name="search" class="search-input nav-search-input">
-					<button class="search-button nav-search-button">
-						<i class="fal fa-search"></i>
-					</button>
-				</form>
+				<x-quick-search></x-quick-search>
 				<div class="burger" onclick="toggleMainMenu(this)">
 					<div class="bar1"></div>
 					<div class="bar2"></div>

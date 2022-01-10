@@ -17,61 +17,27 @@
 			<h2 id="article_title">
 				{{ $content->title }}
 			</h2>
-			@if($content->subtitle)
-				<div id="article_subtitle">{{ $content->subtitle }}</div>
-			@endif
-			@if($content->content())
 				<div id="literal_content" class="js-toc-content">
-					<form method="GET" action="#">
-						<input type="text" name="imei">
-						<button>Test</button>
-					</form>
+					<x-quick-search action="{{ route('warranty') }}" name="imei"/>
 					@if ($warranty === false)
 						<h1>No device matches the IMEI provided. Please check the IMEI and try again</h1>
-					@endif
-
-					@if ($warranty)
-						<h1>We found your device</h1>
-						@if($warranty->inWarranty())
-							<p>Your device has an active warranty which expires
-								on: {{ $warranty->warrantyExpiryDate()->toDateString() }}</p>
-						@else
-							<p>Your device warranty has expired, it expired
-								on: {{ $warranty->warrantyExpiryDate()->toDateString() }}</p>
-						@endif
+					@else
+						<div id="warranty-container">
+							<div>
+								@if($warranty->inWarranty()) <span class="warranty-valid warranty-message">Warranty Valid</span> @else <span class="warranty-invalid warranty-message">Warranty Expired</span> @endif
+							</div>
+							<div>
+								Device: <span class="font-bold">{{ $warranty->description }}</span>
+							</div>
+							<div>
+								Purchase: <span class="font-bold">{{ $warranty->orderDate->format('d/m/Y') }}</span>
+							</div>
+							<div>
+								Warranty valid until: <span class="font-bold">{{ $warranty->warrantyExpiryDate()->format('d/m/Y') }}</span>
+							</div>
+						</div>
 					@endif
 				</div>
-			@endif
-			@if (!$content->content())
-				<ul>
-					@foreach($content->getChildren() as $result)
-						<li><a href="{{ $result->url }}">{{ $result->title }}</a></li>
-					@endforeach
-				</ul>
-			@endif
-			@if($content->getAppliesToImages()->count())
-				<div class="article-bottom-links">
-					<h4 class="applies-to-header">Applies to:</h4>
-					@foreach($content->getAppliesToImages() as $image)
-						<figure class="device-figure">
-							<a href="/devices/{{ $image['device'] }}"><img src="{{ $image['image'] }}"
-																		   alt="{{ $image['device'] }}"></a>
-							<figcaption>{{ $image['device'] }}</figcaption>
-						</figure>
-					@endforeach
-				</div>
-			@endif
-
-			<div class="article-bottom-links">
-				<a target="_blank" href="{{ route('export-to-pdf', ['content' => $content->url]) }}"><i
-							style="padding-right: 10px;" class="fas fa-file"></i>Download as PDF</a>
-				<a target="_blank" href=""><i style="padding-right: 10px;" class="far fa-exclamation-triangle"></i>Report
-					Content</a>
-				<a target="_blank" onclick="window.print()"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
-			</div>
-			@if($content->mailingSignup())
-				{!! $content->mailingSignup() !!}
-			@endif
 		</article>
 	</section>
 @endsection
