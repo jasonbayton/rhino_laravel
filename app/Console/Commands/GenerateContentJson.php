@@ -16,42 +16,42 @@ class GenerateContentJson extends Command {
 	public function handle(): int {
 
 		if (Storage::disk('storageRoot')->exists('content.json')) {
-			$current = json_decode(Storage::disk('storageRoot')->get('content.json'), true);
 			//backup the existing content json
 			Storage::disk('storageRoot')->copy('content.json', time() . '-content.json.bak');
-		} else {
-			//default values for first run
-			$current = [
-				"document_root" => [
-					"title" => "Home",
-					"subtitle" => "Rhino Mobility Security site",
-					"featuredImage" => "",
-					"featured" => "false",
-					"date" => "2021-01-01",
-					"updated" => "2021-01-10",
-					"url" => "/",
-					"type" => "home",
-					"published" => "private",
-					"parent" => "",
-					"topic" => "",
-					"order" => "0",
-				],
-				'404' => [
-					"title" => "Content not found",
-					"subtitle" => "Are you looking in the right location?",
-					"featuredImage" => "",
-					"featured" => "false",
-					"date" => "2021-01-01",
-					"updated" => "",
-					"url" => "/404",
-					"type" => "page",
-					"published" => "private",
-					"parent" => "",
-					"topic" => "",
-					"order" => "0",
-				],
-			];
 		}
+
+
+		//default values for first run
+		$current = [
+			"document_root" => [
+				"title" => "Home",
+				"subtitle" => "Rhino Mobility Security site",
+				"featuredImage" => "",
+				"featured" => "false",
+				"date" => "2021-01-01",
+				"updated" => "2021-01-10",
+				"url" => "/",
+				"type" => "home",
+				"published" => "private",
+				"parent" => "",
+				"topic" => "",
+				"order" => "0",
+			],
+			'404' => [
+				"title" => "Content not found",
+				"subtitle" => "Are you looking in the right location?",
+				"featuredImage" => "",
+				"featured" => "false",
+				"date" => "2021-01-01",
+				"updated" => "",
+				"url" => "/404",
+				"type" => "page",
+				"published" => "private",
+				"parent" => "",
+				"topic" => "",
+				"order" => "0",
+			],
+		];
 
 		$dirs = Storage::disk('content')->files(null, true);
 
@@ -70,10 +70,12 @@ class GenerateContentJson extends Command {
 		$merged = array_merge($current, $content->toArray());
 
 		// Delete the original file
-		Storage::disk('storageRoot')->delete('content.json');
+		if (Storage::disk('storageRoot')->exists('content.json')) {
+			Storage::disk('storageRoot')->delete('content.json');
+		}
 
 		// Write a new file
-		Storage::disk('storageRoot')->write('content.json', json_encode($merged, JSON_UNESCAPED_SLASHES));
+		Storage::disk('storageRoot')->put('content.json', json_encode($merged, JSON_UNESCAPED_SLASHES));
 
 		$this->info('The content JSON file has been generated successfully');
 
