@@ -180,9 +180,6 @@
 					Content</a>
 				<a target="_blank" onclick="window.print()"><i style="padding-right: 10px;" class="fas fa-print"></i>Print</a>
 			</div>
-			@if($content->mailingSignup())
-				{!! $content->mailingSignup() !!}
-			@endif
 		</article>
 	</section>
 @endsection
