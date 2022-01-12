@@ -31,8 +31,7 @@
 					directly download the update (either incremental or full) click the respective download icon.</p>
 
 					<h2>Scheduled releases</h2>
-					<p>Below are scheduled releases currently undergoing development and/or approval. The ETA is a guide following a policy to release updates
-					on the 3rd week of a month.</p>
+					<p>Below are scheduled releases currently undergoing development and/or approval. The ETA provided is a guide and not a firm commitment.</p>
 					<div id="releases_list">
 						<div id="support_table">
 							<table class="tg">
