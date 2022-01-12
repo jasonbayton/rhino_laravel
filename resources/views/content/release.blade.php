@@ -29,6 +29,80 @@
 					the time taken for the update to become available.</p>
 				<p>The releases below are in date order (newest > oldest). For release information, please click the build number of a release, or to
 					directly download the update (either incremental or full) click the respective download icon.</p>
+
+					<h2>Scheduled releases</h2>
+					<div id="releases_list">
+						<div id="support_table">
+							<table class="tg">
+								<thead>
+								  <tr>
+								    <th class="tg-0lax">
+											SKU
+										</th>
+								    <th class="tg-0lax">
+											Type
+										</th>
+								    <th class="tg-0lax">
+											Build #
+										</th>
+								    <th class="tg-0lax">
+											SPL
+										</th>
+								    <th class="tg-0lax">
+											OTA
+										</th>
+										</th>
+								    <th class="tg-0lax">
+											Full
+										</th>
+								  </tr>
+								</thead>
+								<tbody>
+									@foreach($content->getChildren() as $result) if ($result->published == 'scheduled')
+								  <tr>
+								    <td class="tg-0lax">
+											@isset($result->softwaresku)
+												{{ $result->softwaresku }}
+											@endisset
+										</td>
+								    <td class="tg-0lax">
+											@isset($result->releasetype)
+												{{ $result->releasetype }}
+											@endisset
+										</td>
+								    <td class="tg-0lax">
+											@isset($result->title)
+												<a href="{{ $result->url }}">{{ $result->title }}</a>
+											@endisset
+										</td>
+								    <td class="tg-0lax">
+											@isset($result->softwarespl)
+												{{ $result->softwarespl }}
+											@endisset
+										</td>
+								    <td class="tg-0lax">
+											@isset($result->otapackageurl)
+											@if($result->otapackageurl !== '')
+												<a href="{{ $result->otapackageurl }}"><i class="far fa-cloud-download-alt"></i></a>
+											@endif
+											@endisset
+										</td>
+										</td>
+								    <td class="tg-0lax">
+											@isset($result->fullotaurl)
+											@if($result->fullotaurl !== '')
+												<a href="{{ $result->fullotaurl }}"><i class="fas fa-cloud-download-alt"></i></a>
+											@endif
+											@endisset
+										</td>
+								  </tr>
+									@endforeach
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
 				<h2>Releases</h2>
 				<div id="releases_list">
 					<div id="support_table">
@@ -57,7 +131,7 @@
 							  </tr>
 							</thead>
 							<tbody>
-								@foreach($content->getChildren() as $result)
+								@foreach($content->getChildren() as $result) if ($result->published == 'true')
 							  <tr>
 							    <td class="tg-0lax">
 										@isset($result->softwaresku)
