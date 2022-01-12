@@ -58,7 +58,7 @@
 								  </tr>
 								</thead>
 								<tbody>
-									@foreach($content->getChildren() as $result) if ($result->published == 'scheduled')
+									@foreach(($content->getChildren() as $result) if ($result->published == 'scheduled'))
 								  <tr>
 								    <td class="tg-0lax">
 											@isset($result->softwaresku)
@@ -131,7 +131,7 @@
 							  </tr>
 							</thead>
 							<tbody>
-								@foreach($content->getChildren() as $result) if ($result->published == 'true')
+								@foreach(($content->getChildren() as $result) if ($result->published == 'true'))
 							  <tr>
 							    <td class="tg-0lax">
 										@isset($result->softwaresku)
