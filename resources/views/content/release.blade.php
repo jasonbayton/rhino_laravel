@@ -92,7 +92,6 @@
 							</table>
 						</div>
 					</div>
-				</div>
 
 				<h2>Releases</h2>
 				<div id="releases_list">
