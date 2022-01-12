@@ -31,6 +31,7 @@
 					directly download the update (either incremental or full) click the respective download icon.</p>
 
 					<h2>Scheduled releases</h2>
+					<p>Below are scheduled releases currently undergoing certification/development.</p>
 					<div id="releases_list">
 						<div id="support_table">
 							<table class="tg">
