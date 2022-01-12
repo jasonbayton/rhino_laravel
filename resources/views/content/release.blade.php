@@ -50,11 +50,7 @@
 											SPL
 										</th>
 								    <th class="tg-0lax">
-											OTA
-										</th>
-										</th>
-								    <th class="tg-0lax">
-											Full
+											ETA
 										</th>
 								  </tr>
 								</thead>
@@ -83,17 +79,9 @@
 											@endisset
 										</td>
 								    <td class="tg-0lax">
-											@isset($result->otapackageurl)
-											@if($result->otapackageurl !== '')
-												<a href="{{ $result->otapackageurl }}"><i class="far fa-cloud-download-alt"></i></a>
-											@endif
-											@endisset
-										</td>
-										</td>
-								    <td class="tg-0lax">
-											@isset($result->fullotaurl)
-											@if($result->fullotaurl !== '')
-												<a href="{{ $result->fullotaurl }}"><i class="fas fa-cloud-download-alt"></i></a>
+											@isset($result->softwareeta)
+											@if($result->softwareeta !== '')
+												{{ $result->softwareeta }}
 											@endif
 											@endisset
 										</td>
@@ -126,7 +114,6 @@
 									</th>
 							    <th class="tg-0lax">
 										OTA
-									</th>
 									</th>
 							    <th class="tg-0lax">
 										Full
@@ -163,7 +150,6 @@
 											<a href="{{ $result->otapackageurl }}"><i class="far fa-cloud-download-alt"></i></a>
 										@endif
 										@endisset
-									</td>
 									</td>
 							    <td class="tg-0lax">
 										@isset($result->fullotaurl)
