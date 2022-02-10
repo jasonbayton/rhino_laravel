@@ -1134,7 +1134,7 @@ h3.section-title {
 
 .glance-item {
     display: grid;
-    grid-template-columns: 34px 100%;
+    grid-template-columns: 34px 1fr%;
 }
 
 .glance-icon {
