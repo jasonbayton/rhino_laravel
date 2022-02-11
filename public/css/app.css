@@ -2404,6 +2404,7 @@ ul.toc-list li ul {
     #glance_grid {
         display: grid;
         grid-template-columns: minmax(0, 500px) minmax(0, 500px);
+        font-size: inherit;
     }
 }
 
