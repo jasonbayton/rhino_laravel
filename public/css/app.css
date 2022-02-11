@@ -1126,15 +1126,16 @@ h3.section-title {
 
 #glance_grid {
     display: grid;
-    grid-template-columns: minmax(0, 230px) minmax(0, 230px);
+    grid-template-columns: minmax(0, 500px) minmax(0, 500px) minmax(0, 500px);
     grid-template-rows: auto;
     grid-column-gap: 30px;
-    grid-row-gap: 5px;
+    grid-row-gap: 30px;
+    font-size: 23px;
 }
 
 .glance-item {
     display: grid;
-    grid-template-columns: 34px 1fr;
+    grid-template-columns: 44px 1fr;
 }
 
 .glance-icon {
@@ -2398,6 +2399,11 @@ ul.toc-list li ul {
     #article_meta i {
       font-weight: 300;
       margin: 0 3px;
+    }
+
+    #glance_grid {
+        display: grid;
+        grid-template-columns: minmax(0, 500px) minmax(0, 500px);
     }
 }
 
