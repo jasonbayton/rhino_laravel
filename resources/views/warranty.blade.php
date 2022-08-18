@@ -27,7 +27,7 @@
 								@if($warranty->inWarranty()) <span class="warranty-valid warranty-message">Warranty Valid</span> @else <span class="warranty-invalid warranty-message">Warranty Expired</span> @endif
 							</div>
 							<div>
-								Device: <span class="font-bold">{{ $warranty->description }}</span>
+								Device: <span class="font-bold">{{ $warranty->model }}</span>
 							</div>
 							<div>
 								Purchase: <span class="font-bold">{{ $warranty->orderDate->format('d/m/Y') }}</span>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use GuzzleHttp\Psr7\Query;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -24,21 +25,21 @@ class WarrantyController extends Controller {
 
 		if ($imei) {
 			// This would be useful if we has redis on the server, would speed up repeat requests to the server
-//			$response = Cache::remember('warranty-search:' . $imei, 3600, function () {
-//				return Http::withBasicAuth(config('rhino.user'), config('rhino.password'))
-//				->get('https://api.businesscentral.dynamics.com/v2.0/909ebb00-4191-4c08-bab4-2fca7d020089/SMProduction/ODataV4/Company(\'Social%20Mobile\')/WarrentyInfo?$filter=IMEI eq \'' . $imei . '\'');
-//			});
 
-			//354658111328446
-			$response = Http::withBasicAuth(config('rhino.user'), config('rhino.password'))
-				->get('https://api.businesscentral.dynamics.com/v2.0/909ebb00-4191-4c08-bab4-2fca7d020089/SMProduction/ODataV4/Company(\'Social%20Mobile\')/WarrentyInfo?$filter=IMEI eq \'' . $imei . '\'');
-			$decodedResponse = $response->json();
+			$ch = curl_init('https://gridapi-sandbox.azurewebsites.net/api/v1/items/warranty?q[]=imei:eq:' . $imei);
+			curl_setopt($ch, CURLOPT_USERPWD, config('rhino.user') . ":" . config('rhino.password'));
+			curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			$return = curl_exec($ch);
+			curl_close($ch);
 
-			if (Arr::has($decodedResponse, 'error')) {
+			$response = json_decode($return, true);
+
+			if (count($response['items']) === 0) {
 				$warranty = false;
 			} else {
-				$data = $decodedResponse['value'];
-				$warranty = count($data) ? new DeviceWarranty($response->json('value')[1]) : false;
+
+				$warranty = new DeviceWarranty($response['items'][0]);
 			}
 		}
 

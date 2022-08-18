@@ -7,11 +7,7 @@ use Illuminate\Support\Facades\Date;
 
 class DeviceWarranty {
 
-	public string $description;
-
 	public string $serialNumber;
-
-	public string $itemNumber;
 
 	public ?Carbon $warrantyDate;
 
@@ -23,15 +19,19 @@ class DeviceWarranty {
 
 	public Carbon $orderDate;
 
+	public string $manufacturer;
+
+	public string $model;
+
 	public function __construct(array $attributes) {
-		$this->description = $attributes['Description'];
-		$this->serialNumber = $attributes['SrNo'];
-		$this->itemNumber = $attributes['ItemNo'];
-		$this->warrantyDate = $attributes['WarrantyDate'] === '0001-01-01' ? null : Date::parse($attributes['WarrantyDate']);
-		$this->batteryWarrantyDate = $attributes['BatteryWarrantyDate'] === '0001-01-01' ? null : Date::parse($attributes['BatteryWarrantyDate']);
-		$this->extendedWarrantyDate = $attributes['ExtendedWarrantyDate'] === '0001-01-01' ? null : Date::parse($attributes['ExtendedWarrantyDate']);
-		$this->imei = $attributes['IMEI'];
-		$this->orderDate = Date::parse($attributes['OrderDate']);
+		$this->manufacturer = $attributes['manufacturer'];
+		$this->model = $attributes['model'];
+		$this->serialNumber = $attributes['serialNumber'];
+		$this->warrantyDate = $attributes['hardwareWarrantyValidUntil'] === '0001-01-01' ? null : Date::parse($attributes['hardwareWarrantyValidUntil']);
+		$this->batteryWarrantyDate = $attributes['batteryWarrantyValidUntil'] === '0001-01-01' ? null : Date::parse($attributes['batteryWarrantyValidUntil']);
+		$this->extendedWarrantyDate = $attributes['extendedHardwareWarrantyValidUntil'] === '0001-01-01' ? null : Date::parse($attributes['extendedHardwareWarrantyValidUntil']);
+		$this->imei = $attributes['imei'];
+		$this->orderDate = Date::parse($attributes['purchaseDate']);
 	}
 
 	public function inWarranty(): bool {

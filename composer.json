@@ -19,7 +19,8 @@
         "pragmarx/yaml": "^1.2",
         "ryangjchandler/orbit": "^0.7.4",
         "spatie/laravel-feed": "^3.2",
-        "spatie/laravel-sitemap": "^5.9"
+        "spatie/laravel-sitemap": "^5.9",
+      "ext-curl": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.7",
