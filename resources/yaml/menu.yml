@@ -1,30 +1,28 @@
 - name: "Devices"
   href:
   items:
-    - name: "Rhino DS"
-      href: /devices/ds
-    - name: "Rhino T5se"
+    - name: "RHINO PACE A1"
+      href: /devices/pace-a1
+    - name: "RHINO T5se"
       href: /devices/t5se
-    - name: "Rhino R6"
+    - name: "RHINO R6"
       href: /devices/r6
-    - name: "Rhino T8"
+    - name: "RHINO T8"
       href: /devices/t8
-    - name: "Rhino C10"
+    - name: "RHINO C10"
       href: /devices/c10
-    - name: "Rhino M10p"
+    - name: "RHINO M10p"
       href: /devices/m10p
-    - name: "Rhino K27p"
-      href: /devices/k27p
 - name: "Support"
   href: /support
 - name: "Security"
   href:
   items:
-    - name: "Rhino security overview"
+    - name: "RHINO security overview"
       href: /security
     - name: "Software releases"
       href: /security/releases
     - name: "Vulnerability disclosure"
       href: /security/vulnerability-disclosure
-- name: "Contact Rhino"
+- name: "Contact RHINO"
   href: /support/escalate
