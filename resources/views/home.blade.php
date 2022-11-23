@@ -137,10 +137,10 @@
 					</div>
 				</a>
 			</div>
-			<div>
+			<!--div>
 				<a href="#" class="card">
 					<div class="card-icon card-disabled">
-						<!--i class="fas fa-comments-alt"></i--><i class="far fa-construction"></i>
+						<!--i class="fas fa-comments-alt"></i--><!--i class="far fa-construction"></i>
 					</div>
 					<div class="card-header">Community Forum</div>
 					<div class="card-text">
@@ -148,7 +148,7 @@
 						community
 					</div>
 				</a>
-			</div>
+			</div-->
 		</div>
 	</section>
 @endsection
