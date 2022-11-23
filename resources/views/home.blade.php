@@ -8,8 +8,8 @@
 		<div class="hero-grid">
 			<div class="pull-left">
 				<div id="hero_intro">
-					<h2>Rhino Support</h2>
-					<p>Looking for support for your Rhino device?</p>
+					<h2>RHINO Support</h2>
+					<p>Looking for support for your RHINO device?</p>
 					<p>The support centre offers help articles, FAQs,
 					product guides, user manuals, and more. Use the
 					search function below or click a device/topic accordingly.</p>
@@ -43,36 +43,45 @@
 			<div>
 				<a href="/devices/t8" class="card">
 					<img class="product-image" src="/assets/rhino-t8.png" alt="rhino t8">
-					<div class="card-header">Rhino T8</div>
+					<div class="card-header">RHINO T8</div>
 					<div class="card-text">
-						Product documentation for the Rhino T8 includes guides, FAQ, downloads, spec, help docs etc
+						Product documentation for the RHINO T8 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
 				</a>
 			</div>
 			<div>
 				<a href="/devices/c10" class="card">
 					<img class="product-image" src="/assets/rhino-c10.png" alt="rhino c10">
-					<div class="card-header">Rhino C10</div>
+					<div class="card-header">RHINO C10</div>
 					<div class="card-text">
-						Product documentation for the Rhino C10 includes guides, FAQ, downloads, spec, help docs etc
+						Product documentation for the RHINO C10 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
 				</a>
 			</div>
 			<div>
 				<a href="/devices/t5se" class="card">
 					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino t5se">
-					<div class="card-header">Rhino T5se</div>
+					<div class="card-header">RHINO T5se</div>
 					<div class="card-text">
-						Product documentation for the Rhino T5se includes guides, FAQ, downloads, spec, help docs etc
+						Product documentation for the RHINO T5se includes guides, FAQ, downloads, spec, help docs etc
 					</div>
 				</a>
 			</div>
 			<div>
 				<a href="/devices/m10p" class="card">
 					<img class="product-image" src="/assets/rhino-m10p.png" alt="rhino m10p">
-					<div class="card-header">Rhino M10p</div>
+					<div class="card-header">RHINO M10p</div>
 					<div class="card-text">
-						Product documentation for the Rhino M10p includes guides, FAQ, downloads, spec, help docs etc
+						Product documentation for the RHINO M10p includes guides, FAQ, downloads, spec, help docs etc
+					</div>
+				</a>
+			</div>
+			<div>
+				<a href="/devices/pace-a1" class="card">
+					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino pace a1">
+					<div class="card-header">RHINO PACE A1</div>
+					<div class="card-text">
+						Product documentation for the RHINO PACE A1 includes guides, FAQ, downloads, spec, help docs etc
 					</div>
 				</a>
 			</div>
@@ -83,7 +92,7 @@
 					</div>
 					<div class="card-header">Software releases</div>
 					<div class="card-text">
-						View release changelogs for your Rhino devices, and download releases for offline application
+						View release changelogs for your RHINO devices, and download releases for offline application
 					</div>
 				</a>
 			</div>
@@ -104,10 +113,10 @@
 						<i class="fas fa-shield-check"></i>
 					</div>
 					<div class="rhino-security-text">
-						<div class="card-header">Rhino Security</div>
+						<div class="card-header">RHINO Security</div>
 						<div class="card-text">
-							View release notes for system updates, support lifecycle for Rhino devices, download OTA
-							updates	for offline deployment and view or participate in the Rhino vulnerability program.
+							View release notes for system updates, support lifecycle for RHINO devices, download OTA
+							updates	for offline deployment and view or participate in the RHINO vulnerability program.
 						</div>
 					</div>
 				</a>
