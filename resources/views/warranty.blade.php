@@ -15,7 +15,7 @@
 				<i class="fas fa-clock"></i> {{ $content->readTime() }}
 				</div-->
 			<h2 id="article_title">
-				{{ $content->title }}
+				Check your Device Warranty
 			</h2>
 				<div id="literal_content" class="js-toc-content">
 					<x-quick-search action="{{ route('warranty') }}" name="imei"/>
