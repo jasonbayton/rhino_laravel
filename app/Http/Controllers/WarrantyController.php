@@ -26,7 +26,7 @@ class WarrantyController extends Controller {
 		if ($imei) {
 			// This would be useful if we has redis on the server, would speed up repeat requests to the server
 
-			$ch = curl_init('https://gridapi-sandbox.azurewebsites.net/api/v1/items/warranty?q[]=imei:eq:' . $imei);
+			$ch = curl_init('https://gridapi.azurewebsites.net/api/v1/items/warranty?q[]=imei:eq:' . $imei);
 			curl_setopt($ch, CURLOPT_USERPWD, config('rhino.user') . ":" . config('rhino.password'));
 			curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
