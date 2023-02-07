@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Cache;
 class WarrantyController extends Controller {
 
 	public function __invoke(Request $request, ContentService $contentService, MenuService $menuService): Response {
-		$content = $contentService->getByUrl('/warranty');
+		$content = $contentService->getByUrl('/warranty-check');
 		$imei = $request->imei;
 
 		$warranty = null;
