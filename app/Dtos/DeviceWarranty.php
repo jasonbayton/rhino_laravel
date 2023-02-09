@@ -28,8 +28,8 @@ class DeviceWarranty {
 		$this->model = $attributes['model'];
 		$this->serialNumber = $attributes['serialNumber'];
 		$this->warrantyDate = $attributes['hardwareWarrantyValidUntil'] === '0001-01-01' ? null : Date::parse($attributes['hardwareWarrantyValidUntil']);
-		$this->batteryWarrantyDate = $attributes['batteryWarrantyValidUntil'] === '0001-01-01' ? null : Date::parse($attributes['batteryWarrantyValidUntil']);
-		$this->extendedWarrantyDate = $attributes['extendedHardwareWarrantyValidUntil'] === '0001-01-01' ? null : Date::parse($attributes['extendedHardwareWarrantyValidUntil']);
+		$this->batteryWarrantyDate = $attributes['batteryWarrantyValidUntil'] === '' ? null : Date::parse($attributes['batteryWarrantyValidUntil']);
+		$this->extendedWarrantyDate = $attributes['extendedHardwareWarrantyValidUntil'] === '' ? null : Date::parse($attributes['extendedHardwareWarrantyValidUntil']);
 		$this->imei = $attributes['imei'];
 		$this->orderDate = Date::parse($attributes['purchaseDate']);
 	}
