@@ -36,9 +36,8 @@ class WarrantyController extends Controller {
 			$response = json_decode($return, true);
 
 			if (count($response['items']) === 0) {
-				$warranty = false;
+				$warranty = 'not-found';
 			} else {
-
 				$warranty = new DeviceWarranty($response['items'][0]);
 			}
 		}

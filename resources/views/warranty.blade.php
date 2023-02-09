@@ -18,10 +18,14 @@
 				Check your Device Warranty
 			</h2>
 				<div id="literal_content" class="js-toc-content">
+					<p>
+						Please enter an IMEI number into the field below to search for your device warranty details.
+					</p>
 					<x-quick-search action="{{ route('warranty') }}" name="imei"/>
-					@if($warranty)
-						@if ($warranty === false)
-							<h1>No device matches the IMEI provided. Please check the IMEI and try again</h1>
+						@if(!$warranty)
+
+						@elseif($warranty === 'not-found')
+							<h1>No device matches the IMEI provided. Please check the IMEI and try again.</h1>
 						@else
 							<div id="warranty-container">
 								<div>
@@ -38,7 +42,6 @@
 								</div>
 							</div>
 						@endif
-					@endif
 				</div>
 		</article>
 	</section>
