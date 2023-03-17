@@ -77,15 +77,6 @@
 				</a>
 			</div>
 			<div>
-				<a href="/devices/pace-a1" class="card">
-					<img class="product-image" src="/assets/rhino-t5se.png" alt="rhino pace a1">
-					<div class="card-header">RHINO PACE A1</div>
-					<div class="card-text">
-						Product documentation for the RHINO PACE A1 includes guides, FAQ, downloads, spec, help docs etc
-					</div>
-				</a>
-			</div>
-			<div>
 				<a href="/security/releases" class="card">
 					<div class="card-icon text-success">
 						<!--i class="fas fa-play-circle"></i--><i class="fas fa-rocket-launch"></i>

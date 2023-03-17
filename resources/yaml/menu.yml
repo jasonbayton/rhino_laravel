@@ -1,8 +1,6 @@
 - name: "Devices"
   href:
   items:
-    - name: "RHINO PACE A1"
-      href: /devices/pace-a1
     - name: "RHINO T5se"
       href: /devices/t5se
     - name: "RHINO R6"
